@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-class Bio extends React.Component {
+export default class Bio extends Component {
   render() {
     return (
       <p>
@@ -9,5 +9,3 @@ class Bio extends React.Component {
     )
   }
 }
-
-export default Bio
