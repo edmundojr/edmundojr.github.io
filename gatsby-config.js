@@ -5,7 +5,6 @@ module.exports = {
     description: 'The daily, weekly, and monthly musings of Edmundo Santos.',
     siteUrl: 'https://edmundojr.com/',
   },
-  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
