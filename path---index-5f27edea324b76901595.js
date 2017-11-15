@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{349:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Edmundo Santos"}},allMarkdownRemark:{edges:[{node:{excerpt:"“The scariest moment is always just before you start. After that, things can only get better.” On each and every one of the blogs that I’d…",fields:{slug:"/blog/the-scariest-moment/"},frontmatter:{date:"01 May 2015",title:"The Scariest Moment"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-5f27edea324b76901595.js.map
