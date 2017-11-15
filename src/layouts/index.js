@@ -1,22 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link'
+
+import Header from '../components/Header'
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
-    let header
-
-    header = (
-      <h1>
-        <Link to={'/'}>
-          Edmundo Santos
-        </Link>
-      </h1>
-    )
+    const { children } = this.props
 
     return (
       <div>
-        {header}
+        <Header />
         {children()}
       </div>
     )
