@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Edmundo Santos',
+    author: 'Edmundo Santos',
+    description: 'The daily, weekly, and monthly musings of Edmundo Santos.',
+    siteUrl: 'https://edmundojr.com/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,7 +27,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1rem`,
             },
           },
           'gatsby-remark-prismjs',
@@ -46,12 +46,6 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
+    `gatsby-plugin-react-helmet`
   ],
 }
