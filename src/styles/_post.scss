@@ -1,0 +1,14 @@
+.post {
+  &-title {
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    div {
+      height: 3px;
+      background: white;
+    }
+  }
+}
