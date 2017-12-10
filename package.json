@@ -3,6 +3,7 @@
   "description": "ed",
   "version": "1.0.0",
   "author": "Edmundo Santos <hello@edmundojr.com>",
+  "license": "CC-BY-4.0",
   "dependencies": {
     "gatsby": "^1.9.112",
     "gatsby-link": "^1.6.27",
@@ -10,6 +11,7 @@
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.13",
     "gatsby-plugin-sharp": "^1.6.20",
     "gatsby-remark-copy-linked-files": "^1.5.21",
     "gatsby-remark-images": "^1.5.31",
