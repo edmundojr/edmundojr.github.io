@@ -11,21 +11,26 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <div className="container">
         <Helmet title={siteTitle} />
-        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <article key={node.fields.slug} className="post row">
+              <header className="col-sm-9 col-md-8 offset-md-1">
+                <h2 className="post-title">
+                  <Link to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h2>
+              </header>
+              <div className="post__body col-sm-9 col-md-8 offset-md-1">
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </div>
+              <div className="post__meta col-sm-3">
+                <time>{node.frontmatter.date}</time>
+              </div>
+            </article>
           )
         })}
       </div>
