@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 export default class Header extends Component {
   render() {
     return (
-      <header className="sticky-top container-fluid"
+      <header className="header"
               role="banner">
         <div className="row justify-content-between align-items-center pt-3">
           <Link to={'/'}
