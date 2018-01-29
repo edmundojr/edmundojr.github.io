@@ -1,36 +1,31 @@
-@import "functions";
-@import "variables";
+// @import "../../node_modules/normalize/normalize.css";
 
-@at-root {
-  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+body {
+  margin: 0;
+  padding: 40px;
 }
 
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-  font-family: $font-family-sans-serif;
-  color: #F0F5F9;
-  background: #111418;
+img {
+  width: 100%;
+  height: auto;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.post {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 8fr 3fr;
+  outline: 1px solid red;
+
+  > * {
+    grid-column: 2 / span 1;
+  }
+
+  > div {
+
+  }
+
+  figure {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
 }
-
-//
-// Grid mixins
-//
-
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
-
-@import "grid";
-@import "utilities/flex";
-@import "utilities/display";
-@import "utilities/position";
-@import "utilities/spacing";
-
-@import "post";
