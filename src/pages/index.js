@@ -3,37 +3,43 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
-
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div className="container">
+      <main className="main">
         <Helmet title={siteTitle} />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
+          const postDate = node.frontmatter.date.replace(/\S+/g, function(a) {
+            return `<span>${a}</span>`
+          })
           return (
-            <article key={node.fields.slug} className="post row">
-              <header className="col-sm-9 col-md-8 offset-md-1">
-                <h2 className="post-title">
+            <article key={node.fields.slug}
+                     className="post">
+              <header className="post__header">
+                <h2 className="post__title">
                   <Link to={node.fields.slug}>
                     {title}
                   </Link>
                 </h2>
               </header>
-              <div className="post__body col-sm-9 col-md-8 offset-md-1">
+              <div className="post__content">
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </div>
-              <div className="post__meta col-sm-3">
-                <time>{node.frontmatter.date}</time>
+              <div className="post__meta">
+                <time className="post__date"
+                      dangerouslySetInnerHTML={{ __html: postDate }} />
+                <ul className="post__tags">
+                  <li><a href="">Design</a></li>
+                </ul>
               </div>
             </article>
           )
         })}
-      </div>
+      </main>
     )
   }
 }
@@ -57,6 +63,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMM YYYY")
             title
+            tags
           }
         }
       }

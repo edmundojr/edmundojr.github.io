@@ -2,23 +2,32 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
-
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post      = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const postDate  = post.frontmatter.date.replace(/\S+/g, function(a) {
+      return `<span>${a}</span>`
+    })
 
     return (
-      <article className="post">
+      <main className="main">
         <Helmet title={`${post.frontmatter.title} · ${siteTitle}`} />
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <time className="post__meta">{post.frontmatter.date}</time>
-        </header>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Bio />
-      </article>
+        <article className="post">
+          <header className="post__header">
+            <h1 className="post__title">{post.frontmatter.title}</h1>
+          </header>
+          <div className="post__content"
+               dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div className="post__meta">
+            <time className="post__date"
+                  dangerouslySetInnerHTML={{ __html: postDate }} />
+            <ul className="post__tags">
+              <li><a href="">Design</a></li>
+            </ul>
+          </div>
+        </article>
+      </main>
     )
   }
 }
@@ -39,6 +48,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD MMM YYYY")
+        tags
       }
     }
   }
