@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 import '../styles/main.scss'
 
@@ -11,6 +12,7 @@ class Template extends React.Component {
     return (
       <div className="container">
         <Header />
+        <Hero />
         {children()}
       </div>
     )
