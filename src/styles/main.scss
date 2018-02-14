@@ -127,6 +127,10 @@ p, ul, ol {
   grid-gap: 40px;
   grid-template-columns: repeat(12, 1fr);
 
+  & + & {
+    margin-top: 120px;
+  }
+
   // Header line
 
   &::before {
