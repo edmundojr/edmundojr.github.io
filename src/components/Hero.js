@@ -9,7 +9,7 @@ export default class Hero extends Component {
           The daily, weekly, and monthly musings of Edmundo Santos.
         </h1>
         <p className="hero__description">
-          For news updates, please <a href="https://twitter.com/edmundojr_">follow me on Twitter</a> or <Link to="/feed.xml">subscribe to the feed</Link>.
+          UI/UX Designer living in Cork, Ireland.
         </p>
       </div>
     )
