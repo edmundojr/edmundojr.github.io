@@ -22,9 +22,6 @@ class BlogPostTemplate extends React.Component {
           <div className="post__meta">
             <time className="post__date"
                   dangerouslySetInnerHTML={{ __html: postDate }} />
-            <ul className="post__tags">
-              <li><a href="">Design</a></li>
-            </ul>
           </div>
         </article>
       </main>
