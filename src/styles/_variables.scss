@@ -1,0 +1,56 @@
+//
+// Colors
+//
+
+$white:                   #fff;
+$black:                   #000;
+$tangerine-tango:         #ED5548;
+
+$primary:                 $tangerine-tango;
+
+$body-bg:                 $white;
+$body-color:              $black;
+
+//
+// Grid
+//
+
+$container-width:         1280px;
+$grid-gutter:             40px;
+$grid-template-columns:   repeat(16, 1fr);
+
+//
+// Typography
+//
+
+$font-family-base:        "Operator Pro", sans-serif;
+$font-family-headings:    "Margem", sans-serif;
+$font-family-monospace:   "Operator Mono", monospace;
+
+$font-size-root:          20px;
+$font-size-base:          .8rem;
+$font-size-sm:            .7rem;
+$font-size-xs:            .5rem;
+$font-size-lg:            1.05rem;
+
+$font-size-h0:            3.6rem;
+$font-size-h1:            3rem;
+$font-size-h2:            2.4rem;
+$font-size-h3:            1.8rem;
+$font-size-h4:            1.2rem;
+$font-size-h5:            1.05rem;
+$font-size-h6:            .9rem;
+
+$font-weight-light:       200;
+$font-weight-normal:      400;
+$font-weight-bold:        700;
+$font-weight-black:       900;
+$font-weight-base:        $font-weight-light;
+$font-weight-headings:    $font-weight-black;
+
+$line-height-base:        1.7;
+$line-height-sm:          1;
+$line-height-headings:    1.1;
+
+$headings-margin-bottom:  .5rem;
+$headings-letter-spacing: -.03em;
