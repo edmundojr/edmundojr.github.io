@@ -8,10 +8,10 @@ export default class Header extends Component {
         <h1 className="h0">Edmundo Santos</h1>
         <p>UI/UX designer, photo enthusiast, book lover, occasional hiker<br/> <small>Cork, Ireland</small></p>
         <nav className="nav">
-          <Link to="/" className={"nav__link " + ((location.pathname == '/') ? 'is-active' : '')}>
+          <Link to="/" className={"nav__link " + ((window.location.pathname == '/') ? 'is-active' : '')}>
             Home →
           </Link>
-          <Link to="/blog/" className={"nav__link " + (location.pathname.startsWith('/blog') ? 'is-active' : '')}>
+          <Link to="/blog/" className={"nav__link " + (window.location.pathname.startsWith('/blog') ? 'is-active' : '')}>
             Blog →
           </Link>
         </nav>
