@@ -3,66 +3,31 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-class BlogIndex extends React.Component {
+class HomeIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle   = get(this, 'props.data.site.siteMetadata.title')
 
     return (
-      <main className="main">
-        <Helmet title={siteTitle} />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          const postDate = node.frontmatter.date.replace(/\S+/g, function(a) {
-            return `<span>${a}</span>`
-          })
-          return (
-            <article key={node.fields.slug}
-                     className="post">
-              <header className="post__header">
-                <h2 className="post__title">
-                  <Link to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h2>
-              </header>
-              <div className="post__content">
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </div>
-              <div className="post__meta">
-                <time className="post__date"
-                      dangerouslySetInnerHTML={{ __html: postDate }} />
-              </div>
-            </article>
-          )
-        })}
+      <main className="main main--home">
+        <Helmet title={siteTitle + ' × UI/UX Designer'} />
+        <article>
+          <h4>Hello, welcome to my homepage!</h4>
+          <p>
+            This website is <del>a work in progress</del> an experiment, so don't take it too seriously. I'm aiming to build a personal hub where I can try my hand at writing some <Link to="/blog/">articles</Link>, share my photos, books I'm reading, maybe some sort of travel log… all that <span title="Irish for fun"><em lang="ie">craic</em></span> – a creative outlet I guess, some way to stretch parts of my brain that don't get enough exercise.
+          </p>
+        </article>
       </main>
     )
   }
 }
 
-export default BlogIndex
+export default HomeIndex
 
 export const pageQuery = graphql`
   query IndexQuery {
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMM YYYY")
-            title
-            tags
-          }
-        }
       }
     }
   }
