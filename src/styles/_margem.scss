@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Margem';
+    src: url('../fonts/margem/Margem-Black.eot');
+    src: url('../fonts/margem/Margem-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/margem/Margem-Black.woff2') format('woff2'),
+        url('../fonts/margem/Margem-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Margem';
+    src: url('../fonts/margem/Margem-Bold.eot');
+    src: url('../fonts/margem/Margem-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/margem/Margem-Bold.woff2') format('woff2'),
+        url('../fonts/margem/Margem-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
