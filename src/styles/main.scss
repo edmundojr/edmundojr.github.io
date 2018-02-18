@@ -11,6 +11,10 @@
 body {
   padding: $grid-gutter;
 
+  @media (max-width:500px) {
+    padding: $grid-gutter / 2;
+  }
+
   &::after {
     content: "";
     position: fixed;
@@ -20,6 +24,10 @@ body {
     bottom: 0;
     border: .75rem solid $body-color;
     pointer-events: none;
+
+    @media (max-width:500px) {
+      border-width: .5rem;
+    }
   }
 }
 
