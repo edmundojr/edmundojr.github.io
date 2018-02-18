@@ -31,6 +31,10 @@ body {
   grid-template-columns: $grid-template-columns;
   max-width: $container-width;
   margin: 0 auto;
+
+  @media (max-width:900px) {
+    grid-gap: 0 ($grid-gutter / 2);
+  }
 }
 
 // Main Area
@@ -40,6 +44,14 @@ body {
 
   &--home {
     grid-column: 5 / span 8;
+
+    @media (max-width:900px) {
+      grid-column: 4 / span 10;
+    }
+
+    @media (max-width:500px) {
+      grid-column: 2 / span 12;
+    }
   }
 }
 
@@ -48,6 +60,14 @@ body {
 .header {
   grid-column: 5 / span 8;
   margin-top: 3rem;
+
+  @media (max-width:900px) {
+    grid-column: 4 / span 10;
+  }
+
+  @media (max-width:500px) {
+    grid-column: 2 / span 12;
+  }
 }
 
 // Footer
@@ -56,6 +76,14 @@ body {
   grid-column: 5 / span 8;
   margin-bottom: 3rem;
   font-size: $font-size-sm;
+
+  @media (max-width:900px) {
+    grid-column: 4 / span 10;
+  }
+
+  @media (max-width:500px) {
+    grid-column: 2 / span 12;
+  }
 }
 
 // Nav
@@ -90,6 +118,10 @@ body {
   grid-gap: ($grid-gutter / 2) $grid-gutter;
   grid-template-columns: $grid-template-columns;
 
+  @media (max-width:900px) {
+    grid-gap: ($grid-gutter / 4) ($grid-gutter / 2);
+  }
+
   & + & {
     margin-top: 3rem;
   }
@@ -99,6 +131,14 @@ body {
   &__header {
     grid-column: 5 / span 8;
     grid-row: 1 / 1;
+
+    @media (max-width:900px) {
+      grid-column: 4 / span 10;
+    }
+
+    @media (max-width:500px) {
+      grid-column: 2 / span 12;
+    }
   }
 
   &__title {
@@ -115,12 +155,32 @@ body {
     grid-gap: 0 $grid-gutter;
     grid-template-columns: $grid-template-columns;
 
+    @media (max-width:900px) {
+      grid-gap: 0 ($grid-gutter / 2);
+    }
+
     > * {
       grid-column: 5 / span 8;
+
+      @media (max-width:900px) {
+        grid-column: 4 / span 10;
+      }
+
+      @media (max-width:500px) {
+        grid-column: 2 / span 12;
+      }
     }
 
     blockquote {
       grid-column: 6 / span 8;
+
+      @media (max-width:900px) {
+        grid-column: 5 / span 10;
+      }
+
+      @media (max-width:500px) {
+        grid-column: 3 / span 12;
+      }
     }
 
     figure {
@@ -136,6 +196,17 @@ body {
     font-weight: $font-weight-bold;
     text-align: center;
     text-transform: uppercase;
+
+    @media (max-width:900px) {
+      grid-column: 1 / span 3;
+      grid-row: 1 / 1;
+    }
+
+    @media (max-width:500px) {
+      grid-column: 2 / span 12;
+      grid-row: 1 / 1;
+      text-align: left;
+    }
   }
 
   // Date
@@ -151,6 +222,17 @@ body {
       font-size: $font-size-h2;
       font-weight: $font-weight-black;
       line-height: $line-height-sm;
+    }
+
+    @media (max-width:500px) {
+      display: block;
+      margin-bottom: .75rem;
+      color: rgba($black, .5);
+
+      span:first-child {
+        display: inline;
+        font-size: $font-size-base;
+      }
     }
   }
 

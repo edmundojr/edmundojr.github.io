@@ -4,6 +4,10 @@
 
 html {
   font-size: $font-size-root;
+
+  @media (max-width:900px) {
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -24,6 +28,10 @@ body {
 
   &::first-letter {
     margin-left: -4px;
+  }
+
+  @media (max-width:500px) {
+    font-size: $font-size-h2;
   }
 }
 
