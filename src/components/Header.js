@@ -17,7 +17,7 @@ export default class Header extends Component {
     return (
       <header className="header" role="banner">
         <h1 className="h0">Edmundo Santos</h1>
-        <p>UI/UX designer, photo enthusiast, book lover, occasional hiker<br/> <small>Cork, Ireland</small></p>
+        <p>Multidisciplinary designer, coder, photo enthusiast, book lover, occasional wanderer<br/> <small>Cork, Ireland</small></p>
         <nav className="nav">
           <Link to="/" className={"nav__link " + isHome}>
             Home →
