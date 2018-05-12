@@ -1,0 +1,173 @@
+// Header
+
+.header {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  color: $black;
+}
+
+// Logo
+
+.logo {
+  display: inline-block;
+  color: currentColor;
+  transition:
+    opacity .4s $ease-in-out-quart,
+    transform .4s $ease-in-out-quart;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+// Nav Toogle
+
+.nav-toggle {
+  display: none;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    width: 1.6rem;
+    height: 1.2rem;
+    color: currentColor;
+    cursor: pointer;
+    transition: transform .4s $ease-in-out-quart;
+
+    span,
+    &::before,
+    &::after, {
+      content: "";
+      position: absolute;
+      width: 1.6rem;
+      height: .2rem;
+      background: currentColor;
+      transition:
+        transform .4s $ease-in-out-quart,
+        color .4s $ease-in-out-quart,
+        opacity .4s $ease-in-out-quart;
+    }
+
+    span { top: .5rem; }
+
+    &::before { top: 0; }
+    &::after  { bottom: 0; }
+  }
+
+  // Animation
+
+  &:checked {
+    ~ .nav {
+      opacity: 1;
+      transform: none;
+
+      .logo,
+      .nav__item,
+      .nav__social {
+        opacity: 1;
+      }
+    }
+
+    ~ .nav-toggle__icon {
+      color: $black;
+      transform: rotate(-180deg) scale(.75);
+
+      span      {
+        transform: scale(.5);
+        opacity: 0;
+      }
+
+      &::before { transform: translateY(.5rem) rotate(-45deg); }
+      &::after  { transform: translateY(-.5rem) rotate(45deg); }
+    }
+
+    ~ .nav-overlay {
+      opacity: .5;
+      pointer-events: auto;
+    }
+
+    ~ .logo {
+      opacity: 0;
+      transform: scale(.9);
+    }
+  }
+}
+
+// 
+// Navigation panel
+// 
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 320px;
+  padding: 2rem;
+  font-family: $font-family-headings;
+  color: $black;
+  background: $white;
+  // box-shadow: 0 0 2rem rgba(0,0,0,.25);
+  opacity: 1;
+  transform: translateX(100%);
+  transition:
+    transform .5s $ease-in-out-quart,
+    opacity .4s $ease-in-out-quart;
+
+  .logo {
+    margin-bottom: 1.5rem;
+  }
+
+  &__item {
+    display: block;
+    color: currentColor;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+
+    // &.is-active {
+    //   text-decoration: underline;
+    // }
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 1.75rem;
+
+    &__item {
+      margin-right: 1.25rem;
+    }
+  }
+
+  // Animations
+
+  .logo,
+  .nav__item,
+  .nav__social {
+    opacity: 0;
+    transition: opacity .4s .2s $ease-in-out-quart;
+  }
+}
+
+// 
+// Overlay
+// Darkens the website when nav is open
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  background: $black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s $ease-in-out-quart;
+}
