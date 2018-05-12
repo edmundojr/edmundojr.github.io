@@ -1,35 +1,12 @@
 @import "~normalize.css/normalize";
 
-@import "_operator-pro";
-@import "_margem";
-@import "_variables";
-@import "_typography";
-@import "_reboot";
+@import "operator-pro";
+@import "margem";
+@import "variables";
+@import "typography";
+@import "reboot";
 
-// Body spacing and border
-
-body {
-  padding: $grid-gutter;
-
-  @media (max-width:500px) {
-    padding: $grid-gutter / 2;
-  }
-
-  &::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: .75rem solid $body-color;
-    pointer-events: none;
-
-    @media (max-width:500px) {
-      border-width: .5rem;
-    }
-  }
-}
+@import "header";
 
 // Grid container
 
@@ -63,21 +40,6 @@ body {
   }
 }
 
-// Header
-
-.header {
-  grid-column: 5 / span 8;
-  margin-top: 3rem;
-
-  @media (max-width:900px) {
-    grid-column: 4 / span 10;
-  }
-
-  @media (max-width:500px) {
-    grid-column: 2 / span 12;
-  }
-}
-
 // Footer
 
 .footer {
@@ -91,31 +53,6 @@ body {
 
   @media (max-width:500px) {
     grid-column: 2 / span 12;
-  }
-}
-
-// Nav
-
-.nav {
-  margin-top: .75rem;
-  font-weight: $font-weight-bold;
-
-  &__link {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 1rem;
-    color: $body-color;
-    transition: all .2s;
-
-    &:hover,
-    &:focus {
-      outline: none;
-      color: rgba($body-color,.5);
-    }
-
-    &.is-active {
-      color: $primary;
-    }
   }
 }
 
