@@ -9,7 +9,7 @@ class HomeIndex extends React.Component {
 
     return (
       <main className="main main--home">
-        <Helmet title={siteTitle + ' × UI/UX Designer'} />
+        <Helmet title={siteTitle + ' × Multidisciplinary Designer & Coder'} />
         <article>
           <h4>Hello, welcome to my homepage!</h4>
           <p>
