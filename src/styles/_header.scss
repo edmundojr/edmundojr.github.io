@@ -1,11 +1,18 @@
 // Header
 
+:root {
+  --nav-panel-transition:
+    opacity .4s #{$ease-in-out-quart},
+    transform .4s #{$ease-in-out-quart};
+  --nav-panel-transition-delayed: opacity .5s #{$ease-in-out-quart}, transform .5s #{$ease-in-out-quart};
+}
+
 .header {
   position: fixed;
   top: 2rem;
   left: 2rem;
   right: 2rem;
-  color: $black;
+  color: $body-color;
 }
 
 // Logo
@@ -13,9 +20,7 @@
 .logo {
   display: inline-block;
   color: currentColor;
-  transition:
-    opacity .4s $ease-in-out-quart,
-    transform .4s $ease-in-out-quart;
+  transition: var(--nav-panel-transition);
 
   svg {
     fill: currentColor;
@@ -29,45 +34,42 @@
 
   &__icon {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -.6rem;
+    right: -.8rem;
     z-index: 110;
-    width: 1.6rem;
-    height: 1.2rem;
+    width: 3.2rem;
+    height: 2.4rem;
     color: currentColor;
     cursor: pointer;
-    transition: transform .4s $ease-in-out-quart;
+    transition: var(--nav-panel-transition), color .4s #{$ease-in-out-quart};
 
     span,
     &::before,
     &::after, {
       content: "";
       position: absolute;
+      left: .8rem;
       width: 1.6rem;
       height: .2rem;
       background: currentColor;
-      transition:
-        transform .4s $ease-in-out-quart,
-        color .4s $ease-in-out-quart,
-        opacity .4s $ease-in-out-quart;
+      transition: var(--nav-panel-transition);
     }
 
-    span { top: .5rem; }
-
-    &::before { top: 0; }
-    &::after  { bottom: 0; }
+    span      { top: 1.1rem; }
+    &::before { top: .6rem; }
+    &::after  { bottom: .6rem; }
   }
 
   // Animation
 
   &:checked {
-    ~ .nav {
+    ~ .nav-panel {
       opacity: 1;
       transform: none;
 
       .logo,
-      .nav__item,
-      .nav__social {
+      .nav-panel__item,
+      .nav-panel__social {
         opacity: 1;
       }
     }
@@ -86,7 +88,7 @@
     }
 
     ~ .nav-overlay {
-      opacity: .5;
+      opacity: .7;
       pointer-events: auto;
     }
 
@@ -101,23 +103,20 @@
 // Navigation panel
 // 
 
-.nav {
+.nav-panel {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 320px;
+  width: 16rem;
   padding: 2rem;
   font-family: $font-family-headings;
   color: $black;
   background: $white;
-  // box-shadow: 0 0 2rem rgba(0,0,0,.25);
   opacity: 1;
   transform: translateX(100%);
-  transition:
-    transform .5s $ease-in-out-quart,
-    opacity .4s $ease-in-out-quart;
+  transition: var(--nav-panel-transition-delayed);
 
   .logo {
     margin-bottom: 1.5rem;
@@ -148,15 +147,15 @@
   // Animations
 
   .logo,
-  .nav__item,
-  .nav__social {
+  .nav-panel__item,
+  .nav-panel__social {
     opacity: 0;
-    transition: opacity .4s .2s $ease-in-out-quart;
+    transition: var(--nav-panel-transition);
   }
 }
 
 // 
-// Overlay
+// Nav Overlay
 // Darkens the website when nav is open
 
 .nav-overlay {
@@ -169,5 +168,5 @@
   background: $black;
   opacity: 0;
   pointer-events: none;
-  transition: opacity .5s $ease-in-out-quart;
+  transition: var(--nav-panel-transition);
 }

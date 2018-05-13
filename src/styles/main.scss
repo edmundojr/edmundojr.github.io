@@ -6,66 +6,16 @@
 @import "typography";
 @import "reboot";
 
+@import "layout";
+
 @import "header";
-
-// Grid container
-
-.grid-container {
-  display: grid;
-  grid-gap: 0 $grid-gutter;
-  grid-template-columns: $grid-template-columns;
-  max-width: $container-width;
-  margin: 0 auto;
-
-  @media (max-width:900px) {
-    grid-gap: 0 ($grid-gutter / 2);
-  }
-}
-
-// Main Area
-
-.main {
-  grid-column: 1 / span 16;
-
-  &--home {
-    grid-column: 5 / span 8;
-
-    @media (max-width:900px) {
-      grid-column: 4 / span 10;
-    }
-
-    @media (max-width:500px) {
-      grid-column: 2 / span 12;
-    }
-  }
-}
-
-// Footer
-
-.footer {
-  grid-column: 5 / span 8;
-  margin-bottom: 3rem;
-  font-size: $font-size-sm;
-
-  @media (max-width:900px) {
-    grid-column: 4 / span 10;
-  }
-
-  @media (max-width:500px) {
-    grid-column: 2 / span 12;
-  }
-}
+@import "hero";
 
 // Post
 
 .post {
   display: grid;
   grid-gap: ($grid-gutter / 2) $grid-gutter;
-  grid-template-columns: $grid-template-columns;
-
-  @media (max-width:900px) {
-    grid-gap: ($grid-gutter / 4) ($grid-gutter / 2);
-  }
 
   & + & {
     margin-top: 3rem;
