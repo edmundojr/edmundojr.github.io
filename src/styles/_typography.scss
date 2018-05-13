@@ -26,10 +26,6 @@ body {
   line-height: $line-height-sm;
   margin-bottom: 0;
 
-  &::first-letter {
-    margin-left: -4px;
-  }
-
   @media (max-width:500px) {
     font-size: $font-size-h2;
   }
@@ -42,7 +38,12 @@ h4 { font-size: $font-size-h4; }
 h5 { font-size: $font-size-h5; }
 h6 { font-size: $font-size-h6; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-family-headings;
   font-weight: $font-weight-black;
   letter-spacing: $headings-letter-spacing;
@@ -61,9 +62,15 @@ small {
 
 // Remove top margin for textual elements
 
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
-ul, ol,
+ul,
+ol,
 blockquote {
   margin-top: 0;
 
@@ -107,7 +114,8 @@ blockquote {
 
 // Lists
 
-ol, ul {
+ol,
+ul {
   padding: 0;
   list-style-position: outside;
 }
@@ -144,22 +152,4 @@ ul {
 
 figure {
   margin: 0 0 .75rem 0;
-}
-
-// Separator
-
-.separator {
-  display: inline-block;
-  font-size: $font-size-xs;
-  margin: 3rem 0;
-  transform: translateX(-50%);
-
-  &::before {
-    content: "· · · · · · × · · · · · ·";
-    display: inline-block;
-
-    @media (max-width:500px) {
-      content: "· · · × · · ·";
-    }
-  }
 }

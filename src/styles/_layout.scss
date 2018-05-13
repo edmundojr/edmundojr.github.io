@@ -1,0 +1,55 @@
+// 
+// Body
+// 
+
+body {
+  padding: $grid-gutter;
+}
+
+// 
+// Grid
+// 
+
+.grid {
+  display: grid;
+  grid:
+    ". hero ." 75vh
+    "main main main" auto
+    ". footer ." 5rem / 1fr 4fr 1fr;
+  grid-gap: 2rem;
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+// 
+// Hero
+// 
+
+.hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// 
+// Main area
+// 
+
+.main {
+  grid-area: main;
+}
+
+// 
+// Footer
+// 
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-sm;
+}
