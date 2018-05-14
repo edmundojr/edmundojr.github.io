@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
             return `<span>${a}</span>`
           })
           return (
-            <article key={node.fields.slug} className="post">
+            <article key={node.fields.slug} className="content post">
               <header className="post__header">
                 <h2 className="post__title">
                   <Link to={node.fields.slug}>
@@ -27,10 +27,10 @@ class BlogIndex extends React.Component {
               </header>
               <div className="post__content">
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                <aside className="post__meta">
-                  <time className="post__date" dangerouslySetInnerHTML={{ __html: postDate }} />
-                </aside>
               </div>
+              <aside className="post__meta">
+                <time className="post__date" dangerouslySetInnerHTML={{ __html: postDate }} />
+              </aside>
             </article>
           )
         })}

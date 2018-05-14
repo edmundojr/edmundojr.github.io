@@ -15,7 +15,7 @@ body {
   grid:
     ". hero ." 75vh
     "main main main" auto
-    ". footer ." 5rem / 1fr 4fr 1fr;
+    "footer footer footer" 5rem / 1fr minmax(auto, 700px) 1fr;
   grid-gap: 2rem;
   max-width: $container-width;
   margin: 0 auto;
@@ -40,6 +40,10 @@ body {
 
 .main {
   grid-area: main;
+
+  &--home article {
+    grid-column: 2 / -2;
+  }
 }
 
 // 
@@ -52,4 +56,18 @@ body {
   align-items: center;
   justify-content: center;
   font-size: $font-size-sm;
+}
+
+// 
+// Content
+// 
+
+.content {
+  display: grid;
+  grid: auto / 1fr minmax(auto, 700px) 1fr;
+  grid-gap: 0 $grid-gutter;
+
+  > * {
+    grid-column: 2 / -2;
+  }
 }
