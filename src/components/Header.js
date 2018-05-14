@@ -71,9 +71,9 @@ export default class Header extends Component {
         <Logo />
         <nav className="nav-panel">
           <Logo />
-          <Link to="/" className={"nav-panel__item " + isHome}>Work</Link>
-          <Link to="/blog/" className={"nav-panel__item " + isBlog}>Journal</Link>
-          <Link to="/about/" className={"nav-panel__item " + isAbout}>About</Link>
+          <Link to="/" className={"nav-panel__item " + isHome}>Home</Link>
+          <Link to="/blog/" className={"nav-panel__item " + isBlog}>Blog</Link>
+          {/* <Link to="/about/" className={"nav-panel__item " + isAbout}>About</Link> */}
           <div className="nav-panel__social">
             <Dribbble />
             <Instagram />

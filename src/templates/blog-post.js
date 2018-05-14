@@ -6,26 +6,28 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post      = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const postDate  = post.frontmatter.date.replace(/\S+/g, function(a) {
-      return `<span>${a}</span>`
-    })
+    // const postDate  = post.frontmatter.date.replace(/\S+/g, function(a) {
+    //   return `<span>${a}</span>`
+    // })
+    const postHeader = `
+      <header class="post__header">
+        <h1 class="post__title">${post.frontmatter.title}</h1>
+      </header>
+    `
     const postMeta = `
       <aside class="post__meta">
         <time class="post__date">
-          ${postDate}
+          ${post.frontmatter.date.replace(/\S+/g, function (a) {
+            return `<span>${a}</span>`
+          })}
         </time>
       </aside>
     `
 
     return (
-      <main className="main main--post">
+      <main className="main">
         <Helmet title={`${post.frontmatter.title} × ${siteTitle}`} />
-        <article className="post">
-          <header className="post__header">
-            <h1 className="post__title">{post.frontmatter.title}</h1>
-          </header>
-          <div className="post__content" dangerouslySetInnerHTML={{ __html: post.html + postMeta }} />
-        </article>
+        <article className="content post" dangerouslySetInnerHTML={{ __html: postHeader + post.html + postMeta }} />
       </main>
     )
   }
