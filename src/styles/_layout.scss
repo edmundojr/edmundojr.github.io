@@ -13,7 +13,7 @@ body {
 .grid {
   display: grid;
   grid:
-    ". hero ." 75vh
+    ". hero ." 50vh
     "main main main" auto
     "footer footer footer" 5rem / 1fr minmax(auto, 700px) 1fr;
   grid-gap: 2rem;
@@ -29,9 +29,9 @@ body {
   grid-area: hero;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
-  text-align: center;
+  // text-align: center;
 }
 
 // 
