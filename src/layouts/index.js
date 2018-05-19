@@ -15,7 +15,6 @@ class Template extends React.Component {
       	<Header />
         <Hero />
         {children()}
-        <Footer />
       </div>
     )
   }
