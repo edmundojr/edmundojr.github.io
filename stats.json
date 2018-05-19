@@ -1,12 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-ae98236d70fda798c846.js",
-      "component---src-pages-index-js-ae98236d70fda798c846.js.map"
-    ],
-    "path---blog": [
-      "path---blog-4e0efce5543e717ecdd8.js",
-      "path---blog-4e0efce5543e717ecdd8.js.map"
+      "component---src-pages-index-js-a015b733b399a7c3add1.js",
+      "component---src-pages-index-js-a015b733b399a7c3add1.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -17,32 +13,28 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-8b10348b5ccf60c7eb79.js",
-      "component---src-templates-blog-post-js-8b10348b5ccf60c7eb79.js.map"
+      "component---src-templates-blog-post-js-135e4a151605e0b86fe3.js",
+      "component---src-templates-blog-post-js-135e4a151605e0b86fe3.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1832cd753cd008b91399.js",
-      "component---src-layouts-index-js-1832cd753cd008b91399.js.map"
+      "component---src-layouts-index-js-8fc23a0a40bba1f64570.js",
+      "component---src-layouts-index-js-8fc23a0a40bba1f64570.js.map"
     ],
     "path---index": [
-      "path---index-78d452cc970a25c55e18.js",
-      "path---index-78d452cc970a25c55e18.js.map"
+      "path---index-1353a373efe9c6162bb2.js",
+      "path---index-1353a373efe9c6162bb2.js.map"
     ],
     "commons": [
-      "commons-8d23a67706fd3e385a4d.js",
-      "commons-8d23a67706fd3e385a4d.js.map"
+      "commons-b473c4ddef8d57bfbb89.js",
+      "commons-b473c4ddef8d57bfbb89.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-bfe6e1388c438e0a85ef.js",
-      "component---src-pages-blog-js-bfe6e1388c438e0a85ef.js.map"
-    ],
     "app": [
-      "app-963aa70064edcbf973e2.js",
-      "app-963aa70064edcbf973e2.js.map"
+      "app-38cb3e9d4cf7c429b44a.js",
+      "app-38cb3e9d4cf7c429b44a.js.map"
     ],
     "path---blog-the-scariest-moment": [
       "path---blog-the-scariest-moment-f1b41d47d46680cfe731.js",
