@@ -64,7 +64,7 @@ $body-color:                #FFFFFF;
 
 $link-color:                white;
 $link-decoration:           none;
-$link-hover-color:          #5A6166;
+$link-hover-color:          darken($body-bg, 25%);
 $link-hover-decoration:     none;
 
 // Paragraphs
