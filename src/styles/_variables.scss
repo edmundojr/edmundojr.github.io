@@ -1,63 +1,185 @@
+// Options
 //
-// Colors
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:              false;
+$enable-rounded:            true;
+$enable-shadows:            false;
+$enable-gradients:          false;
+$enable-transitions:        true;
+$enable-grid-classes:       true;
+$enable-print-styles:       false;
+
+
+// Spacing
 //
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
 
-$white:                   #fff;
-$black:                   #000;
-$tangerine-tango:         #ED5548;
+// stylelint-disable
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+  0:  0,
+  1:  ($spacer * .5),
+  2:  ($spacer),
+  3:  ($spacer * 1.5),
+  4:  ($spacer * 2),
+  5:  ($spacer * 2.5),
+  6:  ($spacer * 3),
+  7:  ($spacer * 3.5),
+  8:  ($spacer * 4),
+  9:  ($spacer * 4.5),
+  10: ($spacer * 5),
+  11: ($spacer * 5.5),
+  12: ($spacer * 6),
+  13: ($spacer * 6.5),
+  14: ($spacer * 7),
+  15: ($spacer * 7.5)
+), $spacers);
 
-$primary:                 $black;
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+), $sizes);
+// stylelint-enable
 
-$body-bg:                 #A6B3BD;
-$body-color:              $white;
 
+// Body
 //
-// Grid
+// Settings for the `<body>` element.
+
+$body-bg:                   #A6B2BB;
+$body-color:                #FFFFFF;
+
+// Links
 //
+// Style anchor elements.
 
-$container-width:         1280px;
-$grid-gutter:             2rem;
-$grid-template-columns:   repeat(16, 1fr);
+$link-color:                white;
+$link-decoration:           none;
+$link-hover-color:          #5A6166;
+$link-hover-decoration:     none;
 
+// Paragraphs
 //
-// Typography
+// Style p element.
+
+$paragraph-margin-bottom:   1rem;
+
+
+// Grid breakpoints
 //
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
 
-$font-family-base:        "Margem", sans-serif;
-$font-family-headings:    "Margem", sans-serif;
-$font-family-monospace:   "Operator Mono", monospace;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
-$font-size-root:          20px;
-$font-size-base:          1rem;
-$font-size-sm:            .8rem;
-$font-size-xs:            .7rem;
-$font-size-lg:            1.1rem;
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
 
-$font-size-h0:            3rem;
-$font-size-h1:            2.8rem;
-$font-size-h2:            2.4rem;
-$font-size-h3:            1.6rem;
-$font-size-h4:            1.2rem;
-$font-size-h5:            1.2rem;
-$font-size-h6:            1rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
 
-$font-weight-light:       200;
-$font-weight-normal:      400;
-$font-weight-bold:        700;
-$font-weight-black:       900;
-$font-weight-base:        400;
-$font-weight-headings:    $font-weight-black;
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
 
-$line-height-base:        1.7;
-$line-height-sm:          1;
-$line-height-headings:    1.1;
+$grid-columns:                12;
+$grid-gutter-width:           40px;
 
-$headings-margin-bottom:  .5rem;
-$headings-letter-spacing: -.03em;
 
-// 
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Margem", sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-root:              20px;
+$font-size-base:              1rem;
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
+
+$font-weight-light:           300;
+$font-weight-normal:          300;
+$font-weight-bold:            700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.7;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      ($spacer / 2);
+$headings-font-family:        inherit;
+$headings-font-weight:        900;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
+
+$display1-size:               4.5rem;
+$display2-size:               4rem;
+$display3-size:               3.5rem;
+$display4-size:               3rem;
+
+$display1-weight:             900;
+$display2-weight:             900;
+$display3-weight:             900;
+$display4-weight:             900;
+$display-line-height:         $headings-line-height;
+
+$lead-font-size:              ($font-size-base * 1.25);
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  gray;
+
+$blockquote-small-color:      gray;
+$blockquote-font-size:        ($font-size-base * 1.25);
+
+$hr-border-color:             rgba(white, .1);
+$hr-border-width:             1px;
+
+$mark-padding:                .2em;
+
+$dt-font-weight:              $font-weight-bold;
+
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba(black, .25);
+$nested-kbd-font-weight:      $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-bg:                     #fcf8e3;
+
+$hr-margin-y:                 $spacer;
+
+
 // Transitions
-// 
 
 $ease-in-sine:            cubic-bezier(0.47, 0, 0.745, 0.715);
 $ease-out-sine:           cubic-bezier(0.39, 0.575, 0.565, 1);

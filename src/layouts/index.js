@@ -11,7 +11,7 @@ class Template extends React.Component {
     const { children } = this.props
 
     return (
-      <div className="grid">
+      <div className="container-fluid">
       	<Header />
         <Hero />
         {children()}

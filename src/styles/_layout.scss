@@ -1,73 +1,20 @@
-// 
+//
 // Body
-// 
+//
 
 body {
-  padding: $grid-gutter;
+  padding: 0 $grid-gutter-width / 2;
 }
 
-// 
-// Grid
-// 
-
-.grid {
-  display: grid;
-  grid:
-    ". hero ." 50vh
-    "main main main" auto
-    "footer footer footer" 5rem / 1fr minmax(auto, 700px) 1fr;
-  grid-gap: 2rem;
-  max-width: $container-width;
-  margin: 0 auto;
+.container-fluid {
+  max-width: 1440px;
 }
-
-// 
-// Hero
-// 
 
 .hero {
-  grid-area: hero;
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  justify-content: center;
-  // text-align: center;
+  height: 66vh;
+  min-height: 550px;
 }
-
-// 
-// Main area
-// 
-
-.main {
-  grid-area: main;
-
-  &--home article {
-    grid-column: 2 / -2;
-  }
-}
-
-// 
-// Footer
-// 
 
 .footer {
-  grid-area: footer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: $font-size-sm;
-}
-
-// 
-// Content
-// 
-
-.content {
-  display: grid;
-  grid: auto / 1fr minmax(auto, 700px) 1fr;
-  grid-gap: 0 $grid-gutter;
-
-  > * {
-    grid-column: 2 / -2;
-  }
+  border-top: 1px solid rgba(255,255,255,.25);
 }
