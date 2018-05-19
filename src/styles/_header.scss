@@ -7,8 +7,8 @@
   --nav-panel-transition-delayed:
     opacity .5s #{$ease-in-out-quart},
     transform .5s #{$ease-in-out-quart};
-  --nav-panel-color: #F0F5F9;
-  --nav-panel-background: #111417;
+  --nav-panel-color: #{$body-color};
+  --nav-panel-background: #{$body-bg};
 }
 
 .header {
@@ -171,7 +171,7 @@
   right: 0;
   bottom: 0;
   z-index: $zindex-modal-backdrop;
-  background: var(--nav-panel-background);
+  background: $black;
   opacity: 0;
   pointer-events: none;
   transition: var(--nav-panel-transition);

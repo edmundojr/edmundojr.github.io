@@ -19,7 +19,7 @@ class HomeIndex extends React.Component {
           return (
             <article key={node.fields.slug} className="col post mb-5">
               <div className="row align-items-center">
-                <div className="order-first d-none d-md-block col-md-2 col-lg-1 offset-lg-1">
+                <div className="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
                   <div className="bg-white" style={{paddingTop: '4px'}}></div>
                 </div>
                 <header className="order-2 col-sm-8 col-md-7">
@@ -31,7 +31,7 @@ class HomeIndex extends React.Component {
                 </header>
               </div>
               <div className="row">
-                <div className="order-last order-sm-3 col-sm-8 col-md-7 offset-md-2">
+                <div className="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2">
                   <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                 </div>
                 <aside className="post__meta order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">

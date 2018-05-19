@@ -54,14 +54,21 @@ export default class Header extends Component {
       )
     }
 
-    // Set .is-active class to current page
-    let isHome  = ''
-    let isBlog  = ''
-    let isAbout = ''
-    if (typeof window !== 'undefined') {
-      isHome  = window.location.pathname == '/' ? 'is-active' : ''
-      isBlog  = window.location.pathname.startsWith('/blog/') ? 'is-active' : ''
-      isAbout = window.location.pathname.startsWith('/about/') ? 'is-active' : ''
+    let greeting;
+    const hourOfDay = new Date().getHours();
+    const morning   = 'Good morning!';
+    const afternoon = 'Good afternoon!';
+    const evening   = 'Good evening!';
+    const night     = 'Good night – what are you still doing up!?';
+
+    if (hourOfDay >= 6 && hourOfDay < 12) {
+      greeting = morning;
+    } else if (hourOfDay >= 12 && hourOfDay < 17) {
+      greeting = afternoon;
+    } else if (hourOfDay >= 17 && hourOfDay < 24) {
+      greeting = evening;
+    } else if (hourOfDay >= 0 && hourOfDay < 6) {
+      greeting = night;
     }
 
     return (
@@ -71,9 +78,12 @@ export default class Header extends Component {
         <Logo />
         <nav className="nav-panel">
           <Logo />
-          <Link to="/" className={"nav-panel__item " + isHome}>Home</Link>
-          <Link to="/blog/" className={"nav-panel__item " + isBlog}>Blog</Link>
-          {/* <Link to="/about/" className={"nav-panel__item " + isAbout}>About</Link> */}
+          <h6 className="font-weight-bold">
+            {greeting}
+          </h6>
+          <p className="font-size-sm">
+            This website is <del>a work in progress</del> an experiment, so don't take it too seriously. I'm trying to build a personal hub here so I can try my hand at writing some articles, share some of my work, maybe books I'm reading… – a creative outlet I guess, some way to stretch parts of my brain that don't get enough exercise.
+          </p>
           <div className="nav-panel__social">
             <Dribbble />
             <Instagram />
