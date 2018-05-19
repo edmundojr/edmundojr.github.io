@@ -10,24 +10,33 @@ class BlogPostTemplate extends React.Component {
     //   return `<span>${a}</span>`
     // })
     const postHeader = `
-      <header class="post__header">
-        <h1 class="post__title">${post.frontmatter.title}</h1>
+      <header class="row align-items-center">
+        <div class="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
+          <div class="bg-white" style="padding-top:4px"></div>
+        </div>
+        <h1 class="order-last col-sm-8 col-md-7">${post.frontmatter.title}</h1>
       </header>
     `
-    const postMeta = `
-      <aside class="post__meta">
-        <time class="post__date">
-          ${post.frontmatter.date.replace(/\S+/g, function (a) {
-            return `<span>${a}</span>`
-          })}
-        </time>
-      </aside>
+
+    const postContent = `
+      <div class="row">
+        <div class="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2">
+          ${post.html}
+        </div>
+        <aside class="post__meta order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">
+          <time class="post__date d-inline-block mb-1 mb-sm-0">
+            ${post.frontmatter.date.replace(/\S+/g, function (a) {
+              return `<span>${a}</span>`
+            })}
+          </time>
+        </aside>
+      </div>
     `
 
     return (
-      <main className="main">
+      <main className="container-fluid">
         <Helmet title={`${post.frontmatter.title} × ${siteTitle}`} />
-        <article className="content post" dangerouslySetInnerHTML={{ __html: postHeader + post.html + postMeta }} />
+        <article className="post mb-5" dangerouslySetInnerHTML={{ __html: postHeader + postContent }} />
       </main>
     )
   }

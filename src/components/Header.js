@@ -54,21 +54,23 @@ export default class Header extends Component {
       )
     }
 
+    // greeting
+
     let greeting;
     const hourOfDay = new Date().getHours();
-    const morning   = 'Good morning!';
-    const afternoon = 'Good afternoon!';
-    const evening   = 'Good evening!';
-    const night     = 'Good night – what are you still doing up!?';
+    const greetingMorning   = 'Good morning!';
+    const greetingAfternoon = 'Good afternoon!';
+    const greetingEvening   = 'Good evening!';
+    const greetingNight     = 'Good night – what are you still doing up!?';
 
     if (hourOfDay >= 6 && hourOfDay < 12) {
-      greeting = morning;
+      greeting = greetingMorning;
     } else if (hourOfDay >= 12 && hourOfDay < 17) {
-      greeting = afternoon;
+      greeting = greetingAfternoon;
     } else if (hourOfDay >= 17 && hourOfDay < 24) {
-      greeting = evening;
+      greeting = greetingEvening;
     } else if (hourOfDay >= 0 && hourOfDay < 6) {
-      greeting = night;
+      greeting = greetingNight;
     }
 
     return (
@@ -78,7 +80,7 @@ export default class Header extends Component {
         <Logo />
         <nav className="nav-panel">
           <Logo />
-          <h6 className="font-weight-bold">
+          <h6 className="font-weight-normal">
             {greeting}
           </h6>
           <p className="font-size-sm">

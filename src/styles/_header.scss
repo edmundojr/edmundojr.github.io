@@ -13,11 +13,13 @@
 
 .header {
   position: fixed;
-  top: 2rem;
-  left: 2rem;
-  right: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: $zindex-modal;
+  padding: 2rem;
   color: var(--nav-panel-color);
+  background: linear-gradient(0, rgba($body-bg,0) 0%, rgba($body-bg,.8) 100%);
 }
 
 // Logo
@@ -39,8 +41,8 @@
 
   &__icon {
     position: absolute;
-    top: -.6rem;
-    right: -.8rem;
+    top: 2rem - .6rem;
+    right: 2rem - .8rem;
     z-index: $zindex-modal + 1;
     width: 3.2rem;
     height: 2.4rem;
@@ -59,12 +61,12 @@
       width: 1.6rem;
       height: .2rem;
       background: currentColor;
-      transition: var(--nav-panel-transition);
+      transition: var(--nav-panel-transition), width .4s #{$ease-in-out-quart};
     }
 
     span      { top: 1.1rem; }
     &::before { top: .6rem; }
-    &::after  { bottom: .6rem; }
+    &::after  { bottom: .6rem; transform: scaleX(.7) translateX(-7px); }
   }
 
   // Opened nav panel
@@ -90,11 +92,11 @@
       }
 
       &::before { transform: translateY(.5rem) rotate(-45deg); }
-      &::after  { transform: translateY(-.5rem) rotate(45deg); }
+      &::after  { transform: translateY(-.5rem) rotate(45deg) scaleX(1); }
     }
 
     ~ .nav-overlay {
-      opacity: .5;
+      opacity: .7;
       pointer-events: auto;
     }
 
@@ -115,6 +117,7 @@
   right: 0;
   bottom: 0;
   z-index: $zindex-modal;
+  overflow-y: auto;
   width: 16rem;
   padding: 2rem;
   color: var(--nav-panel-color);
@@ -171,7 +174,7 @@
   right: 0;
   bottom: 0;
   z-index: $zindex-modal-backdrop;
-  background: $black;
+  background: darken($body-bg, 25%);
   opacity: 0;
   pointer-events: none;
   transition: var(--nav-panel-transition);

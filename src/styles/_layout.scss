@@ -2,12 +2,10 @@
 // Body
 //
 
-body {
-  padding: 0 $grid-gutter-width / 2;
-}
-
 .container-fluid {
   max-width: 1440px;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
 }
 
 .hero {
