@@ -14,10 +14,16 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 100px;
+  width: 4rem;
   z-index: $zindex-modal;
   border-right: 1px solid rgba(255,255,255,.25);
   color: var(--nav-panel-color);
+
+  @include media-breakpoint-up(md) {
+    width: 5rem;
+  }
+
+  // SVGs should have same color as body
 
   svg {
     display: block;

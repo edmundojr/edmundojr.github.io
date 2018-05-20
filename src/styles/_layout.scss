@@ -5,8 +5,12 @@
 .container-fluid {
   max-width: 1440px;
   margin: 0;
-  padding-left: 7rem;
+  padding-left: 6rem;
   padding-right: $grid-gutter-width;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 7rem;
+  }
 }
 
 .hero {
