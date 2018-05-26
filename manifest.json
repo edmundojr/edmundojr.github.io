@@ -1,0 +1,15 @@
+{
+  "short_name": "Edmundo",
+  "name": "Edmundo Santos × Multidisciplinary Designer",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#A8B2BA",
+  "Theme_color": "#A8B2BA",
+  "display": "fullscreen"
+}
