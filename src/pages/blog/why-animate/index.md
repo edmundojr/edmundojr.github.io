@@ -11,6 +11,8 @@ When done well, animations can add valuable interaction and feedback. They enhan
 
 ## No animation is unnatural
 
+<iframe height='280' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' class="w-100 mt-2"></iframe>
+
 You click on a “New” button and a form just… appears from nowhere? You click a “X” to close a modal and… it just vanishes into thin air? That is unnatural and it’s what we should be avoiding as designers. Nothing in the real world does anything as jarringly as just swapping states. If that happened it would feel like a glitch in the matrix.
 
 Animations help the user understand the flow between two states and they make your app feels faster.
@@ -21,8 +23,6 @@ Animations help the user understand the flow between two states and they make yo
 ## What makes a good animation
 
 So we know we should animate, but what makes for a good animation? What should we focus on?
-
-<iframe height='385' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
 First of all, you should animate exclusively using `opacity` and `transform` properties, anything else will trigger a browser layout or paint, which are expensive operations. That's the only way to keep your animations running at a smooth 60fps rate.
 
