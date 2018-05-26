@@ -1,7 +1,14 @@
 // Post
 
+@keyframes post {
+  0%   { opacity: 0; transform: translateY(.5rem); }
+  100% { opacity: 1; transform: none; }
+}
+
 .post {
+  opacity: 0;
   margin-bottom: 8rem;
+  animation: post .5s .1s $ease-in-out-quart forwards;
 
   &__title a {
     text-decoration: none;
