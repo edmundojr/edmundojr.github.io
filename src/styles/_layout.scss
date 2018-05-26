@@ -16,8 +16,18 @@
 .hero {
   height: 50vh;
   min-height: 550px;
-}
 
-.footer {
-  border-top: 1px solid rgba(255,255,255,.25);
+  &--small {
+    height: auto;
+    min-height: 300px;
+
+    .hero__title {
+      font-size: $h4-font-size;
+      font-weight: 700;
+    }
+
+    .hero__description {
+      font-size: $font-size-base;
+    }
+  }
 }

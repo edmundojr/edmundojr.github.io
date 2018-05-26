@@ -23,7 +23,7 @@ class Template extends React.Component {
           <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
           <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
           <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
-        </Helmet> 
+        </Helmet>
       	<Header />
         <Hero />
         {children()}
