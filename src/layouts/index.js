@@ -15,6 +15,7 @@ class Template extends React.Component {
       <div>
         <Helmet>
           <html lang="en" />
+          <meta name="theme-color" content="#A6B2BB" />
         </Helmet>
       	<Header />
         <Hero />
