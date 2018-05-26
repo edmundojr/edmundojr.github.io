@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Hero from '../components/Hero'
@@ -12,6 +13,9 @@ class Template extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <html lang="en" />
+        </Helmet>
       	<Header />
         <Hero />
         {children()}
