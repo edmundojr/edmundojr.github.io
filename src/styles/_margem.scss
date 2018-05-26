@@ -1,5 +1,46 @@
 @font-face {
   font-family: 'Margem';
+  src: url('../fonts/margem/Margem-Light.eot');
+  src: url('../fonts/margem/Margem-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/margem/Margem-Light.woff2') format('woff2'),
+       url('../fonts/margem/Margem-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Margem';
+  src: url('../fonts/margem/Margem-LightItalic.eot');
+  src: url('../fonts/margem/Margem-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/margem/Margem-LightItalic.woff2') format('woff2'),
+       url('../fonts/margem/Margem-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Margem';
+  src: url('../fonts/margem/Margem-Thin.eot');
+  src: url('../fonts/margem/Margem-Thin.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/margem/Margem-Thin.woff2') format('woff2'),
+       url('../fonts/margem/Margem-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Margem';
+  src: url('../fonts/margem/Margem-ThinItalic.eot');
+  src: url('../fonts/margem/Margem-ThinItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/margem/Margem-ThinItalic.woff2') format('woff2'),
+       url('../fonts/margem/Margem-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Margem';
   src: url('../fonts/margem/Margem-Regular.eot');
   src: url('../fonts/margem/Margem-Regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/margem/Margem-Regular.woff2') format('woff2'),
@@ -56,14 +97,4 @@
        url('../fonts/margem/Margem-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
-}
-
-@font-face {
-  font-family: 'Margem';
-  src: url('../fonts/margem/Margem-Light.eot');
-  src: url('../fonts/margem/Margem-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/margem/Margem-Light.woff2') format('woff2'),
-       url('../fonts/margem/Margem-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
 }
