@@ -16,6 +16,8 @@
 .hero {
   height: 50vh;
   min-height: 550px;
+  opacity: 0;
+  animation: hero .5s $ease-in-out-quart forwards;
 
   &--small {
     height: auto;
@@ -30,4 +32,9 @@
       font-size: $font-size-base;
     }
   }
+}
+
+@keyframes hero {
+  0%   { opacity: 0; transform: translateY(.5rem); }
+  100% { opacity: 1; transform: none; }
 }

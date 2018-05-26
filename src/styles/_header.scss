@@ -15,9 +15,10 @@
   left: 0;
   bottom: 0;
   width: 4rem;
+  opacity: 0;
   z-index: $zindex-modal;
   border-right: 1px solid rgba(255,255,255,.25);
-  color: var(--nav-panel-color);
+  animation: header 1s .5s $ease-in-out-quart forwards;
 
   @include media-breakpoint-up(md) {
     width: 5rem;
@@ -30,6 +31,11 @@
     fill: currentColor;
     transition: all .3s $ease-in-out-quart;
   }
+}
+
+@keyframes header {
+  0%   { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: none; }
 }
 
 // Logo
