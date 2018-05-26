@@ -63,7 +63,7 @@ $body-color:                #fff;
 // Style anchor elements.
 
 $link-color:                white;
-$link-decoration:           none;
+$link-decoration:           underline;
 $link-hover-color:          darken($body-bg, 25%);
 $link-hover-decoration:     none;
 
@@ -122,11 +122,11 @@ $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);
 
 $font-weight-light:           300;
-$font-weight-normal:          300;
+$font-weight-normal:          400;
 $font-weight-bold:            700;
 
 $font-weight-base:            $font-weight-normal;
-$line-height-base:            1.7;
+$line-height-base:            1.5;
 
 $h1-font-size:                $font-size-base * 2.5;
 $h2-font-size:                $font-size-base * 2;
@@ -153,7 +153,7 @@ $display4-weight:             900;
 $display-line-height:         $headings-line-height;
 
 $lead-font-size:              ($font-size-base * 1.25);
-$lead-font-weight:            300;
+$lead-font-weight:            400;
 
 $small-font-size:             80%;
 
