@@ -16,7 +16,11 @@ class Template extends React.Component {
         <Helmet>
           <html lang="en" />
           <meta name="theme-color" content="#A6B2BB" />
-        </Helmet>
+          <link rel="icon" type="image/png" href="/favicon@16px.png" sizes="16x16" />
+          <link rel="icon" type="image/png" href="/favicon@32px.png" sizes="32x32" />
+          <link rel="icon" type="image/png" href="/favicon@48px.png" sizes="48x48" />
+          <link rel="icon" type="image/png" href="/favicon@96px.png" sizes="96x96" />
+        </Helmet> 
       	<Header />
         <Hero />
         {children()}
