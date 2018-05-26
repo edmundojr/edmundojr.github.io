@@ -13,3 +13,16 @@ html {
 .font-size-base { font-size: $font-size-base; }
 .font-size-lg { font-size: $font-size-lg; }
 .font-size-sm { font-size: $font-size-sm; }
+
+blockquote {
+  padding-left: 1rem;
+  font-style: italic;
+  font-size: $blockquote-font-size;
+}
+
+code {
+  padding: .1em .25em;
+  font-size: 85%;
+  background: rgba(black, .1);
+  border-radius: $border-radius;
+}
