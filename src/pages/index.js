@@ -17,12 +17,12 @@ export default class HomeIndex extends React.Component {
             return `<span>${a}</span>`
           })
           return (
-            <article key={node.fields.slug} className="post mb-5">
+            <article key={node.fields.slug} className="post">
               <header className="row align-items-center">
                 <div className="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
                   <div className="bg-white" style={{ paddingTop: '4px' }}></div>
                 </div>
-                <h1 className="order-last col-sm-8 col-md-7">
+                <h1 className="post__title order-last col-sm-8 col-md-7">
                   <Link to={node.fields.slug}>
                     {title}
                   </Link>

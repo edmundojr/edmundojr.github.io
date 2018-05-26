@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
         <div class="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
           <div class="bg-white" style="padding-top:4px"></div>
         </div>
-        <h1 class="order-last col-sm-8 col-md-7">${post.frontmatter.title}</h1>
+        <h1 class="post__title order-last col-sm-8 col-md-7">${post.frontmatter.title}</h1>
       </header>
     `
 
@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <main className="container-fluid">
         <Helmet title={`${post.frontmatter.title} × ${siteTitle}`} />
-        <article className="post mb-5" dangerouslySetInnerHTML={{ __html: postHeader + postContent }} />
+        <article className="post" dangerouslySetInnerHTML={{ __html: postHeader + postContent }} />
       </main>
     )
   }

@@ -1,6 +1,11 @@
 // Post
 
 .post {
+  margin-bottom: 8rem;
+
+  &__title a {
+    text-decoration: none;
+  }
 
   // Meta
 
