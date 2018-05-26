@@ -22,7 +22,7 @@ Animations help the user understand the flow between two states and they make yo
 
 So we know we should animate, but what makes for a good animation? What should we focus on?
 
-<iframe height='340' scrolling='no' title='Widget animation' src='//codepen.io/edmundojr/embed/zEobzx/?height=399&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+<iframe height='385' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
 First of all, you should animate exclusively using `opacity` and `transform` properties, anything else will trigger a browser layout or paint, which are expensive operations. That's the only way to keep your animations running at a smooth 60fps rate.
 
