@@ -10,9 +10,9 @@ class BlogPostTemplate extends React.Component {
     //   return `<span>${a}</span>`
     // })
     const postHeader = `
-      <header class="row align-items-center">
+      <header class="row align-items-center post__header position-sticky">
         <div class="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
-          <div class="bg-white" style="padding-top:4px"></div>
+          <div class="post__title__decoration"></div>
         </div>
         <h1 class="post__title order-last col-sm-8 col-md-7">${post.frontmatter.title}</h1>
       </header>

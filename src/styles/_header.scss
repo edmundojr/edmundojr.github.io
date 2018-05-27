@@ -17,7 +17,9 @@
   width: 4rem;
   opacity: 0;
   z-index: $zindex-modal;
-  border-right: 1px solid rgba(255,255,255,.25);
+  color: $link-color;
+  background: $body-bg;
+  border-right: 1px solid rgba($body-color,.15);
   animation: header 1s .5s $ease-in-out-quart forwards;
 
   @include media-breakpoint-up(md) {
@@ -110,8 +112,10 @@
 }
 
 .nav {
-  padding: 1rem 0;
+  padding: .75rem 0;
+
   &__item {
-    padding: 1rem;
+    padding: .75rem;
+    transition: var(--nav-panel-transition);
   }
 }

@@ -13,6 +13,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .font-size-base { font-size: $font-size-base; }
@@ -20,9 +21,24 @@ body {
 .font-size-sm { font-size: $font-size-sm; }
 
 blockquote {
-  padding-left: 1rem;
+  position: relative;
+  max-width: 75%;
+  padding-left: 2rem;
   font-style: italic;
   font-size: $blockquote-font-size;
+  color: $blockquote-small-color;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: $display1-size;
+    line-height: 2.5rem;
+    opacity: .1;
+    transform: translate(0,0);
+  }
 }
 
 code {
@@ -30,4 +46,16 @@ code {
   font-size: 85%;
   background: rgba(black, .1);
   border-radius: $border-radius;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -.05em;
+}
+
+a {
+  transition: all .3s $ease-in-out-quart;
+}
+
+q {
+  font-style: italic;
 }

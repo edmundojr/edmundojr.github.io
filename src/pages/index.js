@@ -18,22 +18,30 @@ export default class HomeIndex extends React.Component {
           })
           return (
             <article key={node.fields.slug} className="post">
-              <header className="row align-items-center">
-                <div className="order-first d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
-                  <div className="bg-white" style={{ paddingTop: '4px' }}></div>
+              <h1 className="post__title">
+                <Link to={node.fields.slug} className="post__title__link row align-items-center">
+                  <span className="post__title__detail d-none d-md-block col-md-1 col-lg-1 offset-lg-1"></span>
+                  <span className="col-sm-8 col-md-7">
+                    {title}
+                  </span>
+                </Link>
+              </h1>
+              {/* <header className="row align-items-center post__header">
+                <div className="d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
+                  <div className="post__title__detail"></div>
                 </div>
-                <h1 className="post__title order-last col-sm-8 col-md-7">
-                  <Link to={node.fields.slug}>
+                <h1 className="post__title col-sm-8 col-md-7">
+                  <Link to={node.fields.slug} className="post__title__link">
                     {title}
                   </Link>
                 </h1>
-              </header>
-              <div className="row">
+              </header> */}
+              <div className="row align-items-start">
                 <div
                   className="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2"
                   dangerouslySetInnerHTML={{ __html: node.html }}>
                 </div>
-                <aside className="post__meta order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">
+                <aside className="post__meta position-sticky order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">
                   <time className="post__date d-inline-block mb-1 mb-sm-0" dangerouslySetInnerHTML={{ __html: postDate }} />
                 </aside>
               </div>
