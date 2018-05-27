@@ -42,8 +42,8 @@
     letter-spacing: -.025em;
     color: $headings-color;
 
-    @include media-breakpoint-up(sm) {
-      top: 1rem;
+    @include media-breakpoint-up(md) {
+      top: 4rem;
       z-index: $zindex-sticky;
     }
   }
