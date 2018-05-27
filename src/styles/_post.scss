@@ -10,14 +10,38 @@
   margin-bottom: 8rem;
   animation: post .5s .1s $ease-in-out-quart forwards;
 
-  &__title a {
-    text-decoration: none;
+  &__header {
+    top: 0;
+    padding-bottom: .5rem;
+    z-index: $zindex-sticky;
+    background: linear-gradient(0, rgba($body-bg, 0) 0%, rgba($body-bg, 1) 100%);
+  }
+
+  &__title {
+    &__link {
+      text-decoration: none;
+      color: currentColor;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+    &__detail {
+      padding: .1rem;
+      background: currentColor;
+    }
   }
 
   // Meta
 
   &__meta {
-    font-weight: 400;
+    top: 1rem;
+    z-index: $zindex-sticky;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    color: $headings-color;
   }
 
   // Date
