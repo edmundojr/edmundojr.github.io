@@ -26,16 +26,6 @@ export default class HomeIndex extends React.Component {
                   </span>
                 </Link>
               </h1>
-              {/* <header className="row align-items-center post__header">
-                <div className="d-none d-md-block col-md-1 col-lg-1 offset-lg-1">
-                  <div className="post__title__detail"></div>
-                </div>
-                <h1 className="post__title col-sm-8 col-md-7">
-                  <Link to={node.fields.slug} className="post__title__link">
-                    {title}
-                  </Link>
-                </h1>
-              </header> */}
               <div className="row align-items-start">
                 <div
                   className="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2"

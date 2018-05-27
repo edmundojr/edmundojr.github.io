@@ -37,11 +37,15 @@
   // Meta
 
   &__meta {
-    top: 1rem;
-    z-index: $zindex-sticky;
+    margin-bottom: .5rem;
     font-weight: 700;
     letter-spacing: -.025em;
     color: $headings-color;
+
+    @include media-breakpoint-up(sm) {
+      top: 1rem;
+      z-index: $zindex-sticky;
+    }
   }
 
   // Date
