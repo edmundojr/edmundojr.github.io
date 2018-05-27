@@ -11,7 +11,9 @@ When done well, animations can add valuable interaction and feedback. They enhan
 
 ## No animation is unnatural
 
-<iframe height='310' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' class="w-100 img-fluid"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" height='310' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe>
+</div>
 
 You click on a “New” button and a form just… appears from nowhere? You click a “X” to close a modal and… it just vanishes into thin air? That is unnatural and it’s what we should be avoiding as designers. Nothing in the real world does anything as jarringly as just swapping states. If that happened it would feel like a glitch in the matrix.
 
