@@ -5,7 +5,7 @@
 .container-fluid {
   max-width: 1440px;
   margin: 0;
-  padding-left: 6rem;
+  padding-left: 2rem;
   padding-right: $grid-gutter-width;
 
   @include media-breakpoint-up(md) {
