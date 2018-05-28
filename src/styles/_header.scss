@@ -114,10 +114,10 @@
 }
 
 .nav {
-  padding: .75rem;
+  padding: .75rem 1rem;
 
   &__item {
-    padding: .75rem;
+    padding: .75rem .5rem;
     transition: var(--nav-panel-transition);
   }
 }
