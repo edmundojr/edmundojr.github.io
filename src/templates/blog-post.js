@@ -1,21 +1,16 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post      = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const postHeader = `
-      <h1 class="post__title">
-        <div class="post__title__link row align-items-center">
-          <span class="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
-          <span class="col-11 col-md-7 order-first order-sm-last">
-            ${post.frontmatter.title}
-          </span>
-        </Link>
-      </h1>
-    `
+
+    const post = this.props.data.markdownRemark
+    const postTitle = post.frontmatter.title
+    const postLink = post.frontmatter.slug
+    const postDate = post.frontmatter.date
 
     const postContent = `
       <div class="row align-items-start">
@@ -24,7 +19,7 @@ class BlogPostTemplate extends React.Component {
         </div>
         <aside class="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
           <time class="post__date d-inline-block mb-1 mb-sm-0">
-            ${post.frontmatter.date.replace(/\S+/g, function (a) {
+            ${postDate.replace(/\S+/g, function (a) {
               return `<span>${a}</span>`
             })}
           </time>
@@ -34,8 +29,18 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <main className="container-fluid">
-        <Helmet title={`${post.frontmatter.title} × ${siteTitle}`} />
-        <article className="post" dangerouslySetInnerHTML={{ __html: postHeader + postContent }} />
+        <Helmet title={`${postTitle} × ${siteTitle}`} />
+        <article className="post">
+          <h1 className="post__title">
+            <Link to={postLink} className="post__title__link row align-items-center">
+              <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
+              <span className="col-11 col-md-7 order-first order-sm-last">
+                {postTitle}
+              </span>
+            </Link>
+          </h1>
+          <div dangerouslySetInnerHTML={{ __html: postContent }} />
+        </article>
       </main>
     )
   }

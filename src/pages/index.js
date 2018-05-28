@@ -6,23 +6,25 @@ import Helmet from 'react-helmet'
 export default class HomeIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <main className="container-fluid">
         <Helmet title={siteTitle + ' × Articles'} />
         {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
+          const postTitle = get(node, 'frontmatter.title')
+          const postLink = get(node, 'fields.slug')
           const postDate = node.frontmatter.date.replace(/\S+/g, function(a) {
             return `<span>${a}</span>`
           })
           return (
-            <article key={node.fields.slug} className="post">
+            <article key={postLink} className="post">
               <h1 className="post__title">
-                <Link to={node.fields.slug} className="post__title__link row align-items-center">
+                <Link to={postLink} className="post__title__link row align-items-center">
                   <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
                   <span className="col-11 col-md-7 order-first order-sm-last">
-                    {title}
+                    {postTitle}
                   </span>
                 </Link>
               </h1>
