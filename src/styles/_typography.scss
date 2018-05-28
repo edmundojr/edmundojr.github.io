@@ -1,3 +1,5 @@
+// Responsive typography
+
 html {
   font-size: 18px;
 
@@ -6,7 +8,7 @@ html {
   }
 }
 
-// 
+// Improve type rendering 
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -14,9 +16,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.font-size-base { font-size: $font-size-base; }
-.font-size-lg { font-size: $font-size-lg; }
-.font-size-sm { font-size: $font-size-sm; }
+// Blockquotes
 
 blockquote {
   position: relative;
@@ -25,6 +25,8 @@ blockquote {
   font-style: italic;
   font-size: $blockquote-font-size;
   color: $blockquote-small-color;
+
+  // Quotation mark
 
   &::before {
     content: "“";
@@ -39,30 +41,47 @@ blockquote {
   }
 }
 
+// Inline blockquote
+
+q {
+  font-style: italic;
+}
+
+// Code
+
 code {
   padding: .1em .25em;
   font-size: 85%;
+  color: $headings-color;
   background: rgba(black, .1);
   border-radius: $border-radius;
 }
+
+// Headings
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.05em;
 }
 
+// Smaller heading sizes on small screens
+
 @include media-breakpoint-down(md) {
-  h1 { font-size: $font-size-base * 2.5; }
-  h2 { font-size: $font-size-base * 1.75; }
-  h3 { font-size: $font-size-base * 1.5; }
-  h4 { font-size: $font-size-base * 1.25; }
+  h1 { font-size: $font-size-base * 2.222222222; }
+  h2 { font-size: $font-size-base * 1.666666667; }
+  h3 { font-size: $font-size-base * 1.444444444; }
+  h4 { font-size: $font-size-base * 1.222222222; }
   h5 { font-size: $font-size-base * 1; }
-  h6 { font-size: $font-size-base * .8; }
+  h6 { font-size: $font-size-base * .888888889; }
 }
+
+// Add color transition to links
 
 a {
-  transition: all .3s $ease-in-out-quart;
+  transition: color .3s $ease-in-out-quart;
 }
 
-q {
-  font-style: italic;
-}
+// Font size utility classes
+
+.font-size-base { font-size: $font-size-base; }
+.font-size-lg { font-size: $font-size-lg; }
+.font-size-sm { font-size: $font-size-sm; }
