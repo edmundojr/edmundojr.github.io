@@ -9,8 +9,8 @@ class BlogPostTemplate extends React.Component {
     const postHeader = `
       <h1 class="post__title">
         <div class="post__title__link row align-items-center">
-          <span class="post__title__detail d-none d-md-block col-md-1 col-lg-1 offset-lg-1"></span>
-          <span class="col-sm-8 col-md-7">
+          <span class="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
+          <span class="col-11 col-md-7 order-first order-sm-last">
             ${post.frontmatter.title}
           </span>
         </Link>
@@ -19,10 +19,10 @@ class BlogPostTemplate extends React.Component {
 
     const postContent = `
       <div class="row align-items-start">
-        <div class="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2">
+        <div class="col-sm-11 col-md-7 offset-sm-1 offset-lg-2 order-last order-md-first">
           ${post.html}
         </div>
-        <aside class="post__meta position-sticky order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">
+        <aside class="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
           <time class="post__date d-inline-block mb-1 mb-sm-0">
             ${post.frontmatter.date.replace(/\S+/g, function (a) {
               return `<span>${a}</span>`

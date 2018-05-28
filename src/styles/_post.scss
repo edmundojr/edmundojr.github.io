@@ -1,45 +1,72 @@
-// Post
+// Post animation
 
 @keyframes post {
   0%   { opacity: 0; transform: translateY(.5rem); }
   100% { opacity: 1; transform: none; }
 }
 
+// Post container
+
 .post {
   opacity: 0;
   margin-bottom: 8rem;
   animation: post .5s .1s $ease-in-out-quart forwards;
 
-  &__header {
-    top: 0;
-    padding-bottom: .5rem;
-    z-index: $zindex-sticky;
-    background: linear-gradient(0, rgba($body-bg, 0) 0%, rgba($body-bg, 1) 100%);
-  }
+  // Title
 
   &__title {
+
+    // Title link
+
     &__link {
+      position: relative;
       text-decoration: none;
       color: currentColor;
 
+      // Show arrow head
+
       &:hover {
         text-decoration: none;
+
+        .post__title__detail {
+          &::before { opacity: 1; transform: translate(.05rem, .05rem) rotate(45deg); }
+          &::after  { opacity: 1; transform: translate(.05rem, -.05rem) rotate(-45deg); }
+        }
       }
 
     }
 
     &__detail {
-      padding: .1rem;
+      position: relative;
+      z-index: -1;
+      padding: 2px;
       background: currentColor;
+      transform-origin: left center;
+
+      // Arrow head
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1rem;
+        padding: 2px;
+        background: currentColor;
+        opacity: 0;
+        transform-origin: right center;
+        transition: transform .4s $ease-in-out-quart, opacity .4s $ease-in-out-quart;
+      }
     }
   }
 
   // Meta
 
   &__meta {
-    margin-bottom: .5rem;
     font-weight: 700;
     letter-spacing: -.025em;
+    text-transform: uppercase;
     color: $headings-color;
 
     @include media-breakpoint-up(md) {
@@ -53,7 +80,7 @@
   &__date {
     font-variant: tabular-nums;
 
-    // Day
+    // Day should be bigger
 
     span:first-child {
       display: block;
@@ -61,7 +88,7 @@
       font-weight: 900;
       line-height: 1;
 
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(sm) {
         display: inline;
         font-size: $font-size-base;
         font-weight: 400;
