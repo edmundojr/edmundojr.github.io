@@ -20,18 +20,18 @@ export default class HomeIndex extends React.Component {
             <article key={node.fields.slug} className="post">
               <h1 className="post__title">
                 <Link to={node.fields.slug} className="post__title__link row align-items-center">
-                  <span className="post__title__detail d-none d-md-block col-md-1 col-lg-1 offset-lg-1"></span>
-                  <span className="col-sm-8 col-md-7">
+                  <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
+                  <span className="col-11 col-md-7 order-first order-sm-last">
                     {title}
                   </span>
                 </Link>
               </h1>
               <div className="row align-items-start">
                 <div
-                  className="order-last order-sm-3 col-sm-8 col-md-7 offset-md-1 offset-lg-2"
+                  className="col-sm-11 col-md-7 offset-sm-1 offset-lg-2 order-last order-md-first"
                   dangerouslySetInnerHTML={{ __html: node.html }}>
                 </div>
-                <aside className="post__meta position-sticky order-3 order-sm-last col-sm-4 col-md-3 text-sm-center text-uppercase">
+                <aside className="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
                   <time className="post__date d-inline-block mb-1 mb-sm-0" dangerouslySetInnerHTML={{ __html: postDate }} />
                 </aside>
               </div>
