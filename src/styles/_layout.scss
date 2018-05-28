@@ -1,7 +1,10 @@
-// Container
+// 
+// Container Fluid
+// Used for wrapping site content
+// 
 
 .container-fluid {
-  max-width: 1440px;
+  max-width: 72rem;
   margin: 0;
   padding-left: 2rem;
   padding-right: $grid-gutter-width;
@@ -9,44 +12,4 @@
   @include media-breakpoint-up(md) {
     padding-left: 7rem;
   }
-}
-
-// Hero
-
-.hero {
-  height: 50vh;
-  min-height: 16rem;
-  opacity: 0;
-  animation: hero .5s $ease-in-out-quart forwards;
-
-  &__title,
-  &__description {
-    transform-origin: left center;
-  }
-
-  // Small hero version for single articles
-
-  &--small {
-    height: auto;
-    min-height: 12rem;
-    animation: heroSmall .5s $ease-in-out-quart forwards;
-
-    .hero__title {
-      transform: scale(.6);
-    }
-
-    .hero__description {
-      transform: scale(.75) translateY(-100%);
-    }
-  }
-}
-
-@keyframes hero {
-  0%   { opacity: 0; transform: translateY(.5rem); }
-  100% { opacity: 1; transform: none; }
-}
-
-@keyframes heroSmall {
-  0%   { opacity: 0; transform: translateY(.5rem); }
-  100% { opacity: 1; transform: none; }
 }
