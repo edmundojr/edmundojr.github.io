@@ -15,7 +15,7 @@ const Hero = () => {
             From the desk of 
             Edmundo Santos
           </h1>
-          <p className="hero__description lead text-nowrap mb-0">
+          <p className="hero__description lead mb-0">
             Multidisciplinary designer & coder
           </p>
         </div>
