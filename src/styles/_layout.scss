@@ -1,6 +1,4 @@
-//
-// Body
-//
+// Container
 
 .container-fluid {
   max-width: 1440px;
@@ -13,28 +11,42 @@
   }
 }
 
+// Hero
+
 .hero {
   height: 50vh;
-  min-height: 550px;
+  min-height: 16rem;
   opacity: 0;
   animation: hero .5s $ease-in-out-quart forwards;
 
+  &__title,
+  &__description {
+    transform-origin: left center;
+  }
+
+  // Small hero version for single articles
+
   &--small {
     height: auto;
-    min-height: 300px;
+    min-height: 12rem;
+    animation: heroSmall .5s $ease-in-out-quart forwards;
 
     .hero__title {
-      font-size: $h4-font-size;
-      font-weight: 700;
+      transform: scale(.6);
     }
 
     .hero__description {
-      font-size: $font-size-base;
+      transform: scale(.75) translateY(-100%);
     }
   }
 }
 
 @keyframes hero {
+  0%   { opacity: 0; transform: translateY(.5rem); }
+  100% { opacity: 1; transform: none; }
+}
+
+@keyframes heroSmall {
   0%   { opacity: 0; transform: translateY(.5rem); }
   100% { opacity: 1; transform: none; }
 }
