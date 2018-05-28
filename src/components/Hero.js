@@ -1,11 +1,15 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 const Hero = () => {
-  const isBlog = window.location.pathname.startsWith("/blog");
+  let isArticle = ""
+  if (typeof window !== 'undefined') {
+    isArticle = window.location.pathname.startsWith('/blog')
+  }
 
   return (
     <div className="container-fluid">
-      <div className={"hero row align-items-center mt-8 my-md-0 " + (isBlog ? "hero--small" : "")}>
+      <div className={"hero row align-items-center mt-8 my-md-0 " + (isArticle ? "hero--small" : "")}>
         <div className="col-sm-9 col-md-7 offset-sm-1 offset-lg-2">
           <h1 className="hero__title mb-0">
             From the desk of 
