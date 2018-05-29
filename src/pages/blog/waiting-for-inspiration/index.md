@@ -1,7 +1,7 @@
 ---
 title: Waiting for inspiration
 date: "2018-05-27"
-tags: ["Reading, Quotes"]
+tags: ["Reading", "Quotes"]
 ---
 
 > There is a popular notion that artists work from inspiration—that there is some strike or bolt or bubbling up of creative mojo from who knows where… but I hope [my work] makes clear that waiting for inspiration to strike is a terrible, terrible plan. In fact, perhaps the single best piece of advice I can offer to anyone trying to do creative work is to ignore inspiration.

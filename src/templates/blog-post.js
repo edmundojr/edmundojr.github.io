@@ -11,6 +11,7 @@ class BlogPostTemplate extends React.Component {
     const postTitle = post.frontmatter.title
     const postLink = post.frontmatter.slug
     const postDate = post.frontmatter.date
+    const postTags = post.frontmatter.tags
 
     const postContent = `
       <div class="row align-items-start">
@@ -23,6 +24,13 @@ class BlogPostTemplate extends React.Component {
               return `<span>${a}</span>`
             })}
           </time>
+          <ul class="post__tags">
+            ${postTags.map((tag, index) => {
+              return `
+                <li key=${index}>${tag}</li>
+              `
+            }).join("")}
+          </ul>
         </aside>
       </div>
     `

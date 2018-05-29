@@ -1,5 +1,5 @@
 ---
-title: Reading Tip‌‌‌‌ #1
+title: "Reading Tip‌‌‌‌ #1"
 date: "2018-05-29"
 tags: ["Reading", "Quotes"]
 ---
