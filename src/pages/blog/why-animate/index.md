@@ -11,16 +11,15 @@ When done well, animations can add valuable interaction and feedback. They enhan
 
 ## No animation is unnatural
 
+You click on a “New” button and a form just… appears from nowhere? You click a “X” to close a modal and… it just vanishes into thin air? That is unnatural and it’s what we should be avoiding as designers. Nothing in the real world does anything as jarringly as just swapping states. If that happened it would feel like a glitch in the matrix.
+
+Take for instance the carousel interface below: without any animations, could you tell that it is indeed a carousel interface? Are we offering the user any clues other than changing the background color and emoji when we swap the panels?
+
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" height='310' scrolling='no' title='CSS 3D transform Colorful Animated Carousel' src='//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe>
 </div>
 
-You click on a “New” button and a form just… appears from nowhere? You click a “X” to close a modal and… it just vanishes into thin air? That is unnatural and it’s what we should be avoiding as designers. Nothing in the real world does anything as jarringly as just swapping states. If that happened it would feel like a glitch in the matrix.
-
-Animations help the user understand the flow between two states and they make your app feels faster.
-
-> A good animation should amplify the behaviour and consolidate the relationship between different elements.
-> <footer>— Benjamin De Dock</footer>
+If you toggle the animation (go on, I wait), you'll see how much nicer it is to understand the relationship between the  elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊
 
 ## What makes a good animation
 
