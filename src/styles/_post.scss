@@ -100,7 +100,7 @@
 
   &__tags {
     position: relative;
-    display: inline-block;
+    display: inline;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -115,8 +115,9 @@
 
     &::before {
       content: "×";
+      display: inline-block;
       font-weight: normal;
-      padding: 0 1rem;
+      padding: 0 .5rem;
     }
 
     @include media-breakpoint-down(sm) {

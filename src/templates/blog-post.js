@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
           ${post.html}
         </div>
         <aside class="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
-          <time class="post__date d-inline-block mb-1 mb-sm-0">
+          <time class="post__date d-inline-block mb-sm-0">
             ${postDate.replace(/\S+/g, function (a) {
               return `<span>${a}</span>`
             })}
