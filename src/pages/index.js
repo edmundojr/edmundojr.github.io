@@ -35,6 +35,16 @@ export default class HomeIndex extends React.Component {
                 </div>
                 <aside className="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
                   <time className="post__date d-inline-block mb-1 mb-sm-0" dangerouslySetInnerHTML={{ __html: postDate }} />
+                  <ul className="post__tags">
+                    {get(node, 'frontmatter.tags').map((tag, index) => {
+                      return (
+                        <li key={index}>
+                          {tag}
+                          {/* <Link to={`/tags/${tag}`} className="post__tags__tag">{tag}</Link> */}
+                        </li>
+                      )
+                    })}
+                  </ul>
                 </aside>
               </div>
             </article>

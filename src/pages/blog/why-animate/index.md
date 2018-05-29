@@ -1,7 +1,7 @@
 ---
 title: Why animate?
 date: "2018-05-21"
-tags: ["Design, Animation"]
+tags: ["Design", "Animation"]
 ---
 
 When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding personality to your interface. In fact, to animate means bring to life.

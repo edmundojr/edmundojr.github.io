@@ -1,7 +1,7 @@
 ---
 title: The Scariest Moment
 date: "2018-02-18"
-tags: ["Personal"]
+tags: ["Everything Else"]
 ---
 
 Happy days: today I'm releasing a new version of my website! 🎉
