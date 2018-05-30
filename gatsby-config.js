@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Edmundo Santos',
     author: 'Edmundo Santos',
-    description: 'The daily, weekly, and monthly musings of Edmundo Santos.',
+    description: 'The daily, weekly, and monthly musings of Edmundo Santos, multidisciplinary designer & coder.',
     siteUrl: 'https://edmundojr.com/',
   },
   plugins: [
@@ -21,17 +21,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 840,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1rem`,
+              linkImagesToOriginal: false,
+              wrapperStyle: {
+                marginBottom: '1rem'
+              }
             },
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
