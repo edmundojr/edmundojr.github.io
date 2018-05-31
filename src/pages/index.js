@@ -20,9 +20,9 @@ export default class HomeIndex extends React.Component {
           const postDate2 = node.frontmatter.date
           const postTags = node.frontmatter.tags
           return (
-            <article key={`${postLink}`} className="post">
+            <article key={postLink} className="post">
               <h1 className="post__title">
-                <Link to={`${postLink}`} className="post__title__link row align-items-center">
+                <Link to={postLink} className="post__title__link row align-items-center">
                   <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
                   <span className="col-11 col-md-7 order-first order-sm-last">
                     {postTitle}
@@ -40,7 +40,7 @@ export default class HomeIndex extends React.Component {
                   <ul className="post__tags">
                     {postTags.map((tag, index) => {
                       return (
-                        <li key={`${index}`}>
+                        <li key={index}>
                           {tag}
                         </li>
                       )

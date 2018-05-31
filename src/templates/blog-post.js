@@ -6,8 +6,8 @@ import get from 'lodash/get'
 class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const post = this.props.data.markdownRemark
-    const postTitle = post.frontmatter.title
+    const post = get(this.props, 'data.markdownRemark')
+    const postTitle = post.frontmatter.title 
     const postLink = post.frontmatter.slug
     const postDate = post.frontmatter.date.replace(/\S+/g, function (a) {
       return `<span>${a}</span>`
@@ -19,12 +19,12 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${postTitle} × ${siteTitle}`} />
         <article className="post">
           <h1 className="post__title">
-            <Link to={`${postLink}`} className="post__title__link row align-items-center">
+            <div className="post__title__link row align-items-center">
               <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first"></span>
               <span className="col-11 col-md-7 order-first order-sm-last">
                 {postTitle}
               </span>
-            </Link>
+            </div>
           </h1>
           <div className="row align-items-start">
             <div
