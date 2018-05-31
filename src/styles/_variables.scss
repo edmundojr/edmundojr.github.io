@@ -3,12 +3,12 @@
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:              false;
-$enable-rounded:            true;
+$enable-rounded:            false;
 $enable-shadows:            false;
 $enable-gradients:          false;
-$enable-transitions:        true;
-$enable-grid-classes:       true;
+$enable-transitions:        false;
 $enable-print-styles:       false;
+$enable-grid-classes:       true;
 
 
 // Spacing
@@ -21,22 +21,15 @@ $enable-print-styles:       false;
 $spacer: 1rem;
 $spacers: ();
 $spacers: map-merge((
-  0:  0,
-  1:  ($spacer * .5),
-  2:  ($spacer),
-  3:  ($spacer * 1.5),
-  4:  ($spacer * 2),
-  5:  ($spacer * 2.5),
-  6:  ($spacer * 3),
-  7:  ($spacer * 3.5),
-  8:  ($spacer * 4),
-  9:  ($spacer * 4.5),
-  10: ($spacer * 5),
-  11: ($spacer * 5.5),
-  12: ($spacer * 6),
-  13: ($spacer * 6.5),
-  14: ($spacer * 7),
-  15: ($spacer * 7.5)
+  0: 0,
+  1: ($spacer * .5),
+  2: ($spacer),
+  3: ($spacer * 1.5),
+  4: ($spacer * 2),
+  5: ($spacer * 2.5),
+  6: ($spacer * 3),
+  7: ($spacer * 3.5),
+  8: ($spacer * 4)
 ), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -68,6 +61,7 @@ $link-decoration:           underline;
 $link-hover-color:          #F8465B;
 $link-hover-decoration:     underline;
 
+
 // Paragraphs
 //
 // Style p element.
@@ -88,6 +82,7 @@ $grid-breakpoints: (
   xl: 1200px
 );
 
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -98,6 +93,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
+
 
 // Grid columns
 //
@@ -112,7 +108,7 @@ $grid-gutter-width:           40px;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Margem", sans-serif;
+$font-family-sans-serif:      "Margem", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
