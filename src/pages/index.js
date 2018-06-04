@@ -14,10 +14,7 @@ export default class HomeIndex extends React.Component {
         {posts.map(({ node }) => {
           const postTitle = node.frontmatter.title
           const postLink = node.fields.slug
-          const postDate = node.frontmatter.date.replace(/\S+/g, function(a) {
-            return `<span>${a}</span>`
-          })
-          const postDate2 = node.frontmatter.date
+          const postDate = node.frontmatter.date.replace(/(\S+)/g, '<span>$1</span>')
           const postTags = node.frontmatter.tags
           return (
             <article key={postLink} className="post">
@@ -38,13 +35,11 @@ export default class HomeIndex extends React.Component {
                     className="post__date d-inline-block"
                     dangerouslySetInnerHTML={{ __html: postDate }} />
                   <ul className="post__tags">
-                    {postTags.map((tag, index) => {
-                      return (
-                        <li key={index}>
-                          {tag}
-                        </li>
-                      )
-                    })}
+                    {postTags.map((tag, index) => (
+                      <li key={index}>
+                        {tag}
+                      </li>
+                    ))}
                   </ul>
                 </aside>
               </div>

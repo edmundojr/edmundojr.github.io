@@ -1,11 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Hero = () => {
-  let isArticle = ""
-  if (typeof window !== 'undefined') {
-    isArticle = window.location.pathname.startsWith('/blog')
-  }
+const Hero = ({location}) => {
+  const isArticle = location.pathname.startsWith('/blog/')
 
   return (
     <div className="container-fluid">
@@ -23,5 +20,9 @@ const Hero = () => {
     </div>
   )
 }
+
+Hero.defaultProps = {
+  location: { pathname: '' }
+};
 
 export default Hero
