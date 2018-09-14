@@ -17,7 +17,7 @@
   width: 100%;
   padding: 0 .5rem;
   z-index: $zindex-modal;
-  color: $link-color;
+  color: $white;
   background: linear-gradient(0deg, rgba($body-bg, 0) 0%, rgba($body-bg, 1) 100%);
 
   @include media-breakpoint-up(md) {
@@ -50,74 +50,20 @@
   padding: 1.5rem;
   color: currentColor;
   transition: var(--nav-panel-transition);
-}
-
-// Nav Toogle
-
-.nav-toggle {
-  width: 5rem;
-  height: 4rem;
-  color: currentColor;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: var(--nav-panel-transition);
-
-  &__icon {
-    position: relative;
-    width: 1.6rem;
-    height: .1rem;
-    pointer-events: none;
-    background: currentColor;
-    transition: var(--nav-panel-transition);
-    transition-property: background, color;
-    transition-delay: .025s;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: currentColor;
-      transition: var(--nav-panel-transition);
-    }
-
-    &::before {
-      bottom: .5rem;
-    }
-    
-    &::after {
-      top: .5rem;
-    }
-  }
-
-  // Opened nav panel
 
   &:hover {
     color: $link-hover-color;
-    transform: rotate(180deg);
-
-    .nav-toggle__icon {
-      background: transparent;
-
-      &::before {
-        transform: translateY(.5rem) rotate(-45deg);
-      }
-      
-      &::after {
-        transform: translateY(-.5rem) rotate(45deg) scaleX(1);
-      }
-    }
   }
 }
+
+// Nav
 
 .nav {
   padding: .75rem 1rem;
 
   &__item {
     padding: .75rem .5rem;
+    color: currentColor;
     transition: var(--nav-panel-transition);
   }
 }

@@ -1,3 +1,4 @@
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -48,18 +49,18 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-// $body-bg:                   #1370FB;
-$body-bg:                   #FFF;
-$body-color:                #787682;
+$body-bg:    #000;
+$body-color: #CCC;
+$primary:    #F3D145; // Kona Jake 2017 🚲
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                #000;
-$link-decoration:           underline;
-$link-hover-color:          #F8465B;
-$link-hover-decoration:     underline;
+$link-color:                $primary;
+$link-decoration:           none;
+$link-hover-color:          $link-color;
+$link-hover-decoration:     $link-decoration;
 
 
 // Paragraphs
@@ -136,7 +137,7 @@ $headings-margin-bottom:      $spacer;
 $headings-font-family:        inherit;
 $headings-font-weight:        900;
 $headings-line-height:        1;
-$headings-color:              #000;
+$headings-color:              #fff;
 
 $display1-size:               4.5rem;
 $display2-size:               4rem;
@@ -156,7 +157,7 @@ $small-font-size:             80%;
 
 $text-muted:                  gray;
 
-$blockquote-small-color:      #292C37;
+$blockquote-small-color:      $body-color;
 $blockquote-font-size:        $font-size-base;
 
 $hr-border-color:             rgba(white, .1);
