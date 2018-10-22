@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Edmundo Santos',
     author: 'Edmundo Santos',
-    description: 'The daily, weekly, and monthly musings of Edmundo Santos, multidisciplinary designer & coder.',
+    description: 'The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.',
     siteUrl: 'https://edmundojr.com/',
   },
   plugins: [
@@ -41,13 +41,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [
-          require('autoprefixer')()
-        ],
-        precision: 8,
-      },
+      resolve: `gatsby-plugin-sass`,
+      postCssPlugins: [
+        require('autoprefixer')()
+      ],
+      precision: 8,
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,

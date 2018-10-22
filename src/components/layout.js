@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Header from '../components/Header'
-import Hero from '../components/Hero'
 
 import '../styles/main.scss'
 
@@ -26,8 +25,7 @@ class Template extends React.Component {
           <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
         </Helmet>
       	<Header />
-        <Hero location={this.props.location} />
-        {children()}
+        {children}
       </div>
     )
   }
