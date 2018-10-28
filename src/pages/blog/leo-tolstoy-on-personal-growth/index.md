@@ -1,5 +1,5 @@
 ---
-title: "Leo Tolstoy on Personal Growth"
+title: "On Personal Growth"
 date: "2018-09-09"
 tags: ["Quotes"]
 ---
