@@ -18,6 +18,6 @@ tags: ["Reading", "Quotes"]
 >
 > <footer>— Bret Victor, <a href="http://worrydream.com/Links2013/">Links 2013</a></footer>
 
-Occasionally I'll find myself browsing [Bret Victor's website](http://worrydream.com/). I'm usually looking for inspiration and I am always curious to see what is he working on.
+Occasionally I'll find myself browsing [Bret Victor's website](http://worrydream.com/). I'm usually looking for inspiration and I am always curious to see what he is working on.
 
 This reading tip is from a [2013 links page](http://worrydream.com/Links2013/), you'll find additional reading tips and a fair amount of book recommendations and links about <q>powerful seeing, and powerful representations for scientific thinking</q>. Enjoy it!
