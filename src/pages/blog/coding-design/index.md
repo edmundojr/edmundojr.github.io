@@ -1,10 +1,10 @@
 ---
-title: "Coding Design or How to become a unicorn 🦄"
+title: "Coding Design 🦄"
 date: "2018-10-28"
 tags: ["Design", "Development"]
 ---
 
-More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst cases scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.
+More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.
 
 > Code shouldn't hurt your creativity. *It should enhance it.*
 > — Benjamin De Cock on [Let’s Move](https://www.youtube.com/watch?v=J6wUmQDQBkw)
