@@ -15,7 +15,10 @@ const BlogPostTemplate = (props) => {
   return (
     <Layout>
       <Helmet title={`${postTitle} × ${siteTitle}`} />
-      <Hero type={"small"} />
+      <Hero
+        type={"small"}
+        title={"From the desk of Edmundo Santos"}
+      />
       <main className="container-fluid">
         <article className="post">
           <h1 className="post__title">
