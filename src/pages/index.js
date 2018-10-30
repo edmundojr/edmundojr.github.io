@@ -15,7 +15,10 @@ export default class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet title={siteTitle + ' × Articles'} />
-        <Hero type={"large"} />
+        <Hero
+          title={"From the desk of Edmundo Santos"}
+          description={"Multidisciplinary Designer & UI Developer"}
+        />
         <main className="container-fluid">
           {posts.map(({ node }) => {
             const postTitle = node.frontmatter.title
