@@ -5,6 +5,7 @@
   "author": "Edmundo Santos <hello@edmundojr.com>",
   "license": "CC-BY-4.0",
   "dependencies": {
+    "@jamesdanylik/gatsby-source-goodreads": "^0.1.0",
     "autoprefixer": "^9.2.1",
     "bootstrap": "^4.1.*",
     "gatsby": "next",

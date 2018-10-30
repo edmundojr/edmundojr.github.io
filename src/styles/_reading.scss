@@ -1,0 +1,68 @@
+.reading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include media-breakpoint-down(xs) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.book {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  overflow: visible;
+  perspective: 1000px;
+  opacity: 0;
+  animation: load-books 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+
+  &-cover {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    width: 100%;
+    transform-origin: left center;
+  }
+
+  &-details {
+    font-size: $font-size-sm;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &-author {
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@for $i from 1 to 19 {
+  .book:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
+}
+
+@for $i from 19 to 1000 {
+  .book:nth-child(#{$i}) { animation-delay: 1.95s + $i * 0.0375s; }
+}
+
+@keyframes load-books {
+  0% {
+    opacity: 0;
+    transform: translateX(1rem) scale(.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
