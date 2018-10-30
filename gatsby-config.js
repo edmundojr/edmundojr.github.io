@@ -49,6 +49,13 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `@jamesdanylik/gatsby-source-goodreads`,
+      options: {
+        key: `k3utR8gOzC6HeUkbxbXg`,
+        id: `35088315`
+      }
+    }
   ],
 }
