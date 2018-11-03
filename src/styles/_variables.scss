@@ -49,9 +49,10 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:    #000;
+$body-bg:    #16161d;
 $body-color: #CCC;
 $primary:    #F3D145; // Kona Jake 2017 🚲
+$headings-color: #fff;
 
 // Links
 //
@@ -137,7 +138,7 @@ $headings-margin-bottom:      $spacer;
 $headings-font-family:        inherit;
 $headings-font-weight:        900;
 $headings-line-height:        1;
-$headings-color:              #fff;
+$headings-color:              $headings-color;
 
 $display1-size:               4.5rem;
 $display2-size:               4rem;
