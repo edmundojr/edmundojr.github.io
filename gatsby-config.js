@@ -20,11 +20,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 840,
+              backgroundColor: '#16161d',
               linkImagesToOriginal: false,
-              wrapperStyle: {
-                marginBottom: '1rem'
-              }
+              maxWidth: 800,
+              quality: 100,
+              showCaptions: true,
+              withWebp: true
             },
           },
           'gatsby-remark-prismjs',
