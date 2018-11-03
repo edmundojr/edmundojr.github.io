@@ -4,6 +4,8 @@ date: "2018-10-28"
 tags: ["Design", "Development"]
 ---
 
+![Coding Design](./coding-design.png)
+
 More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.
 
 > Code shouldn't hurt your creativity. <strong>It should enhance it.</strong>
