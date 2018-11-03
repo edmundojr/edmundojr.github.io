@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Oct 2018 07:01:33 GMT</lastBuildDate><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 03 Nov 2018 18:38:21 GMT</lastBuildDate><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 61.24999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQoz5WS3U/SYRTHYXFL1/0Fqby5KWkqoLZCAZUyZ75ivlerpa4LuejVmeWcFy7XX2C+tTZ1mcryfUrIRHMKJogXWrNUhB8C/n5wTg9Q5Fpe9GyfnefmfJ7vnnNYWcqnrNMOMkdxB8ym0gf+KxhAeSAAIQBAjognURDORRrzctvZGXIt91J6Azcn++HZdMldbqyqjev6tq/34R56GD9CADEAYfx+RK8XkKYD6PMxGDyHh3RlRChJqYmKFan3BHwFRTjk8xROkVDpfPvOyHR2fMXnTRZoaV4P0dy0Dq87bTA/54b+Php6umlGP49otzv/CC+IixJ4vAzk8+QYdT4dY6Ivo1Agx66uOSzIN0F+ngGKbhgh75oB0mWzUF62AKMjHvIAwrMnyAwOIO7sOCsiQnF8oVQgUKKAnwkxMfIAn58BsbFZ0NOjh5uaz1hcsAC1VUt459Yy5l9fIHURdToPtrchvGxB/4dhxO3tEwnF4mK5SJiNfCIkYuDFZEJ8nBp6ew1QXLCEWYo5yMs1IEmJ2Uo9VlcaUTfmwbZWDKb0D7//S5ggLssJCsn/0QK+ihEJVQz5U2ZgwAiGTy6cGN+FyYkfMDH+Haan9mB56QDGP3ohmLD1xT8SJl2s1aQkV2FiQgmh9BcaHBpaJNPEY4fDR5Mp0pSboa1WN21a3KeJkO7uQrr7DfpGRxC3tpzlEWFy0j2JTFo3mCar70tLbehPldX3p0rr+memN4+DK0JRYYJ33ZgXX3XsotmMODuDODWJ+GU9NOXb4ZWR1Jy62DbbUaHNRj3e3HQ3ErTkrg1W+5Zba7W6tBZLiMaNDdejjQ1KEGlMSa5kKZQatvpqBVuhKmXnqCvYJaX32az/PFYrFe5JSqyPIE15EKq86GqW2ew4QxJxfmO3uzmrq06OyeTgWCwUZ2XFHWJtjeKQxCHZT4ce+VUCJSBiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-977d4.webp 200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-36cac.webp 400w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-324b3.webp 800w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-a893f.webp 1200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-de26b.webp 1600w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-b7d36.png 200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-36b20.png 400w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png 800w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-c978c.png 1200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4e4d5.png 1600w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #16161d;&quot;
+          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png&quot;
+          alt=&quot;Coding Design&quot;
+          title=&quot;&quot;
+          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Code shouldn&apos;t hurt your creativity. &lt;strong&gt;It should enhance it.&lt;/strong&gt;&lt;/p&gt;
 &lt;footer&gt;— Benjamin De Cock, on &lt;a href=&quot;https://www.youtube.com/watch?v=J6wUmQDQBkw&quot;&gt;Let’s Move&lt;/a&gt;&lt;/footer&gt;
