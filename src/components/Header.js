@@ -51,9 +51,9 @@ const Twitter = () => (
 )
 
 const Header = () => (
-  <header className="header d-flex flex-md-column align-items-center justify-content-between" role="banner">
+  <header className="header d-flex align-items-center justify-content-between" role="banner">
     <Logo />
-    <nav className="nav d-flex flex-md-column align-items-center mt-auto" role="navigation">
+    <nav className="nav d-flex align-items-center mt-auto" role="navigation">
       <Dribbble />
       <Instagram />
       <GitHub />
