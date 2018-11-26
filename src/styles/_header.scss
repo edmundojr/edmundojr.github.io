@@ -14,21 +14,10 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   padding: 0 .5rem;
   z-index: $zindex-modal;
   color: $white;
   background: linear-gradient(0deg, rgba($body-bg, 0) 0%, rgba($body-bg, 1) 100%);
-
-  @include media-breakpoint-up(md) {
-    bottom: 0;
-    right: auto;
-    width: 5.2rem;
-    padding: 0;
-    border-right: 1px solid rgba($body-color,.15);
-    opacity: 0;
-    animation: header 1s .5s $ease-in-out-quart forwards;
-  }
 
   // SVGs should have same color as body
 

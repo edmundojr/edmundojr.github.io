@@ -70,7 +70,7 @@
     color: $headings-color;
 
     @include media-breakpoint-up(md) {
-      top: 4rem;
+      top: 6rem;
       z-index: $zindex-sticky;
     }
   }
@@ -145,7 +145,6 @@
         bottom: 100%;
         transform: translateY(50%);
       }
-
     }
   }
 }
