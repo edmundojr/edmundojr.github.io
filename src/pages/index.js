@@ -17,7 +17,7 @@ export default class HomeIndex extends React.Component {
         <Helmet title={siteTitle + ' × Articles'} />
         <Hero
           title={"From the desk of Edmundo Santos"}
-          description={"Multidisciplinary Designer & UI Developer"}
+          description={"Product Designer & UI Developer"}
         />
         <main className="container-fluid">
           {posts.map(({ node }) => {
