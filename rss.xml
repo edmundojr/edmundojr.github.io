@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 26 Nov 2018 23:09:22 GMT</lastBuildDate><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 14:49:51 GMT</lastBuildDate><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGNmriksD//xAAdEAABAwUBAAAAAAAAAAAAAAACAAERAwQSExQh/9oACAEBAAEFAsCnS65zJVPFbk5GQtP/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8BoX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAACAgIDAAAAAAAAAAAAAAAAARFxAhIh0eH/2gAIAQEABj8CXYtebJnEVClnp//EABoQAAMBAQEBAAAAAAAAAAAAAAABEUExcZH/2gAIAQEAAT8hcqcVUwKlquhcp9ozonG5KdPBrf0f/9oADAMBAAIAAwAAABD8/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAABEQD/2gAIAQMBAT8QhRNd/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EAXGf//EABsQAQEAAgMBAAAAAAAAAAAAAAERACExUWFB/9oACAEBAAE/EDQaqWidsT3JQQ4QhPMp7zUYYaHnqYo1QJ1TD428n5iSzIAAGuhz/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-f456c.webp 200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-8fbba.webp 400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-e5f9a.webp 800w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-0b9d6.webp 1200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-1f0e4.webp 1600w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-10b3d.webp 2400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-68b87.webp 3024w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-d8bc6.jpg 200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-eeb2d.jpg 400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-82ed7.jpg 800w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-822ef.jpg 1200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-c7ffb.jpg 1600w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-ecd68.jpg 2400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-1070a.jpg 3024w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #16161d;&quot;
+          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-82ed7.jpg&quot;
+          alt=&quot;Spock: It&apos;s only logical&quot;
+          title=&quot;&quot;
+          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-b4d7939442c44c30ad89e94ea9a7308d-82ed7.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;After doing some research on different models I picked a &lt;strong&gt;Xiaomi Mi Mix 2S&lt;/strong&gt;. The built quality of this phone is outstanding, it supports wireless charging, has 6GB of RAM, Snapdragon 845, and most importantly: it has no notch.&lt;/p&gt;
+&lt;p&gt;There &lt;em&gt;is&lt;/em&gt; a problem though: it comes with that horrible MIUI. What I don&apos;t get it, is why would they ruin such a good piece of hardware? The whole &lt;em&gt;Android-trying-to-be-iOS&lt;/em&gt; thing really doesn&apos;t work IMHO… so inspired by Linus’ video on &lt;a href=&quot;https://www.youtube.com/watch?v=BsHtfLh6azw&quot;&gt;how to turn the Pocophone into a Pixel&lt;/a&gt; I deviced to do the same with the Mi Mix 2S.&lt;/p&gt;
+&lt;p&gt;For this guide you will need:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A &lt;a href=&quot;https://amzn.to/2L7VXPl&quot;&gt;Xiaomi Mi Mix 2s&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://forum.xda-developers.com/xiaomi-mi-mix-2s/development/rom-pixel-experience-t3872863&quot;&gt;Pixel Experience ROM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/&quot;&gt;Google Camera app&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Got everything you need? Cool! &lt;a href=&quot;https://www.youtube.com/watch?v=CBcAXP1QjEs&quot;&gt;Let the hacking commence!&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;1. Unlocking the Bootloader&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Enable &lt;strong&gt;Developer Tools&lt;/strong&gt; on your device by going to &lt;code class=&quot;language-text&quot;&gt;Settings › About Phone&lt;/code&gt;, and tapping on &lt;code class=&quot;language-text&quot;&gt;MIUI Version&lt;/code&gt; for about 7-10 times. You should see a message saying “You are now a developer”.&lt;/li&gt;
+&lt;li&gt;Enable the &lt;strong&gt;OEM unlocking&lt;/strong&gt; option on your device by going to &lt;code class=&quot;language-text&quot;&gt;Settings › Additional Settings › Developer Tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.miui.com/unlock/download_en.html&quot;&gt;Download the Mi Unlock tool&lt;/a&gt; and sign in to your &lt;a href=&quot;https://global.account.xiaomi.com/pass/register&quot;&gt;Mi Account&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Shut down your phone and hold &lt;code class=&quot;language-text&quot;&gt;volume down&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;power button&lt;/code&gt; to enter Fastboot Mode.&lt;/li&gt;
+&lt;li&gt;Connect your phone to your PC using a USB cable and click “Unlock”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Your phone is now unlocked! You will see a “Unlocked” message when turning on the phone. By the way, if you just got the phone you might need to wait 72 hours after the account was created in order to unlock it.&lt;/p&gt;
+&lt;h2&gt;2. Installing the custom ROM&lt;/h2&gt;
+&lt;p&gt;Now that you have your bootloader unlocked, you&apos;re free to do whatever you want with your device. Head over to XDA and follow the steps to &lt;a href=&quot;https://forum.xda-developers.com/xiaomi-mi-mix-2s/development/rom-pixel-experience-t3872863&quot;&gt;install the Pixel Experience ROM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The device should performs exactly the same – if not better, and the clean Android UI fits the hardware like a glove.&lt;/p&gt;
+&lt;h2&gt;3. Installing Google’s Camera App&lt;/h2&gt;
+&lt;p&gt;It&apos;s no secret that the best thing about the Pixel is the camera, and what plays a big part in making the camera perform so well is the software. Some developers have taken Pixel&apos;s Camera app and ported to a wide range of devices.&lt;/p&gt;
+&lt;p&gt;After some testing, I found out that the apps ones ported by &lt;a href=&quot;https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/&quot;&gt;BSG&lt;/a&gt; perform great with the Pixel Experience ROM, specifically the &lt;code class=&quot;language-text&quot;&gt;MGC_6.1.021_MI8_Vc&lt;/code&gt; apk.&lt;/p&gt;
+&lt;p&gt;The image quality is way better than the one you get with the original camera app. It comes out-of-the-box with Portrait Mode, Google Lens, and Night Sight. See the Spock photo above? Shot with Mi Mix 2S on Portrair mode 🤳&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Hope you enjoy this guide! Truth be told, the main reason I&apos;m posting this here is for &lt;em&gt;Future Ed’s&lt;/em&gt; benefit, in case he needs to do it again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
     style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
