@@ -1,64 +1,100 @@
 .reading {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 4rem 0;
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 2rem;
 
   @include media-breakpoint-down(lg) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   @include media-breakpoint-down(md) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @include media-breakpoint-down(xs) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .book {
   display: grid;
-  grid-template-rows: 50% 50%;
-  overflow: visible;
+  flex-direction: row;
+  align-content: flex-end;
   perspective: 1000px;
   opacity: 0;
   animation: load-books 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
 
+  &:hover {
+    .book-details {
+      opacity: 1;
+      transform: none;
+    }
+
+    .book-cover {
+      transform: scale(1.05) rotateY(5deg);
+    }
+  }
+
   &-cover {
-    align-self: flex-end;
-    margin-bottom: 1rem;
     width: 100%;
-    transform-origin: left center;
+    transform-origin: center;
+    border-radius: 3px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   &-details {
-    font-size: $font-size-sm;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    position: absolute;
+    left: 1rem;
+    right: -1rem;
+    bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(white, 0.95);
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba($body-bg, 0.25),
+      inset 0 0 0 1px rgba($body-bg, 0.05);
+    opacity: 0;
+    transform: translateY(1rem) rotateY(-10deg);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &-title {
+      margin-bottom: 0.5rem;
+      font-size: $font-size-base;
+      color: $body-bg;
+    }
 
     &-author {
-      max-width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: $font-size-sm;
+      line-height: 1.15;
+      color: $text-muted;
+
+      &-image {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0;
+        background-position: center;
+        background-size: cover;
+        border-radius: 2rem;
+      }
     }
   }
 }
 
-@for $i from 1 to 19 {
-  .book:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
-}
-
-@for $i from 19 to 1000 {
-  .book:nth-child(#{$i}) { animation-delay: 1.95s + $i * 0.0375s; }
+@for $i from 1 to 1000 {
+  .book:nth-child(#{$i}) {
+    animation-delay: $i * 0.0375s;
+  }
 }
 
 @keyframes load-books {
   0% {
     opacity: 0;
-    transform: translateX(1rem) scale(.95);
+    transform: translateX(1rem) scale(0.95);
   }
 
   100% {
