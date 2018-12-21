@@ -1,15 +1,11 @@
-// 
+//
 // Container Fluid
 // Used for wrapping site content
-// 
+//
 
 .container-fluid {
   max-width: 72rem;
   margin: 0;
-  padding-left: 2rem;
+  padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
-
-  @include media-breakpoint-up(md) {
-    padding-left: 7rem;
-  }
 }
