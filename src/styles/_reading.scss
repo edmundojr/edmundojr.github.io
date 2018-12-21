@@ -1,7 +1,7 @@
 .reading {
   display: grid;
   margin: 4rem 0;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 2rem;
 
   @include media-breakpoint-down(lg) {
