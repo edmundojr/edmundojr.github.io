@@ -6,8 +6,8 @@
   "license": "CC-BY-4.0",
   "dependencies": {
     "@halkeye/gatsby-source-goodreads": "^0.0.6",
-    "autoprefixer": "^9.2.1",
-    "bootstrap": "^4.1.*",
+    "autoprefixer": "^9.4.3",
+    "bootstrap": "^4.2.1",
     "gatsby": "next",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
@@ -21,18 +21,18 @@
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",
-    "lodash": "^4.17.*",
-    "node-sass": "^4.9.4",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
     "prismjs": "^1.15.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.7.*",
-    "eslint-plugin-react": "^7.11.*",
-    "gh-pages": "^2.0.*",
-    "prettier": "^1.14.*"
+    "eslint": "^5.10.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.15.3"
   },
   "keywords": [
     "gatsby"
