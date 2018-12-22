@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Edmundo Santos',
     author: 'Edmundo Santos',
-    description: 'The daily, weekly, and monthly musings of Edmundo Santos, Multidisciplinary Designer & UI Developer.',
+    description:
+      'From the desk of Edmundo Santos, User Interface Designer & Engineer.',
     siteUrl: 'https://edmundojr.com/',
   },
   plugins: [
@@ -25,7 +26,7 @@ module.exports = {
               maxWidth: 800,
               quality: 100,
               showCaptions: true,
-              withWebp: true
+              withWebp: true,
             },
           },
           'gatsby-remark-prismjs',
@@ -43,20 +44,19 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sass`,
-      postCssPlugins: [
-        require('autoprefixer')()
-      ],
+      postCssPlugins: [require('autoprefixer')()],
       precision: 8,
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `@jamesdanylik/gatsby-source-goodreads`,
+      resolve: `@halkeye/gatsby-source-goodreads`,
       options: {
-        key: `k3utR8gOzC6HeUkbxbXg`,
-        id: `35088315`
-      }
-    }
+        developerKey: `k3utR8gOzC6HeUkbxbXg`,
+        goodReadsUserId: `35088315`,
+        // userShelf: "to-read" //optional
+      },
+    },
   ],
 }
