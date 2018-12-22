@@ -10,7 +10,6 @@ export default class LibraryIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const books = get(this, 'props.data.allGoodreadsBook.edges')
-
     return (
       <Layout>
         <Helmet title={siteTitle + ' × Reading'} />
@@ -22,42 +21,39 @@ export default class LibraryIndex extends React.Component {
         <main className={'container-fluid'}>
           <div className={'reading'}>
             {books.map(({ node }) => {
-              const id = node.id
-              const bookTitle = node.title_without_series
-              const bookCover = node.large_image_url
-                ? node.large_image_url
-                : node.image_url
-                  ? node.image_url
-                  : node.small_image_url
-              const bookAuthorName = node.authors[0].name
-              const bookAuthorImage = node.authors[0].image_url
-              return (
-                <div key={id} className={'book'}>
-                  <img
-                    src={bookCover}
-                    className={'book-cover img-fluid'}
-                    alt={bookTitle}
-                  />
-                  <div className={'book-details'}>
-                    <h4 className={'book-details-title'}>{bookTitle}</h4>
-                    <div className={'book-details-author'}>
-                      <figure
-                        style={{
-                          backgroundImage: 'url(' + bookAuthorImage + ')',
-                        }}
-                        className={'book-details-author-image img-fluid'}
-                      />
-                      <figcaption>{bookAuthorName}</figcaption>
-                    </div>
-                  </div>
-                </div>
-              )
+              return <Book props={node} />
             })}
           </div>
         </main>
       </Layout>
     )
   }
+}
+
+const Book = ({ props }) => {
+  const { shelfNames } = props
+  const { bookID, titleWithoutSeries, imageUrl, authors } = props.book
+  return (
+    <div key={bookID} className={'book' + ' book-' + shelfNames}>
+      <img
+        src={imageUrl}
+        className={'book-cover img-fluid'}
+        alt={titleWithoutSeries}
+      />
+      <div className={'book-details'}>
+        <h4 className={'book-details-title'}>{titleWithoutSeries}</h4>
+        <div className={'book-details-author'}>
+          <figure
+            style={{
+              backgroundImage: 'url(' + authors[0].imageUrl + ')',
+            }}
+            className={'book-details-author-image img-fluid'}
+          />
+          <figcaption>{authors[0].name}</figcaption>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export const pageQuery = graphql`
@@ -67,18 +63,24 @@ export const pageQuery = graphql`
         title
       }
     }
-    allGoodreadsBook(sort: { fields: published, order: DESC }) {
+    allGoodreadsBook(
+      filter: { shelfNames: { in: ["currently-reading", "read"] } }
+      sort: { fields: [shelfNames, review___dateUpdated], order: ASC }
+    ) {
       edges {
         node {
-          id
-          title_without_series
-          image_url
-          large_image_url
-          small_image_url
-          authors {
-            id
-            name
-            image_url
+          shelfNames
+          review {
+            dateUpdated
+          }
+          book {
+            bookID
+            titleWithoutSeries
+            imageUrl
+            authors {
+              name
+              imageUrl
+            }
           }
         }
       }

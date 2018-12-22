@@ -5,7 +5,7 @@
   grid-gap: 2rem;
 
   @include media-breakpoint-down(lg) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   @include media-breakpoint-down(md) {
@@ -24,6 +24,23 @@
   perspective: 1000px;
   opacity: 0;
   animation: load-books 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+
+  &-currently-reading .book-details::before {
+    content: 'Reading';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $body-bg;
+    background: $primary;
+    border-radius: 3px 3px 0 0;
+    transform: translateY(-100%);
+  }
 
   &:hover {
     .book-details {
@@ -74,6 +91,7 @@
       color: $text-muted;
 
       &-image {
+        flex-shrink: 0;
         width: 1.25rem;
         height: 1.25rem;
         margin: 0;
