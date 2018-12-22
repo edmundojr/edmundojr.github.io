@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 import Hero from '../components/Hero'
 
 export default class HomeIndex extends React.Component {
@@ -16,38 +16,44 @@ export default class HomeIndex extends React.Component {
       <Layout>
         <Helmet title={siteTitle + ' × Articles'} />
         <Hero
-          title={"From the desk of Edmundo Santos"}
-          description={"Product Designer & UI Developer"}
+          title={'From the desk of Edmundo Santos'}
+          description={'User Interface Designer'}
         />
         <main className="container-fluid">
           {posts.map(({ node }) => {
             const postTitle = node.frontmatter.title
             const postLink = node.fields.slug
-            const postDate = node.frontmatter.date.replace(/(\S+)/g, '<span>$1</span>')
+            const postDate = node.frontmatter.date.replace(
+              /(\S+)/g,
+              '<span>$1</span>'
+            )
             const postTags = node.frontmatter.tags
             return (
               <article key={postLink} className="post">
                 <h1 className="post__title">
-                  <Link to={postLink} className="post__title__link row align-items-center">
+                  <Link
+                    to={postLink}
+                    className="post__title__link row align-items-center"
+                  >
                     <span className="post__title__detail col-1 offset-lg-1 order-last order-sm-first" />
-                    <span className="col-11 col-md-7 order-first order-sm-last">
+                    <span className="col-11 col-md-6 order-first order-sm-last">
                       {postTitle}
                     </span>
                   </Link>
                 </h1>
                 <div className="row align-items-start">
                   <div
-                    className="col-sm-11 col-md-7 offset-sm-1 offset-lg-2 order-last order-md-first"
-                    dangerouslySetInnerHTML={{ __html: node.html }} />
+                    className="col-sm-11 col-md-6 offset-sm-1 offset-lg-2 order-last order-md-first"
+                    dangerouslySetInnerHTML={{ __html: node.html }}
+                  />
                   <aside className="post__meta col-sm-11 col-md-3 text-md-center offset-sm-1 offset-md-0 order-first order-md-last position-sticky mb-2">
                     <time
                       className="post__date d-inline-block"
-                      dangerouslySetInnerHTML={{ __html: postDate }} />
+                      dangerouslySetInnerHTML={{ __html: postDate }}
+                    />
                     <ul className="post__tags">
                       {postTags.map((tag, index) => (
-                        <li key={index}>
-                          {tag}
-                        </li>
+                        <li key={index}>{tag}</li>
                       ))}
                     </ul>
                   </aside>
