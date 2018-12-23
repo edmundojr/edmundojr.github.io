@@ -1,7 +1,8 @@
 ---
-title: The Scariest Moment
-date: "2018-02-18"
-tags: ["Everything Else"]
+title: 'The Scariest Moment'
+description: 'It’s not really scary, I just love this quote.'
+date: '2018-02-18'
+tags: ['Everything Else']
 ---
 
 Happy days: today I'm releasing a new version of my website! 🎉
@@ -22,6 +23,7 @@ The website is not fully responsive yet and there are probably lots of bugs, but
 On each and every one of the blogs I've started in the past I posted this quote, so here it is again:
 
 > “The scariest moment is always just before you start. After that, things can only get better.”
+>
 > <footer>— Stephen King</footer>
 
 That's it for today, [let me know](https://twitter.com/edmundojr_) what you think.

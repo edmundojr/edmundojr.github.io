@@ -1,12 +1,14 @@
 ---
-title: Why animate?
-date: "2018-05-21"
-tags: ["Design", "Animation"]
+title: 'Why animate?'
+description: 'No animation is unnatural.'
+date: '2018-05-21'
+tags: ['Design', 'Animation']
 ---
 
 When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding personality to your interface. In fact, to animate means bring to life.
 
 > Emotional design’s primary goal is to facilitate human-to-human communication. If we’re doing our job well, the computer recedes into the background, and personalities rise to the surface.
+>
 > <footer>— Aarron Walter, Designing For Emotion</footer>
 
 ## No animation is unnatural
@@ -19,7 +21,7 @@ Take for instance the carousel interface below: without any animations, could yo
   <iframe class="embed-responsive-item" height="310" scrolling="no" title="CSS 3D transform Colorful Animated Carousel" src="//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
 
-If you toggle the animation (go on, I wait), you'll see how much nicer it is to understand the relationship between the  elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊
+If you toggle the animation (go on, I wait), you'll see how much nicer it is to understand the relationship between the elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊
 
 ## What makes a good animation
 
@@ -28,11 +30,12 @@ So we know we should animate, but what makes for a good animation? What should w
 First of all, you should animate exclusively using `opacity` and `transform` properties, anything else will trigger a browser layout or paint, which are expensive operations. That's the only way to keep your animations running at a smooth 60fps rate.
 
 > The process that the browser goes through is pretty simple: calculate the styles that apply to the elements (Recalculate Style), generate the geometry and position for each element (Layout), fill out the pixels for each element into layers (Paint Setup and Paint) and draw the layers out to screen (Composite Layers). To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing -- transform and opacity. The **higher up** you start on the timeline waterfall the **more work** the browser has to do to get pixels on to the screen.
+>
 > <footer><span>—</span> Paul Lewis and Paul Irish, <a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#disqus_thread">High Performance Animations</a></footer>
 
 Secondly, animation is all about timing:
 
-- Try to **keep your animations fast**: usually around the *300ms* mark
+- Try to **keep your animations fast**: usually around the _300ms_ mark
 - **Animate things independently**: stagger individual elements instead of animating big blocks
 - Always **use custom easings**: the default ones are crap
 

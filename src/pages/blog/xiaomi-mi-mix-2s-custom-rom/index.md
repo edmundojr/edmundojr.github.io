@@ -1,7 +1,8 @@
 ---
-title: "The Notchless Pixel"
-date: "2018-12-07"
-tags: ["Android", "Hacking"]
+title: 'The Notchless Pixel'
+description: 'Installing a custom ROM on Xiaomi Mi Mix 2S.'
+date: '2018-12-07'
+tags: ['Android', 'Hacking']
 ---
 
 After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.
@@ -10,7 +11,7 @@ After my OnePlus 3 smashed into the ground – for the third time, I decided it 
 
 After doing some research on different models I picked a **Xiaomi Mi Mix 2S**. The built quality of this phone is outstanding, it supports wireless charging, has 6GB of RAM, Snapdragon 845, and most importantly: it has no notch.
 
-There *is* a problem though: it comes with that horrible MIUI. What I don't get it, is why would they ruin such a good piece of hardware? The whole *Android-trying-to-be-iOS* thing really doesn't work IMHO… so inspired by Linus’ video on [how to turn the Pocophone into a Pixel](https://www.youtube.com/watch?v=BsHtfLh6azw) I deviced to do the same with the Mi Mix 2S.
+There _is_ a problem though: it comes with that horrible MIUI. What I don't get it, is why would they ruin such a good piece of hardware? The whole _Android-trying-to-be-iOS_ thing really doesn't work IMHO… so inspired by Linus’ video on [how to turn the Pocophone into a Pixel](https://www.youtube.com/watch?v=BsHtfLh6azw) I deviced to do the same with the Mi Mix 2S.
 
 For this guide you will need:
 
@@ -46,4 +47,4 @@ The image quality is way better than the one you get with the original camera ap
 
 ---
 
-Hope you enjoy this guide! Truth be told, the main reason I'm posting this here is for *Future Ed’s* benefit, in case he needs to do it again.
+Hope you enjoy this guide! Truth be told, the main reason I'm posting this here is for _Future Ed’s_ benefit, in case he needs to do it again.

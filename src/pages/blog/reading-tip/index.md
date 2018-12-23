@@ -1,7 +1,8 @@
 ---
-title: "Reading Tip‌‌‌‌ #1"
-date: "2018-05-29"
-tags: ["Reading", "Quotes"]
+title: 'Reading Tip‌‌‌‌ #1'
+description: 'I have now learned that there exists a worldview in which all of these statements are consistent.'
+date: '2018-05-29'
+tags: ['Reading', 'Quotes']
 ---
 
 > “It’s tempting to judge what you read:
