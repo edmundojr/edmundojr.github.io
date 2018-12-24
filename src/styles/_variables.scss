@@ -1,16 +1,14 @@
-
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:              false;
-$enable-rounded:            false;
-$enable-shadows:            false;
-$enable-gradients:          false;
-$enable-transitions:        false;
-$enable-print-styles:       false;
-$enable-grid-classes:       true;
-
+$enable-caret: false;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: false;
+$enable-print-styles: false;
+$enable-grid-classes: true;
 
 // Spacing
 //
@@ -21,55 +19,74 @@ $enable-grid-classes:       true;
 // stylelint-disable
 $spacer: 1rem;
 $spacers: ();
-$spacers: map-merge((
-  0: 0,
-  1: ($spacer * .5),
-  2: ($spacer),
-  3: ($spacer * 1.5),
-  4: ($spacer * 2),
-  5: ($spacer * 2.5),
-  6: ($spacer * 3),
-  7: ($spacer * 3.5),
-  8: ($spacer * 4)
-), $spacers);
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.5,
+    ),
+    2: (
+      $spacer,
+    ),
+    3: (
+      $spacer * 1.5,
+    ),
+    4: (
+      $spacer * 2,
+    ),
+    5: (
+      $spacer * 2.5,
+    ),
+    6: (
+      $spacer * 3,
+    ),
+    7: (
+      $spacer * 3.5,
+    ),
+    8: (
+      $spacer * 4,
+    ),
+  ),
+  $spacers
+);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: ();
-$sizes: map-merge((
-  25: 25%,
-  50: 50%,
-  75: 75%,
-  100: 100%,
-  auto: auto
-), $sizes);
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+  ),
+  $sizes
+);
 // stylelint-enable
-
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:    #16161d;
-$body-color: #CCC;
-$primary:    #F3D145; // Kona Jake 2017 🚲
+$body-bg: #101010;
+$body-color: #ccc;
+$primary: #f3d145; // Kona Jake 2017 🚲
 $headings-color: #fff;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                $primary;
-$link-decoration:           none;
-$link-hover-color:          $link-color;
-$link-hover-decoration:     $link-decoration;
-
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $link-color;
+$link-hover-decoration: $link-decoration;
 
 // Paragraphs
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem;
-
+$paragraph-margin-bottom: 1rem;
 
 // Grid breakpoints
 //
@@ -81,9 +98,8 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
 );
-
 
 // Grid containers
 //
@@ -93,114 +109,114 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1140px,
 );
-
 
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12;
-$grid-gutter-width:           40px;
-
+$grid-columns: 12;
+$grid-gutter-width: 40px;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Margem", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:            $font-family-sans-serif;
+$font-family-sans-serif: 'Margem', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace;
+$font-family-base: $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
-$font-size-root:              20px;
-$font-size-base:              1rem;
-$font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .875);
+$font-size-root: 20px;
+$font-size-base: 1rem;
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 0.875);
 
-$font-weight-light:           300;
-$font-weight-normal:          400;
-$font-weight-bold:            700;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
-$font-weight-base:            $font-weight-normal;
-$line-height-base:            1.5;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
 
-$h1-font-size:                $font-size-base * 3;
-$h2-font-size:                $font-size-base * 2;
-$h3-font-size:                $font-size-base * 1.75;
-$h4-font-size:                $font-size-base * 1.5;
-$h5-font-size:                $font-size-base * 1.25;
-$h6-font-size:                $font-size-base;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
 
-$headings-margin-bottom:      $spacer;
-$headings-font-family:        inherit;
-$headings-font-weight:        900;
-$headings-line-height:        1;
-$headings-color:              $headings-color;
+$headings-margin-bottom: $spacer;
+$headings-font-family: inherit;
+$headings-font-weight: 900;
+$headings-line-height: 1;
+$headings-color: $headings-color;
 
-$display1-size:               4.5rem;
-$display2-size:               4rem;
-$display3-size:               3.5rem;
-$display4-size:               3rem;
+$display1-size: 4.5rem;
+$display2-size: 4rem;
+$display3-size: 3.5rem;
+$display4-size: 3rem;
 
-$display1-weight:             900;
-$display2-weight:             900;
-$display3-weight:             900;
-$display4-weight:             900;
-$display-line-height:         $headings-line-height;
+$display1-weight: 900;
+$display2-weight: 900;
+$display3-weight: 900;
+$display4-weight: 900;
+$display-line-height: $headings-line-height;
 
-$lead-font-size:              ($font-size-base * 1.25);
-$lead-font-weight:            400;
+$lead-font-size: ($font-size-base * 1.25);
+$lead-font-weight: 400;
 
-$small-font-size:             80%;
+$small-font-size: 80%;
 
-$text-muted:                  gray;
+$text-muted: gray;
 
-$blockquote-small-color:      $body-color;
-$blockquote-font-size:        $font-size-base;
+$blockquote-small-color: $body-color;
+$blockquote-font-size: $font-size-base;
 
-$hr-border-color:             rgba(white, .1);
-$hr-border-width:             1px;
+$hr-border-color: rgba(white, 0.1);
+$hr-border-width: 1px;
 
-$mark-padding:                .2em;
+$mark-padding: 0.2em;
 
-$dt-font-weight:              $font-weight-bold;
+$dt-font-weight: $font-weight-bold;
 
-$kbd-box-shadow:              inset 0 -.1rem 0 rgba(black, .25);
-$nested-kbd-font-weight:      $font-weight-bold;
+$kbd-box-shadow: inset 0 -0.1rem 0 rgba(black, 0.25);
+$nested-kbd-font-weight: $font-weight-bold;
 
-$list-inline-padding:         .5rem;
+$list-inline-padding: 0.5rem;
 
-$mark-bg:                     #fcf8e3;
+$mark-bg: #fcf8e3;
 
-$hr-margin-y:                 $spacer;
-
+$hr-margin-y: $spacer;
 
 // Transitions
 
-$ease-in-sine:            cubic-bezier(0.47, 0, 0.745, 0.715);
-$ease-out-sine:           cubic-bezier(0.39, 0.575, 0.565, 1);
-$ease-in-out-sine:        cubic-bezier(0.445, 0.05, 0.55, 0.95);
-$ease-in-quad:            cubic-bezier(0.55, 0.085, 0.68, 0.53);
-$ease-out-quad:           cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$ease-in-out-quad:        cubic-bezier(0.455, 0.03, 0.515, 0.955);
-$ease-in-cubic:           cubic-bezier(0.55, 0.055, 0.675, 0.19);
-$ease-out-cubic:          cubic-bezier(0.215, 0.61, 0.355, 1);
-$ease-in-out-cubic:       cubic-bezier(0.645, 0.045, 0.355, 1);
-$ease-in-quart:           cubic-bezier(0.895, 0.03, 0.685, 0.22);
-$ease-out-quart:          cubic-bezier(0.165, 0.84, 0.44, 1);
-$ease-in-out-quart:       cubic-bezier(0.77, 0, 0.175, 1);
-$ease-in-quint:           cubic-bezier(0.755, 0.05, 0.855, 0.06);
-$ease-out-quint:          cubic-bezier(0.23, 1, 0.32, 1);
-$ease-in-out-quint:       cubic-bezier(0.86, 0, 0.07, 1);
-$ease-in-expo:            cubic-bezier(0.95, 0.05, 0.795, 0.035);
-$ease-out-expo:           cubic-bezier(0.19, 1, 0.22, 1);
-$ease-in-out-expo:        cubic-bezier(1, 0, 0, 1);
-$ease-in-circ:            cubic-bezier(0.6, 0.04, 0.98, 0.335);
-$ease-out-circ:           cubic-bezier(0.075, 0.82, 0.165, 1);
-$ease-in-out-circ:        cubic-bezier(0.785, 0.135, 0.15, 0.86);
-$ease-in-back:            cubic-bezier(0.6, -0.28, 0.735, 0.045);
-$ease-out-back:           cubic-bezier(0.175, 0.885, 0.32, 1.275);
-$ease-in-out-back:        cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
