@@ -1,3 +1,24 @@
+// CSS takeover
+
+:root {
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.9rem;
+  --card-bg-1: #f7d052;
+  --card-bg-2: #e89be0;
+  --card-bg-3: #f2f0f0;
+  --card-bg-4: #90ddde;
+  --card-bg-5: #8cc3fa;
+  --card-bg-6: #d3ccfc;
+  --card-bg-7: #faa489;
+  --card-color-1: #57491d;
+  --card-color-2: #452e43;
+  --card-color-3: #5c5c5c;
+  --card-color-4: #324c4d;
+  --card-color-5: #0f3d6b;
+  --card-color-6: #483e87;
+  --card-color-7: #4d322a;
+}
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -69,7 +90,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg: #101010;
-$body-color: #ccc;
+$body-color: #fff;
 $primary: #f3d145; // Kona Jake 2017 🚲
 $headings-color: #fff;
 
@@ -144,11 +165,11 @@ $font-weight-bold: 700;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
 
-$h1-font-size: $font-size-base * 3;
+$h1-font-size: $font-size-base * 2.6;
 $h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
+$h3-font-size: $font-size-base * 1.8;
+$h4-font-size: $font-size-base * 1.6;
+$h5-font-size: $font-size-base * 1.4;
 $h6-font-size: $font-size-base;
 
 $headings-margin-bottom: $spacer;
