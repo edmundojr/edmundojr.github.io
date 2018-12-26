@@ -1,10 +1,9 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import Hero from '../components/Hero'
-import Helmet from 'react-helmet'
+import { Hero, Layout } from '../components'
 
 export default class LibraryIndex extends React.Component {
   render() {

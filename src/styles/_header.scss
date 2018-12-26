@@ -1,36 +1,22 @@
 // Header
 
-:root {
-  --nav-panel-transition:
-    opacity .4s #{$ease-in-out-quart},
-    transform .4s #{$ease-in-out-quart};
-  --nav-panel-transition-delayed:
-    opacity .5s #{$ease-in-out-quart},
-    transform .5s #{$ease-in-out-quart};
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 .5rem;
   z-index: $zindex-modal;
   color: $white;
-  background: linear-gradient(0deg, rgba($body-bg, 0) 0%, rgba($body-bg, 1) 100%);
+  box-shadow: inset 0 50px 100px -50px $body-bg;
 
   // SVGs should have same color as body
 
   svg {
     display: block;
     fill: currentColor;
-    transition: all .3s $ease-in-out-quart;
+    transition: all 0.3s $ease-in-out-quart;
+    filter: drop-shadow(0 0 1rem $body-bg);
   }
-}
-
-@keyframes header {
-  0%   { opacity: 0; transform: translateX(-100%); }
-  100% { opacity: 1; transform: none; }
 }
 
 // Logo
@@ -38,7 +24,6 @@
 .logo {
   padding: 1.5rem;
   color: currentColor;
-  transition: var(--nav-panel-transition);
 
   &:hover {
     color: $link-hover-color;
@@ -48,11 +33,41 @@
 // Nav
 
 .nav {
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
 
   &__item {
-    padding: .75rem .5rem;
+    padding: 0.75rem 0.5rem;
     color: currentColor;
-    transition: var(--nav-panel-transition);
+    filter: drop-shadow(0 0 1rem $body-bg);
+  }
+}
+
+.btn-back {
+  position: fixed;
+  top: .75rem;
+  left: 50%;
+  z-index: $zindex-modal;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+  background: $body-bg;
+  border-radius: 50%;
+  opacity: .95;
+  box-shadow: 0 0 2rem rgba($body-bg, .5);
+  transform: translateX(-50%);
+  animation: dropDown 600ms 200ms backwards $ease-out-expo;
+}
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%,-100%);
+  }
+  100% {
+    opacity: .8;
+    transform: translate(-50%,0);
   }
 }

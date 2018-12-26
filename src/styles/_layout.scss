@@ -1,11 +1,85 @@
-//
-// Container Fluid
-// Used for wrapping site content
-//
+:root {
+  --grid-gap: 1.5rem;
+  --grid-padding: 1.5rem;
+  --grid-width: 62rem;
+  --grid-height: 62rem;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --grid-gap: 1rem;
+    --grid-padding: 1rem;
+    --grid-width: 52rem;
+    --grid-height: 52rem;
+  }
+}
 
 .container-fluid {
-  max-width: 72rem;
-  margin: 0;
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
+  max-width: var(--grid-width);
+  padding: 0 var(--grid-gap);
+  margin: 0 auto;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--grid-gap), 1fr)
+    minmax(auto, 57ch)
+    minmax(var(--grid-gap), 1fr);
+  max-width: var(--grid-width);
+  padding: 0 var(--grid-gap);
+  margin: 0 auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat(10, calc(100% / 10 - var(--grid-gap)));
+  grid-template-rows: repeat(
+    10,
+    calc(var(--grid-height) / 10 - var(--grid-gap))
+  );
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
+  max-width: var(--grid-width);
+  min-height: var(--grid-height);
+  width: 100%;
+  margin: 0 auto;
+  perspective: 1000px;
+
+  .grid-item {
+    padding: var(--grid-padding);
+    background: rgba(white, 0.2);
+    transform-origin: center;
+    animation: gridAnimation backwards $ease-out-expo;
+
+    @for $i from 1 to 8 {
+      &:nth-child(#{$i}) {
+        animation-delay: 200ms + $i * 50ms;
+        animation-duration: 600ms + $i * 75ms;
+      }
+    }
+  }
+
+  &--layout-1 {
+    .grid-item:nth-child(1) { grid-area: 3 / 1 / 7 / 4; }
+    .grid-item:nth-child(2) { grid-area: 1 / 4 / 4 / 7; }
+    .grid-item:nth-child(3) { grid-area: 2 / 7 / 4 / 11; }
+    .grid-item:nth-child(4) { grid-area: 4 / 4 / 7 / 8; }
+    .grid-item:nth-child(5) { grid-area: 4 / 8 / 7 / 10; }
+    .grid-item:nth-child(6) { grid-area: 7 / 5 / 10 / 2; }
+    .grid-item:nth-child(7) { grid-area: 7 / 5 / 9 / 9; }
+  }
+}
+
+@keyframes gridAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }

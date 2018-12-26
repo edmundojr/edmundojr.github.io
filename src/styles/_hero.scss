@@ -1,43 +1,10 @@
-// 
-// Hero
-// 
-
 .hero {
-  height: 50vh;
   min-height: 16rem;
-  opacity: 0;
-  animation: hero .5s $ease-in-out-quart forwards;
+  align-items: center;
+  text-align: center;
 
-  &__title,
-  &__description {
-    transform-origin: left center;
+  &-content {
+    grid-column: 2;
+    animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
   }
-
-  // Small hero version for single articles
-
-  &--small {
-    height: auto;
-    min-height: 12rem;
-    animation: heroSmall .5s $ease-in-out-quart forwards;
-
-    .hero__title {
-      transform: scale(.6);
-    }
-
-    .hero__description {
-      transform: scale(.75) translateY(-1.5rem);
-    }
-  }
-}
-
-// Hero animations
-
-@keyframes hero {
-  0%   { opacity: 0; transform: translateY(.5rem); }
-  100% { opacity: 1; transform: none; }
-}
-
-@keyframes heroSmall {
-  0%   { opacity: 0; transform: translateY(.5rem); }
-  100% { opacity: 1; transform: none; }
 }
