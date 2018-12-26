@@ -1,6 +1,6 @@
 ---
 title: 'Reading Tip‌‌‌‌ #1'
-description: 'I have now learned that there exists a worldview in which all of these statements are consistent.'
+description: 'Tips #2 and #3 are also good.'
 date: '2018-05-29'
 tags: ['Reading', 'Quotes']
 ---
