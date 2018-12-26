@@ -3,11 +3,17 @@ const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage, createRedirect } = actions
+
+  createRedirect({
+    fromPath: `/`,
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: `/blog/`,
+  })
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
@@ -29,7 +35,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        // Create blog-list pages
+        // Create pages for blog posts
         const posts = result.data.allMarkdownRemark.edges
         const postsPerPage = 7
         const numPages = Math.ceil(posts.length / postsPerPage)
@@ -46,7 +52,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           })
         })
 
-        // Create blog posts pages.
+        // Create blog posts pages
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
             path: edge.node.fields.slug,
