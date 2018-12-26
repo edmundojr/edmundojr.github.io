@@ -18,6 +18,7 @@
     "gatsby-remark-copy-linked-files": "next",
     "gatsby-remark-images": "next",
     "gatsby-remark-prismjs": "next",
+    "gatsby-remark-unwrap-images": "^1.0.1",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",

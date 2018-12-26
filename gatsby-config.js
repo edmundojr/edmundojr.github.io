@@ -18,19 +18,21 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-unwrap-images',
           {
             resolve: `gatsby-remark-images`,
             options: {
-              backgroundColor: '#16161d',
+              backgroundColor: '#101010',
               linkImagesToOriginal: false,
-              maxWidth: 800,
+              maxWidth: 1200,
               quality: 100,
               showCaptions: true,
               withWebp: true,
+              wrapperStyle: `margin-bottom: 1rem`
             },
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
+          }
         ],
       },
     },
@@ -55,7 +57,6 @@ module.exports = {
       options: {
         developerKey: `k3utR8gOzC6HeUkbxbXg`,
         goodReadsUserId: `35088315`,
-        // userShelf: "to-read" //optional
       },
     },
   ],
