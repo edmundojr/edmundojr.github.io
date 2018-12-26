@@ -29,11 +29,28 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
+        // Create blog-list pages
+        const posts = result.data.allMarkdownRemark.edges
+        const postsPerPage = 7
+        const numPages = Math.ceil(posts.length / postsPerPage)
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
+            component: path.resolve('./src/templates/blog.js'),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages: numPages,
+              currentPage: i + 1,
+            },
+          })
+        })
+
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
             path: edge.node.fields.slug,
-            component: blogPost,
+            component: path.resolve('./src/templates/post.js'),
             context: {
               slug: edge.node.fields.slug,
             },
@@ -44,9 +61,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
-
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
