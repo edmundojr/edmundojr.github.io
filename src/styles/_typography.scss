@@ -8,6 +8,12 @@ html {
   }
 }
 
+// Selection color
+
+::selection {
+  background-color: black;
+}
+
 // Improve type rendering
 
 body {
@@ -29,7 +35,7 @@ blockquote {
   // Quotation mark
 
   &::before {
-    content: "“";
+    content: '“';
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +44,7 @@ blockquote {
     line-height: 2.5rem;
     color: $headings-color;
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 
@@ -51,50 +57,81 @@ q {
 // Code
 
 code {
-  padding: .1em .25em;
+  padding: 0.1em 0.25em;
   font-size: 85%;
   color: $headings-color;
-  background: rgba(white, .1);
+  background: rgba(white, 0.1);
   border-radius: $border-radius;
 }
 
 // Headings
 
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -.05em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.05em;
 }
 
 // Smaller heading sizes on small screens
 
 @include media-breakpoint-down(md) {
-  h1 { font-size: $font-size-base * 2.222222222; }
-  h2 { font-size: $font-size-base * 1.666666667; }
-  h3 { font-size: $font-size-base * 1.444444444; }
-  h4 { font-size: $font-size-base * 1.222222222; }
-  h5 { font-size: $font-size-base * 1; }
-  h6 { font-size: $font-size-base * .888888889; }
+  h1 {
+    font-size: $font-size-base * 2.222222222;
+  }
+  h2 {
+    font-size: $font-size-base * 1.666666667;
+  }
+  h3 {
+    font-size: $font-size-base * 1.444444444;
+  }
+  h4 {
+    font-size: $font-size-base * 1.222222222;
+  }
+  h5 {
+    font-size: $font-size-base * 1;
+  }
+  h6 {
+    font-size: $font-size-base * 0.888888889;
+  }
 }
 
 // Add color transition to links
 
 a {
-  transition: color .3s $ease-in-out-quart, border .2s $ease-in-out-quart;
+  transition: color 0.3s $ease-in-out-quart, border 0.2s $ease-in-out-quart;
 }
 
-ul, ol, p, blockquote, q {
+ul,
+ol,
+p,
+blockquote,
+q {
   a {
     border-bottom: 2px solid rgba($link-color, 0);
 
     &:hover,
     &:focus {
-      border-bottom: 2px solid rgba($link-color, .5);
+      border-bottom: 2px solid rgba($link-color, 0.5);
     }
-
   }
+}
+
+.gatsby-resp-image-wrapper {
+  width: 100%;
+  max-width: 100ch !important;
 }
 
 // Font size utility classes
 
-.font-size-base { font-size: $font-size-base; }
-.font-size-lg { font-size: $font-size-lg; }
-.font-size-sm { font-size: $font-size-sm; }
+.font-size-base {
+  font-size: $font-size-base;
+}
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+.font-size-sm {
+  font-size: $font-size-sm;
+}
