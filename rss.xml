@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 22 Dec 2018 09:20:04 GMT</lastBuildDate><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
-&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 03:43:36 GMT</lastBuildDate><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
+
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -10,39 +10,37 @@
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-f456c.webp 200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-8fbba.webp 400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-e5f9a.webp 800w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-0b9d6.webp 1200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-1f0e4.webp 1600w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-10b3d.webp 2400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-68b87.webp 3024w&quot;
-          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-70e50.webp 300w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-9bb89.webp 600w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-fbc65.webp 1200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-4601e.webp 1800w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-dbdd7.webp 2400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-d6333.webp 3024w&quot;
+          sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-d8bc6.jpg 200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-eeb2d.jpg 400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-82ed7.jpg 800w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-822ef.jpg 1200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7ffb.jpg 1600w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-ecd68.jpg 2400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-1070a.jpg 3024w&quot;
-          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-4e6ad.jpg 300w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-2c28a.jpg 600w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg 1200w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-a472b.jpg 1800w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-2da82.jpg 2400w,
+/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-e8d2b.jpg 3024w&quot;
+          sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #16161d;&quot;
-          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-82ed7.jpg&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
+          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg&quot;
           alt=&quot;Spock: It&apos;s only logical&quot;
           title=&quot;&quot;
-          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-82ed7.jpg&quot;
+          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
   &lt;/span&gt;
-  &lt;/p&gt;
+  
 &lt;p&gt;After doing some research on different models I picked a &lt;strong&gt;Xiaomi Mi Mix 2S&lt;/strong&gt;. The built quality of this phone is outstanding, it supports wireless charging, has 6GB of RAM, Snapdragon 845, and most importantly: it has no notch.&lt;/p&gt;
 &lt;p&gt;There &lt;em&gt;is&lt;/em&gt; a problem though: it comes with that horrible MIUI. What I don&apos;t get it, is why would they ruin such a good piece of hardware? The whole &lt;em&gt;Android-trying-to-be-iOS&lt;/em&gt; thing really doesn&apos;t work IMHO… so inspired by Linus’ video on &lt;a href=&quot;https://www.youtube.com/watch?v=BsHtfLh6azw&quot;&gt;how to turn the Pocophone into a Pixel&lt;/a&gt; I deviced to do the same with the Mi Mix 2S.&lt;/p&gt;
 &lt;p&gt;For this guide you will need:&lt;/p&gt;
@@ -69,10 +67,10 @@
 &lt;p&gt;After some testing, I found out that the apps ones ported by &lt;a href=&quot;https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/&quot;&gt;BSG&lt;/a&gt; perform great with the Pixel Experience ROM, specifically the &lt;code class=&quot;language-text&quot;&gt;MGC_6.1.021_MI8_Vc&lt;/code&gt; apk.&lt;/p&gt;
 &lt;p&gt;The image quality is way better than the one you get with the original camera app. It comes out-of-the-box with Portrait Mode, Google Lens, and Night Sight. See the Spock photo above? Shot with Mi Mix 2S on Portrair mode 🤳&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Hope you enjoy this guide! Truth be told, the main reason I&apos;m posting this here is for &lt;em&gt;Future Ed’s&lt;/em&gt; benefit, in case he needs to do it again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Hope you enjoy this guide! Truth be told, the main reason I&apos;m posting this here is for &lt;em&gt;Future Ed’s&lt;/em&gt; benefit, in case he needs to do it again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -80,50 +78,48 @@
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-977d4.webp 200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-36cac.webp 400w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-324b3.webp 800w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-a893f.webp 1200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-de26b.webp 1600w&quot;
-          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-c02da.webp 300w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-2ee1d.webp 600w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-50c96.webp 1200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4eaeb.webp 1600w&quot;
+          sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-b7d36.png 200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-36b20.png 400w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png 800w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-c978c.png 1200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4e4d5.png 1600w&quot;
-          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-d99cc.png 300w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-26c40.png 600w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png 1200w,
+/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-f7375.png 1600w&quot;
+          sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #16161d;&quot;
-          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
+          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png&quot;
           alt=&quot;Coding Design&quot;
           title=&quot;&quot;
-          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-ce308.png&quot;
+          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
   &lt;/span&gt;
-  &lt;/p&gt;
+  
 &lt;p&gt;More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Code shouldn&apos;t hurt your creativity. &lt;strong&gt;It should enhance it.&lt;/strong&gt;&lt;/p&gt;
-&lt;footer&gt;— Benjamin De Cock, on &lt;a href=&quot;https://www.youtube.com/watch?v=J6wUmQDQBkw&quot;&gt;Let’s Move&lt;/a&gt;&lt;/footer&gt;
+&lt;p&gt;— Benjamin De Cock, on &lt;a href=&quot;https://www.youtube.com/watch?v=J6wUmQDQBkw&quot;&gt;Let’s Move&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Knowing how to code allows you to make smarter decisions as a designer, it will help you to bring additional value to your work and projects. You don’t necessarily need to write production-ready code, but you should at least know about it as you will gain an understanding of the challenges an engineer faces.&lt;/p&gt;
 &lt;p&gt;Now… should engineers design? Isn’t the opposite true? I’d say maybe not designing screens &lt;em&gt;per se&lt;/em&gt;, but they should definitely be part of feedback calls with customers. Listening to those calls help us better understand how the user feels about the product, what are their pain points, and what are the bits they love, so everyone benefits.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;I’d say 25% of the real design work happens after a designer hands off their designs. That’s when engineers start pressure testing your designs, and they’ll find new constraints and edge cases you never expected.&lt;/p&gt;
-&lt;footer&gt;— John Saito, on &lt;a href=&quot;https://medium.com/dropbox-design/how-to-stay-scrappy-9c42af21c996&quot;&gt;How to stay scrappy&lt;/a&gt;&lt;/footer&gt;
+&lt;p&gt;— John Saito, on &lt;a href=&quot;https://medium.com/dropbox-design/how-to-stay-scrappy-9c42af21c996&quot;&gt;How to stay scrappy&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;So my advice to you, fellow designer, is to learn how to code. Think of coding as another tool in your design tool belt. Start small with HTML and CSS, throw something together in the browser to quickly test an idea or model an aspect of how the interface should behave. Then take up a notch with JavaScript and you will be surprised at what you can achieve. Even if your code doesn’t get shipped, think of it as a communication tool, hand it to engineers to demonstrate how the interface should function — it will always be better than still images.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;We spend hours designing for a medium that’s interactive and responsive, but we start by producing mockups that are static and inflexible. If great design is not only aesthetics but also how it works, then it’s time to make development part of the creative process.&lt;/p&gt;
-&lt;footer&gt;— Jeremy Bell, on &lt;a href=&quot;https://www.teehanlax.com/blog/designing-with-code/&quot;&gt;Designing with Code&lt;/a&gt;&lt;/footer&gt;
+&lt;p&gt;— Jeremy Bell, on &lt;a href=&quot;https://www.teehanlax.com/blog/designing-with-code/&quot;&gt;Designing with Code&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;So that’s my take on the “should designers code” debate. In the end, it&apos;s not about your job title, but about your responsabilities. Remember, code is just another tool, and if it help you delivery better results, why not use it?&lt;/p&gt;
 &lt;p&gt;If you have any thoughts you want to share, feel free to &lt;a href=&quot;https://twitter.com/edmundojr_&quot;&gt;drop me a tweet&lt;/a&gt;.&lt;/p&gt;
@@ -157,7 +153,7 @@
 &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
   &lt;iframe class=&quot;embed-responsive-item&quot; height=&quot;310&quot; scrolling=&quot;no&quot; title=&quot;CSS 3D transform Colorful Animated Carousel&quot; src=&quot;//codepen.io/edmundojr/embed/qdLWWx/?height=383&amp;theme-id=33557&amp;default-tab=result&amp;embed-version=2&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;p&gt;If you toggle the animation (go on, I wait), you&apos;ll see how much nicer it is to understand the relationship between the  elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊&lt;/p&gt;
+&lt;p&gt;If you toggle the animation (go on, I wait), you&apos;ll see how much nicer it is to understand the relationship between the elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊&lt;/p&gt;
 &lt;h2&gt;What makes a good animation&lt;/h2&gt;
 &lt;p&gt;So we know we should animate, but what makes for a good animation? What should we focus on?&lt;/p&gt;
 &lt;p&gt;First of all, you should animate exclusively using &lt;code class=&quot;language-text&quot;&gt;opacity&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;transform&lt;/code&gt; properties, anything else will trigger a browser layout or paint, which are expensive operations. That&apos;s the only way to keep your animations running at a smooth 60fps rate.&lt;/p&gt;
