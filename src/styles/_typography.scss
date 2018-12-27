@@ -11,7 +11,8 @@ html {
 // Selection color
 
 ::selection {
-  background-color: black;
+  color: currentColor;
+  background-color: rgba(white, .25);
 }
 
 // Improve type rendering

@@ -18,8 +18,8 @@ export default class Blog extends React.Component {
       <Layout>
         <Helmet title={pageTitle + ' × Articles'} />
         <Hero
-          title={'Edmundo Santos'}
-          description={'User Interface Designer'}
+          title="Exploring ideas around design, code, and technology."
+          description="And some other random shit!"
         />
         <main className={'blog-grid blog-grid--layout-1'}>
           {posts.map(({ node }, i) => {
@@ -28,22 +28,23 @@ export default class Blog extends React.Component {
               fields: { slug },
             } = node
             return (
-              <Link key={slug} to={slug} className={'post-card grid-item'}>
-                <h1 className={'post-card-title'}>{title}</h1>
-                <time className={'post-card-date'}>{date}</time>
-                <p className={'post-card-description'}>{description}</p>
+              <Link key={slug} to={slug} className="post-card grid-item">
+                <h1 className="post-card-title">{title}</h1>
+                <time className="post-card-date">{date}</time>
+                <p className="post-card-description">{description}</p>
+                <small className="post-card-read">Read more ›</small>
               </Link>
             )
           })}
         </main>
         <div className="pagination text-center">
           {!isFirst && (
-            <Link to={prevPage} rel="prev">
+            <Link to={prevPage} rel="prev" aria-label="Previous page">
               ←
             </Link>
           )}
           {!isLast && (
-            <Link to={nextPage} rel="next">
+            <Link to={nextPage} rel="next" aria-label="Next page">
               →
             </Link>
           )}
