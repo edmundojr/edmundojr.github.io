@@ -1,4 +1,5 @@
 .hero {
+  height: 70vh;
   min-height: 16rem;
   align-items: center;
   text-align: center;
@@ -6,5 +7,18 @@
   &-content {
     grid-column: 2;
     animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
+  }
+
+  &-title {
+    margin-bottom: .25rem;
+    font-size: 3.6rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &-description {
+    opacity: .6;
   }
 }

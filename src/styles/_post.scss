@@ -1,16 +1,30 @@
-// Post Cards (blog list)
+// Post cards (blog list)
 
 .post-card {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--grid-padding) var(--grid-padding) calc(var(--grid-padding) * 2);
   color: currentColor;
+  border-radius: 4px;
+  transition-property: color, background, box-shadow, transform;
+  transition-duration: 600ms;
+  transition-timing-function: $ease-out-expo;
 
   @for $i from 1 to 8 {
     &:nth-child(#{$i}) {
       color: var(--card-color-#{$i});
       background-color: var(--card-bg-#{$i});
 
-      &:hover {
+      .post-card-read {
         color: var(--card-color-#{$i});
+      }
+
+      &:hover {
+        color: $body-bg;
+        background: white;
+        box-shadow: inset 0 -.5rem 0 var(--card-bg-#{$i});
+        transform: translateY(-.1rem);
       }
     }
   }
@@ -24,7 +38,7 @@
 
   &-date {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     font-size: var(--font-size-xs);
     opacity: 0.6;
   }
@@ -32,6 +46,23 @@
   &-description {
     font-size: var(--font-size-sm);
     line-height: 1.4;
+  }
+
+  &-read {
+    position: absolute;
+    bottom: var(--grid-padding);
+    margin-top: auto;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateY(.5rem);
+    transition: all 300ms;
+  }
+
+  &:hover {
+    .post-card-read {
+      transform: none;
+      opacity: .8;
+    }
   }
 }
 
@@ -42,7 +73,7 @@
     grid-column: 2;
     grid-row: 1;
     align-self: flex-end;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
   }
 
