@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { graphql, Link } from 'gatsby'
 
-import { Hero, Layout } from '../components'
+import { Layout } from '../components'
 
 const BlogPostTemplate = props => {
   const siteTitle = get(props, 'data.site.siteMetadata.title')
@@ -15,7 +15,7 @@ const BlogPostTemplate = props => {
     <Layout>
       <Helmet title={`${title} × ${siteTitle}`} />
       <main>
-        <Link className={'btn-back'} to={'/blog/'} aria-label={'Back to home'}>←</Link>
+        <Link className={'back-button'} to={'/blog/'} aria-label={'Back to home'}>←</Link>
         <article className={'post container-grid'}>
           <header className={'post-header'}>
             <h1 className={'post-title'}>{title}</h1>

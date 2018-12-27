@@ -15,14 +15,14 @@
     display: block;
     fill: currentColor;
     transition: all 0.3s $ease-in-out-quart;
-    filter: drop-shadow(0 0 1rem $body-bg);
+    filter: drop-shadow(0 0 1rem rgba($body-bg, .5));
   }
 }
 
 // Logo
 
 .logo {
-  padding: 1.5rem;
+  padding: 0.75rem var(--grid-gap);
   color: currentColor;
 
   &:hover {
@@ -33,41 +33,52 @@
 // Nav
 
 .nav {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem var(--grid-gap);
 
   &__item {
     padding: 0.75rem 0.5rem;
     color: currentColor;
-    filter: drop-shadow(0 0 1rem $body-bg);
+    filter: drop-shadow(0 0 1rem rgba($body-bg, .5));
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
-.btn-back {
+.back-button {
   position: fixed;
-  top: .75rem;
+  top: 1rem;
   left: 50%;
   z-index: $zindex-modal;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.25rem;
   text-align: center;
   color: white;
   background: $body-bg;
   border-radius: 50%;
-  opacity: .95;
-  box-shadow: 0 0 2rem rgba($body-bg, .5);
+  opacity: 0.95;
+  box-shadow: 0 0 2rem rgba($body-bg, 0.5), 0 0 0 .2rem rgba(white, 0);
   transform: translateX(-50%);
-  animation: dropDown 600ms 200ms backwards $ease-out-expo;
+  transition: box-shadow 300ms $ease-out-expo;
+  animation: dropDown 600ms 300ms backwards $ease-out-expo;
+
+  &:hover {
+    color: currentColor;
+    box-shadow: 0 0 2rem rgba($body-bg, 0.5), 0 0 0 1px rgba(white, .1);
+  }
 }
 
 @keyframes dropDown {
   0% {
     opacity: 0;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%, -100%);
   }
   100% {
-    opacity: .8;
-    transform: translate(-50%,0);
+    opacity: 0.8;
+    transform: translate(-50%, 0);
   }
 }
