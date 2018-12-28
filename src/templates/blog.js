@@ -19,7 +19,7 @@ export default class Blog extends React.Component {
         <Helmet title={pageTitle + ' × Articles'} />
         <Hero
           title="Exploring ideas around design, code, and technology."
-          description="And some other random shit!"
+          description="+ some other random shit."
         />
         <main className={'blog-grid blog-grid--layout-1'}>
           {posts.map(({ node }, i) => {

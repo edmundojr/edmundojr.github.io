@@ -1,7 +1,8 @@
 .hero {
-  height: 70vh;
-  min-height: 16rem;
   align-items: center;
+  height: 70vh;
+  min-height: 20rem;
+  padding-top: 2rem;
   text-align: center;
 
   &-content {
