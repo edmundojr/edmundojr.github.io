@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
-import { Header } from '../components'
+import { Header, Footer } from '../components'
 
 import '../styles/main.scss'
 
@@ -51,6 +51,7 @@ export class Layout extends React.Component {
         </Helmet>
         <Header />
         {children}
+        <Footer />
       </>
     )
   }
