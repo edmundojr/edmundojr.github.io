@@ -13,16 +13,28 @@
 
   body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font: 1.25rem/1.5 "Helvetica Neue", sans-serif;
+    color: white;
+    background: black;
+  }
+
+  a {
+    margin: .5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,.2);
+    border-radius: 4px;
   }
   </style>
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
   
-  <a href="itms-services://?action=download-manifest&amp;url=https://edmundojr.com/app/install/app.plist">Install Poppulo App</a>
+  <a href="itms-services://?action=download-manifest&amp;url=https://edmundojr.com/app/install/release.plist">Install Poppulo (adhoc sigining)</a>
+  <a href="itms-services://?action=download-manifest&amp;url=https://edmundojr.com/app/install/debug.plist">Install Poppulo (appstore signing)</a>
 
 </body>
 </html>
