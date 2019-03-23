@@ -6,8 +6,8 @@
   "license": "CC-BY-4.0",
   "dependencies": {
     "@halkeye/gatsby-source-goodreads": "^0.0.6",
-    "autoprefixer": "^9.4.3",
-    "bootstrap": "^4.2.1",
+    "autoprefixer": "^9.5.0",
+    "bootstrap": "^4.3.1",
     "gatsby": "next",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
@@ -25,16 +25,16 @@
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "prismjs": "^1.15.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.15.3",
-    "stylelint": "^9.9.0",
+    "prettier": "^1.16.4",
+    "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
   },
   "keywords": [
