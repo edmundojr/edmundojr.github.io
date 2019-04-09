@@ -20,7 +20,7 @@ export default class LibraryIndex extends React.Component {
         <main className={'container-fluid'}>
           <div className={'reading'}>
             {books.map(({ node }) => {
-              return <Book props={node} />
+              return <Book props={node} key={node.book.bookID} />
             })}
           </div>
         </main>
@@ -31,9 +31,9 @@ export default class LibraryIndex extends React.Component {
 
 const Book = ({ props }) => {
   const { shelfNames } = props
-  const { bookID, titleWithoutSeries, imageUrl, authors } = props.book
+  const { titleWithoutSeries, imageUrl, authors } = props.book
   return (
-    <div key={bookID} className={'book' + ' book-' + shelfNames}>
+    <div className={'book' + ' book-' + shelfNames}>
       <img
         src={imageUrl}
         className={'book-cover img-fluid'}
