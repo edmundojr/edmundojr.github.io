@@ -2,17 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 export const Header = () => (
-  <header
-    className="header d-flex align-items-center justify-content-between"
-    role="banner"
-  >
-    <Logo />
-    <nav className="nav d-flex align-items-center mt-auto" role="navigation">
-      <Dribbble />
-      <Instagram />
-      <GitHub />
-      <Twitter />
-    </nav>
+  <header className="header" role="banner">
+    <div className="container-fluid d-flex align-items-center justify-content-between">
+      <Logo />
+      <nav className="nav d-flex align-items-center mt-auto" role="navigation">
+        <Dribbble />
+        <Instagram />
+        <GitHub />
+        <Twitter />
+      </nav>
+    </div>
   </header>
 )
 
