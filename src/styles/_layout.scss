@@ -34,7 +34,7 @@
   display: grid;
   grid-gap: var(--grid-gap);
   grid-template-columns: repeat(10, calc(10% - var(--grid-gap)));
-  grid-template-rows: repeat(10, calc(var(--grid-height) / (10 - var(--grid-gap))));
+  grid-template-rows: repeat(10, calc(var(--grid-height) / 10 - var(--grid-gap)));
   align-items: stretch;
   justify-content: center;
   max-width: var(--grid-width);
