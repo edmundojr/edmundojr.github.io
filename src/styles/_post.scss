@@ -20,7 +20,8 @@
         color: var(--card-color-#{$i});
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $body-bg;
         background: white;
         box-shadow: inset 0 -.5rem 0 var(--card-bg-#{$i});
@@ -59,7 +60,8 @@
     transition: all 300ms;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     .post-card-description {
       opacity: 0;
       transform: translateY(-.25rem);
@@ -76,11 +78,17 @@
   grid-template-rows: 16rem;
 
   &-header {
+    z-index: $zindex-modal;
     grid-column: 2;
     grid-row: 1;
     align-self: flex-end;
-    padding: 2rem 0;
+    padding: 1.75rem 0 2rem;
     animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
+
+    @media (min-width: 990px) {
+      position: sticky;
+      top: 0;
+    }
   }
 
   &-title {
