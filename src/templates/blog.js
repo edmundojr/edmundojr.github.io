@@ -37,15 +37,15 @@ export default class Blog extends React.Component {
             )
           })}
         </main>
-        <div className="pagination text-center">
+        <div className="pagination text-center h2 font-weight-bolder mt-6">
           {!isFirst && (
             <Link to={prevPage} rel="prev" aria-label="Previous page">
-              ←
+              ← Prev
             </Link>
           )}
           {!isLast && (
             <Link to={nextPage} rel="next" aria-label="Next page">
-              →
+              Next →
             </Link>
           )}
         </div>
