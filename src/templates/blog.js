@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import { get } from 'lodash'
 
-import { Layout, Hero } from '../components'
+import { Layout, Hero, PostCard } from '../components'
 
 export default class Blog extends React.Component {
   render() {
@@ -18,22 +18,23 @@ export default class Blog extends React.Component {
       <Layout>
         <Helmet title={pageTitle + ' × Articles'} />
         <Hero
-          title="Exploring ideas around design, code, and technology."
-          description="+ some other random shit."
+          title={"Exploring ideas around design, code, and technology."}
+          description={"+ some random stuff."}
         />
         <main className={'blog-grid blog-grid--layout-1'}>
-          {posts.map(({ node }, i) => {
+          {posts.map(({ node, index }, i) => {
             const {
               frontmatter: { title, description, date },
               fields: { slug },
             } = node
             return (
-              <Link key={slug} to={slug} className="post-card grid-item">
-                <h1 className="post-card-title">{title}</h1>
-                <time className="post-card-date">{date}</time>
-                <p className="post-card-description">{description}</p>
-                <small className="post-card-read">Read more ›</small>
-              </Link>
+              <PostCard
+                key={date + index}
+                slug={slug}
+                title={title}
+                description={description}
+                date={date}
+              />
             )
           })}
         </main>
