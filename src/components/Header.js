@@ -6,10 +6,10 @@ export const Header = () => (
     <div className="container-fluid d-flex align-items-center justify-content-between">
       <Logo />
       <nav className="nav d-flex align-items-center mt-auto" role="navigation">
-        <Dribbble />
-        <Instagram />
-        <GitHub />
-        <Twitter />
+        <Dribbble link={"https://dribbble.com/edmundojr"} />
+        <Instagram link={"https://instagram.com/manfromanotherland"} />
+        <GitHub link={"https://github.com/edmundojr"} />
+        <Twitter link={"https://twitter.com/edmundojr_"} />
       </nav>
     </div>
   </header>
@@ -25,10 +25,10 @@ const Logo = () => (
   </Link>
 )
 
-const Dribbble = () => (
+const Dribbble = ({link}) => (
   <a
     className="nav__item d-inline-flex justify-content-center"
-    href="https://dribbble.com/edmundojr"
+    href={link}
   >
     <span className="sr-only">Dribbble</span>
     <svg width="24" height="24">
@@ -38,10 +38,10 @@ const Dribbble = () => (
   </a>
 )
 
-const Instagram = () => (
+const Instagram = ({link}) => (
   <a
     className="nav__item d-inline-flex justify-content-center"
-    href="https://instagram.com/manfromanotherland"
+    href={link}
   >
     <span className="sr-only">Instagram</span>
     <svg width="24" height="24">
@@ -51,10 +51,10 @@ const Instagram = () => (
   </a>
 )
 
-const GitHub = () => (
+const GitHub = ({link}) => (
   <a
     className="nav__item d-inline-flex justify-content-center"
-    href="https://github.com/edmundojr"
+    href={link}
   >
     <span className="sr-only">GitHub</span>
     <svg width="24" height="24">
@@ -64,10 +64,10 @@ const GitHub = () => (
   </a>
 )
 
-const Twitter = () => (
+const Twitter = ({link}) => (
   <a
     className="nav__item d-inline-flex justify-content-center"
-    href="https://twitter.com/edmundojr_"
+    href={link}
   >
     <span className="sr-only">Twitter</span>
     <svg width="24" height="24">
