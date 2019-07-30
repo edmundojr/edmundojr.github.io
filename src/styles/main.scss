@@ -14,3 +14,21 @@
 @import 'hero';
 @import 'post';
 @import 'reading';
+
+.wave {
+  display: inline-block;
+  transform-origin: bottom right;
+  transform: rotate(0);
+  animation: wave .3s 5 ease-in-out alternate backwards;
+}
+
+.flip {
+  display: inline-block;
+  margin: 0 1rem;
+  transform: scaleX(-1);
+}
+
+@keyframes wave {
+  0% { transform: rotate(30deg); }
+  100% { transform: rotate(0); }
+}
