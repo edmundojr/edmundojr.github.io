@@ -29,7 +29,12 @@
 
 .logo {
   padding: 1.5rem var(--grid-gap);
+  margin: 0 calc(var(--grid-gap) * -1);
   color: currentColor;
+
+  @include media-breakpoint-down(md) {
+    padding: .75rem var(--grid-gap);
+  }
 
   &:hover,
   &:focus {
@@ -40,15 +45,19 @@
 // Nav
 
 .nav {
-  padding: 1.5rem var(--grid-gap);
+  padding: 1.5rem 0;
+
+  @include media-breakpoint-down(md) {
+    padding: .75rem 0;
+  }
 
   &__item {
-    padding: 0.75rem 0.5rem;
+    padding: .75rem .5rem;
     color: currentColor;
     filter: drop-shadow(0 0 1rem rgba($body-bg, .5));
 
     &:last-child {
-      margin-right: -0.5rem;
+      margin-right: -.5rem;
     }
   }
 }

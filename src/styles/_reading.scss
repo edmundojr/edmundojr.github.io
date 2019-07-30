@@ -2,7 +2,7 @@
   display: grid;
   margin: 4rem 0;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 2rem;
+  grid-gap: var(--grid-gap);
 
   @include media-breakpoint-down(lg) {
     grid-template-columns: repeat(5, 1fr);

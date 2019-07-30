@@ -76,6 +76,7 @@
 
 .post {
   grid-template-rows: 16rem;
+  perspective: 1000px;
 
   &-header {
     z-index: $zindex-modal;
@@ -83,7 +84,7 @@
     grid-row: 1;
     align-self: flex-end;
     padding: 1.75rem 0 2rem;
-    animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
+    animation: loadPost 600ms 100ms backwards $ease-out-expo;
 
     @media (min-width: 990px) {
       position: sticky;
@@ -117,7 +118,7 @@
     grid-column: 1 / 4;
     grid-row: 2;
     transform-origin: top center;
-    animation: gridAnimation 600ms 100ms backwards $ease-out-expo;
+    animation: loadPost 600ms 150ms backwards $ease-out-expo;
 
     h1,
     h2,
@@ -137,5 +138,16 @@
     .gatsby-resp-image-wrapper {
       grid-column: 1 / 4;
     }
+  }
+}
+
+@keyframes loadPost {
+  0% {
+    opacity: 0;
+    transform: scale(.95) translateY(100px) rotateX(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
