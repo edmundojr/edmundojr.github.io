@@ -8,7 +8,7 @@
   z-index: $zindex-modal;
   padding-bottom: 3rem;
   color: $white;
-  background-image: linear-gradient($body-bg 1rem, rgba($body-bg, .9) 50%, rgba($body-bg, 0) 100%);
+  background-image: linear-gradient(rgba($body-bg, .75) 0%, rgba($body-bg, 0) 100%);
   pointer-events: none;
 
   > * {
