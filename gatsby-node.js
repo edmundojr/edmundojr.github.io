@@ -1,5 +1,4 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
+const each = require('lodash/each')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -53,7 +52,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         // Create blog posts pages
-        _.each(result.data.allMarkdownRemark.edges, edge => {
+        each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
             path: edge.node.fields.slug,
             component: path.resolve('./src/templates/post.js'),
