@@ -1,11 +1,7 @@
 import { Link } from 'gatsby'
-import React, { useEffect } from 'react'
+import React from 'react'
 
-export const PostCard = ({slug, title, date, description}) => {
-  useEffect(() => {
-    console.log("useEffect works!");
-  }, []);
-
+export const PostCard = React.memo(({slug, title, date, description}) => {
   return (
     <Link to={slug} className="post-card grid-item">
       <h1 className="post-card-title">{title}</h1>
@@ -14,4 +10,4 @@ export const PostCard = ({slug, title, date, description}) => {
       <small className="post-card-read">Read more ›</small>
     </Link>
   )
-}
+});
