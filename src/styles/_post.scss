@@ -76,7 +76,6 @@
 
 .post {
   grid-template-rows: 16rem;
-  perspective: 1000px;
 
   &-header {
     z-index: $zindex-modal;
