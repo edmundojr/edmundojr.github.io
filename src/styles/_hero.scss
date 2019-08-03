@@ -1,9 +1,23 @@
 .hero {
   align-items: center;
   height: 70vh;
+  max-height: 30rem;
   min-height: 20rem;
   padding-top: 2rem;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(rgba(255,255,255,.0) 0%, rgba(255,255,255,.015) 100%);
+    transform: skewY(-13deg);
+    pointer-events: none;
+  }
 
   &-content {
     grid-column: 2;

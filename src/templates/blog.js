@@ -18,8 +18,8 @@ export default class Blog extends React.Component {
       <Layout>
         <Helmet title={pageTitle + ' × Articles'} />
         <Hero
-          title={"Exploring ideas around design, code, and technology."}
-          description={"+ some random stuff."}
+          title={"Exploring ideas about design, code, and technology."}
+          description={"+ some other random stuff."}
         />
         <main className={'blog-grid blog-grid--layout-1'}>
           {posts.map(({ node, index }, i) => {
@@ -38,7 +38,7 @@ export default class Blog extends React.Component {
             )
           })}
         </main>
-        <div className="pagination text-center h2 font-weight-bolder mt-6">
+        <div className="pagination text-center h2 font-weight-bolder">
           {!isFirst && (
             <Link to={prevPage} rel="prev" aria-label="Previous page">
               ← Prev
