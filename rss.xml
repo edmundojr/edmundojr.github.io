@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 31 Jul 2019 00:01:55 GMT</lastBuildDate><item><title><![CDATA[Sketch Libraries: UX Cork Meetup]]></title><description><![CDATA[Last week I gave a talk (my first!) at the  UX Cork  meetup group. Although I was a bit nervous about doing the talk at first, it all went…]]></description><link>https://edmundojr.com//blog/sketch-libraries/</link><guid isPermaLink="false">https://edmundojr.com//blog/sketch-libraries/</guid><pubDate>Sat, 23 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week I gave a talk (my first!) at the &lt;a href=&quot;https://www.meetup.com/UX-Cork/&quot;&gt;UX Cork&lt;/a&gt; meetup group. Although I was a bit nervous about doing the talk at first, it all went okay – I think!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 03 Aug 2019 22:16:12 GMT</lastBuildDate><item><title><![CDATA[Sketch Libraries: UX Cork Meetup]]></title><description><![CDATA[Last week I gave a talk (my first!) at the  UX Cork  meetup group. Although I was a bit nervous about doing the talk at first, it all went…]]></description><link>https://edmundojr.com//blog/sketch-libraries/</link><guid isPermaLink="false">https://edmundojr.com//blog/sketch-libraries/</guid><pubDate>Sat, 23 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week I gave a talk (my first!) at the &lt;a href=&quot;https://www.meetup.com/UX-Cork/&quot;&gt;UX Cork&lt;/a&gt; meetup group. Although I was a bit nervous about doing the talk at first, it all went okay – I think!&lt;/p&gt;
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1080px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 74.9074074074074%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeauXJCA4//EABkQAQEAAwEAAAAAAAAAAAAAAAECAAMRIf/aAAgBAQABBQLqrzIqgc2Pk7Lk/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAIS/9oACAEDAQE/AWJf/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/Aauv/8QAHxAAAQMDBQAAAAAAAAAAAAAAAQACERAhURIiYXGC/9oACAEBAAY/AtRvGaWYD5U5Qk8ra9w6K//EABsQAAICAwEAAAAAAAAAAAAAAAERACExQVGB/9oACAEBAAE/IQph7axKKGohjXktMO3YEKgxBGuzEwDxE//aAAwDAQACAAMAAAAQH+//xAAXEQEBAQEAAAAAAAAAAAAAAAABACER/9oACAEDAQE/EA3ZZ6l//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAExQVH/2gAIAQIBAT8QcGrMD//EAB0QAQEAAgMAAwAAAAAAAAAAAAERACExQXFRgZH/2gAIAQEAAT8QTxAbVh0nfJ+ZoiPGvTapOvcSFy5m+4EFhUCBvjGkXsgUt7+NZsUNpF+s/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-d9537.webp 300w,
+/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-e3bfd.webp 600w,
+/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-a8775.webp 1080w&quot;
+          sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-84b99.jpg 300w,
+/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-489cf.jpg 600w,
+/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg 1080w&quot;
+          sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
+          src=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg&quot;
+          alt=&quot;Me reading from my notes&quot;
+          title=&quot;&quot;
+          src=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  
+&lt;p&gt;&lt;small&gt;&lt;i&gt;Me reading from my notes – thanks for the pic, &lt;a href=&quot;https://www.instagram.com/arlene_angela_/&quot;&gt;Arlo&lt;/a&gt;!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;The talk was focused on Sketch Libraries, and how can help you improve your design workflow and collaboration with other designers.&lt;/p&gt;
 &lt;p&gt;You can &lt;a href=&quot;https://cloudup.com/ckuvbdbBBCT&quot;&gt;download the slides&lt;/a&gt; for the talk if you want. Hope it helps! 😊&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
 
