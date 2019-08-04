@@ -16,7 +16,7 @@ const BlogPostTemplate = props => {
       <Helmet title={`${title} × ${siteTitle}`} />
       <main>
         <article className={'post container-grid'}>
-          <header className={'post-header'}>
+          <header className={'post-header container-grid'}>
             <Link className={'back-button'} to={'/blog/'} aria-label={'Back to home'}>←</Link>
             <h1 className={'post-title'}>{title}</h1>
             <time className={'post-date'}>{date}</time>
@@ -53,7 +53,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "dddd, MMMM DD, YYYY")
         tags
       }
     }
