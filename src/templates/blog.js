@@ -14,6 +14,7 @@ export default class Blog extends React.Component {
     const nextPage = '/blog/' + (page + 1).toString()
     const isFirst = page === 1
     const isLast = page === numPages
+    const blogLayout = 'blog-grid--layout-' + page.toString();
     return (
       <Layout>
         <Helmet title={pageTitle + ' × Articles'} />
@@ -21,7 +22,7 @@ export default class Blog extends React.Component {
           title={"Exploring ideas about design, code, and technology."}
           description={"+ some other random stuff."}
         />
-        <main className={'blog-grid blog-grid--layout-1'}>
+        <main className={'blog-grid ' + blogLayout}>
           {posts.map(({ node, index }, i) => {
             const {
               frontmatter: { title, description, date },
