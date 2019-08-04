@@ -74,34 +74,34 @@
   }
 }
 
+// Post
+
 .post {
   grid-template-rows: 16rem;
+  perspective: 1000px;
 
   &-header {
-    z-index: $zindex-modal;
-    grid-column: 2;
+    grid-column: 1 / 4;
     grid-row: 1;
+    z-index: 2;
     align-self: flex-end;
-    padding: 1.75rem 0 2rem;
+    padding: 1.75rem 0;
     animation: loadPost 600ms 100ms backwards $ease-out-expo;
-
-    @media (min-width: 990px) {
-      position: sticky;
-      top: 0;
-    }
   }
 
   &-title {
-    margin-bottom: 0.5rem;
+    grid-column: 2;
+    margin: 0;
   }
 
   &-date {
-    display: block;
+    grid-column: 2;
     font-size: $font-size-sm;
     opacity: 0.5;
   }
 
   &-tags {
+    grid-column: 2;
     display: none;
     padding: 0;
     font-weight: 600;

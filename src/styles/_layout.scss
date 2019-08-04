@@ -16,16 +16,16 @@
 
 .container-fluid {
   max-width: var(--grid-width);
-  padding: 0 calc(var(--grid-gap) * 1.5);
+  padding: 0 calc(var(--grid-gap) * 2);
   margin: 0 auto;
 }
 
 .container-grid {
   display: grid;
   grid-template-columns:
-    minmax(calc(var(--grid-gap) * 1.5), 1fr)
+    minmax(calc(var(--grid-gap) * 2), 1fr)
     minmax(auto, 57ch)
-    minmax(calc(var(--grid-gap) * 1.5), 1fr);
+    minmax(calc(var(--grid-gap) * 2), 1fr);
   max-width: var(--grid-width);
   margin: 0 auto;
 }

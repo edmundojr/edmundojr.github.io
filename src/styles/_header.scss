@@ -6,12 +6,10 @@
   left: 0;
   right: 0;
   z-index: $zindex-modal;
-  padding-bottom: 3rem;
   color: $white;
-  background-image: linear-gradient(rgba($body-bg, .75) 0%, rgba($body-bg, 0) 100%);
   pointer-events: none;
 
-  > * {
+  .container-fluid > * {
     pointer-events: auto;
   }
 
@@ -63,19 +61,23 @@
 }
 
 .back-button {
-  position: absolute;
-  font-size: 2rem;
+  grid-column: 1;
+  align-self: center;
+  font-size: 1.6rem;
   font-weight: 600;
+  line-height: 2.2rem;
+  text-align: center;
+  border-radius: 50%;
   color: white;
-  transform: translateX(-200%);
+  transition: all .3s;
 
-  span {
-    display: inline-block;
-    margin-right: .5rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.2rem;
+    text-align: center;
   }
 
   &:hover,
   &:focus {
-    color: currentColor;
+    color: $link-color;
   }
 }
