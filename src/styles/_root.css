@@ -1,5 +1,5 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
-@custom-selector :--textTags p, ul, ol, dl, blockquote, address, pre;
+@custom-selector :--textTags p, ul, ol, dl, blockquote, address, pre, hr;
 @custom-media --sm-window (max-width: 576px);
 @custom-media --md-window (max-width: 768px);
 @custom-media --lg-window (max-width: 992px);
