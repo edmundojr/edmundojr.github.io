@@ -15,7 +15,6 @@ body {
   outline: 0 !important;
 }
 
-
 :--heading {
   margin-top: 0;
   margin-bottom: var(--headings-margin-bottom);
@@ -44,7 +43,6 @@ h5 {
 h6 {
   font-size: var(--h6-font-size);
 }
-
 
 :--textTags {
   margin-top: 0;
@@ -107,6 +105,16 @@ sub {
 }
 sup {
   top: -0.5em;
+}
+
+hr {
+  width: 66%;
+  height: 1px;
+  margin: var(--paragraph-margin-bottom) auto calc(var(--paragraph-margin-bottom) * 1.5);
+  color: var(--body-color);
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
 }
 
 a {
@@ -191,7 +199,7 @@ main {
 .embed-responsive {
   position: relative;
   width: 100%;
-  padding-bottom: calc(100% / (16/9));
+  padding-bottom: calc(100% / (16 / 9));
   margin-bottom: var(--paragraph-margin-bottom);
 
   &-item,
