@@ -18,7 +18,7 @@ You click on a “New” button and a form just… appears from nowhere? You cli
 Take for instance the carousel interface below: without any animations, could you tell that it is indeed a carousel interface? Are we offering the user any clues other than changing the background color and emoji when we swap the panels?
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" height="310" scrolling="no" title="CSS 3D transform Colorful Animated Carousel" src="//codepen.io/edmundojr/embed/qdLWWx/?height=383&theme-id=33557&default-tab=result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe height="440" style="width: 100%;" scrolling="no" title="CSS 3D transform Colorful Animated Carousel" src="//codepen.io/edmundojr/embed/qdLWWx/?height=440&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
 
 If you toggle the animation (go on, I wait), you'll see how much nicer it is to understand the relationship between the elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊

@@ -1,0 +1,5 @@
+.footer {
+  padding: 3rem 0;
+  text-align: center;
+  animation: loadIn 600ms 300ms backwards var(--ease-out-expo);
+}

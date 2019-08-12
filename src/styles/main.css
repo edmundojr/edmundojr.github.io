@@ -1,0 +1,38 @@
+@import '_root.css';
+@import '_reboot.css';
+
+@import '_margem.css';
+@import '_typography.css';
+
+@import '_layout.css';
+@import '_header.css';
+@import '_hero.css';
+@import '_footer.css';
+@import '_post.css';
+@import '_reading.css';
+
+
+
+/* Animations */
+
+.wave {
+  display: inline-block;
+  transform-origin: bottom right;
+  transform: rotate(0);
+  animation: wave 0.3s 5 ease-in-out alternate backwards;
+}
+
+.flip {
+  display: inline-block;
+  margin: 0 -1rem 0 1rem;
+  transform: scaleX(-1);
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

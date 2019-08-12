@@ -1,0 +1,24 @@
+.hero {
+  align-items: center;
+  height: 70vh;
+  max-height: 30rem;
+  min-height: 20rem;
+  padding-top: 2rem;
+  text-align: center;
+
+  &-content {
+    grid-column: 2;
+    animation: loadIn 600ms 100ms backwards var(--ease-out-expo);
+  }
+  &-title {
+    margin-bottom: 0.5rem;
+    font-size: var(--display1-size);
+    font-weight: var(--display-font-weight);
+    line-height: var(--display-line-height);
+  }
+
+  &-description {
+    margin-bottom: 0;
+    color: gray(80);
+  }
+}
