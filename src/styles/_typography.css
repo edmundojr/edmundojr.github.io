@@ -44,7 +44,6 @@ blockquote {
     position: absolute;
     top: 0;
     left: -1rem;
-    z-index: -1;
     font-size: var(--display1-size);
     line-height: 2.5rem;
     color: var(--headings-color);

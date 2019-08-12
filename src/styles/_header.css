@@ -5,15 +5,20 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 2;
+  padding: var(--grid-gap) 0;
   color: var(--body-color);
   pointer-events: none;
+
+  @media (--sm-window) {
+    background: var(--body-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
   &-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: var(--grid-gap);
 
     & > * {
       pointer-events: auto;
