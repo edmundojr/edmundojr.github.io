@@ -64,18 +64,40 @@
 }
 
 .back-button {
+  position: relative;
   grid-column: 1;
   align-self: center;
   font-size: var(--h4-font-size);
-  font-weight: var(--display-font-weight);
+  font-family: system-ui;
+  font-weight: 600;
   line-height: 2.2rem;
   text-align: center;
   border-radius: 50%;
   color: var(--body-color);
-  transition: all 0.3s;
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 2rem;
+    height: 2rem;
+    background: var(--link-color);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.2s var(--ease-in-out-quad);
+  }
 
   &:hover,
   &:focus {
-    color: var(--link-hover-color);
+    color: var(--body-bg);
+
+    &::before {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
   }
 }
