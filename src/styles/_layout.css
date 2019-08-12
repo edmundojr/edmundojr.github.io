@@ -24,11 +24,11 @@
   max-width: var(--grid-width);
   min-height: var(--grid-height);
   width: 100%;
-  padding: 0 calc(var(--grid-gap));
+  padding: 0 var(--grid-gap);
   margin: 0 auto;
   perspective: 1000px;
 
-  @media (--narrow-window) {
+  @media (--sm-window) {
     display: flex;
     flex-direction: column;
     min-height: auto;

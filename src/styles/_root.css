@@ -1,8 +1,8 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--textTags p, ul, ol, dl, blockquote, address, pre;
-@custom-media --narrow-window (max-width: 45em);
-@custom-media --medium-window (max-width: 60em);
-@custom-media --large-window (max-width: 80em);
+@custom-media --sm-window (max-width: 576px);
+@custom-media --md-window (max-width: 768px);
+@custom-media --lg-window (max-width: 992px);
 
 @keyframes loadIn {
   0% {
@@ -111,7 +111,7 @@
   --border-radius: 4px;
 }
 
-@media (--medium-window) {
+@media (--md-window) {
   :root {
     --grid-gap: 1.25rem;
     --grid-padding: 1.25rem;
@@ -119,7 +119,7 @@
   }
 }
 
-@media (--narrow-window) {
+@media (--sm-window) {
   :root {
     --grid-gap: 1rem;
     --grid-padding: 1rem;

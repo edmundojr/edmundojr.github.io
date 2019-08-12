@@ -4,17 +4,17 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: var(--grid-gap);
 
-  /*@include media-breakpoint-down(lg) {
+  @media (--lg-window) {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  @include media-breakpoint-down(md) {
+  @media (--md-window) {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @include media-breakpoint-down(xs) {
+  @media (--sm-window) {
     grid-template-columns: repeat(2, 1fr);
-  }*/
+  }
 }
 
 .book {
@@ -23,7 +23,7 @@
   align-content: flex-end;
   perspective: 1000px;
   opacity: 0;
-  animation: load-books 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+  animation: loadBooks 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
 
   &-currently-reading .book-details::before {
     content: 'Reading';
@@ -66,10 +66,9 @@
     right: -1rem;
     bottom: 1rem;
     padding: 0.75rem;
-    background: rgba(white, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 3px;
-    box-shadow: 0 3px 10px rgba(var(--body-bg), 0.25),
-      inset 0 0 0 1px rgba(var(--body-bg), 0.05);
+    box-shadow: 0 3px 10px rgba(var(--body-bg), 0.25), inset 0 0 0 1px rgba(var(--body-bg), 0.05);
     opacity: 0;
     transform: translateY(1rem);
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -109,7 +108,7 @@
   }
 }*/
 
-@keyframes load-books {
+@keyframes loadBooks {
   0% {
     opacity: 0;
     transform: translateX(1rem) scale(0.95);
