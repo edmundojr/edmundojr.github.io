@@ -126,6 +126,7 @@
       &-figcaption {
         grid-column: 2;
         margin-top: 0.5rem;
+        opacity: 0.5;
       }
     }
   }
