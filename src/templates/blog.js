@@ -14,7 +14,6 @@ export default class Blog extends React.Component {
     const nextPage = '/blog/' + (page + 1).toString()
     const isFirst = page === 1
     const isLast = page === numPages
-    const blogLayout = 'blog-grid--layout-' + page.toString();
     return (
       <Layout>
         <Helmet title={pageTitle + ' × Articles'} />
@@ -22,15 +21,16 @@ export default class Blog extends React.Component {
           title={"Exploring ideas about design, code, and technology."}
           description={"+ some other random stuff."}
         />
-        <main className={'blog-grid ' + blogLayout}>
-          {posts.map(({ node, index }, i) => {
+        <main className={'blog-grid'}>
+          {posts.map(({ node }, index) => {
             const {
               frontmatter: { title, description, date },
               fields: { slug },
             } = node
             return (
               <PostCard
-                key={date + index}
+                key={index}
+                index={index}
                 slug={slug}
                 title={title}
                 description={description}
@@ -39,7 +39,7 @@ export default class Blog extends React.Component {
             )
           })}
         </main>
-        <div className="pagination text-center h2 font-weight-bolder">
+        <div className={"pagination"}>
           {!isFirst && (
             <Link to={prevPage} rel="prev" aria-label="Previous page">
               ← Prev

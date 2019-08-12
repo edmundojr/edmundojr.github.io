@@ -1,0 +1,138 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--textTags p, ul, ol, dl, blockquote, address, pre;
+@custom-media --narrow-window (max-width: 45em);
+@custom-media --medium-window (max-width: 60em);
+@custom-media --large-window (max-width: 80em);
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(100px) rotateX(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+:root {
+  /* Grid variables */
+  --grid-gap: 1.5rem;
+  --grid-padding: 1.5rem;
+  --grid-width: 62rem;
+  --grid-height: 52rem;
+  /* General colors */
+  --body-bg: #101010;
+  --body-color: #fff;
+  --primary: #f3d145;
+  --headings-color: var(--body-color);
+  --link-color: var(--primary);
+  --link-decoration: none;
+  --link-hover-color: var(--link-color);
+  --link-hover-decoration: var(--link-decoration);
+  /* Blog card colors */
+  --card-bg-1: #f7d052;
+  --card-bg-2: #e89be0;
+  --card-bg-3: #ff94b0;
+  --card-bg-4: #90ddde;
+  --card-bg-5: #8cc3fa;
+  --card-bg-6: #d3ccfc;
+  --card-bg-7: #faa489;
+  --card-color-1: #57491d;
+  --card-color-2: #452e43;
+  --card-color-3: #661229;
+  --card-color-4: #324c4d;
+  --card-color-5: #0f3d6b;
+  --card-color-6: #483e87;
+  --card-color-7: #4d322a;
+  /* Typography */
+  --paragraph-margin-bottom: 1rem;
+  --font-family-sans-serif: 'Margem', sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, monospace;
+  --font-family-base: var(--font-family-sans-serif);
+  --font-size-root: 20px;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.8rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-base: var(--font-weight-normal);
+  --line-height-base: 1.5;
+  --h1-font-size: 2.6rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.8rem;
+  --h4-font-size: 1.6rem;
+  --h5-font-size: 1.4rem;
+  --h6-font-size: var(--font-size-base);
+  --headings-margin-bottom: 1rem;
+  --headings-font-family: inherit;
+  --headings-font-weight: 900;
+  --headings-line-height: 1;
+  --display1-size: 3.5rem;
+  --display2-size: 3.25rem;
+  --display3-size: 3rem;
+  --display4-size: 2.75rem;
+  --display-font-weight: 900;
+  --display-line-height: var(--headings-line-height);
+  --lead-font-size: 1.25rem;
+  --lead-font-weight: 400;
+  --small-font-size: 80%;
+  --text-muted: gray;
+  --blockquote-small-color: var(--body-color);
+  --blockquote-font-size: var(--font-size-base);
+  /* Easings */
+  --ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+  --ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+  --ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  --ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+  --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+  --ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  --ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  --ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Random */
+  --border-radius: 4px;
+}
+
+@media (--medium-window) {
+  :root {
+    --grid-gap: 1.25rem;
+    --grid-padding: 1.25rem;
+    --font-size-root: 18px;
+  }
+}
+
+@media (--narrow-window) {
+  :root {
+    --grid-gap: 1rem;
+    --grid-padding: 1rem;
+    --font-size-root: 16px;
+    --h1-font-size: 2.4rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1.6rem;
+    --h4-font-size: 1.5rem;
+    --h5-font-size: 1.2rem;
+    --h6-font-size: var(--font-size-base);
+    --display1-size: 2.5rem;
+    --display2-size: 2.25rem;
+    --display3-size: 2rem;
+    --display4-size: 1.75rem;
+  }
+}

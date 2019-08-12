@@ -4,7 +4,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: var(--grid-gap);
 
-  @include media-breakpoint-down(lg) {
+  /*@include media-breakpoint-down(lg) {
     grid-template-columns: repeat(5, 1fr);
   }
 
@@ -14,7 +14,7 @@
 
   @include media-breakpoint-down(xs) {
     grid-template-columns: repeat(2, 1fr);
-  }
+  }*/
 }
 
 .book {
@@ -36,19 +36,19 @@
     font-size: 0.6rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: $body-bg;
-    background: $primary;
+    color: var(--body-bg);
+    background: var(--primary);
     border-radius: 3px 3px 0 0;
     transform: translateY(-100%);
   }
 
   &:hover {
-    .book-details {
+    & .book-details {
       opacity: 1;
       transform: none;
     }
 
-    .book-cover {
+    & .book-cover {
       transform: scale(1.05);
     }
   }
@@ -68,16 +68,16 @@
     padding: 0.75rem;
     background: rgba(white, 0.95);
     border-radius: 3px;
-    box-shadow: 0 3px 10px rgba($body-bg, 0.25),
-      inset 0 0 0 1px rgba($body-bg, 0.05);
+    box-shadow: 0 3px 10px rgba(var(--body-bg), 0.25),
+      inset 0 0 0 1px rgba(var(--body-bg), 0.05);
     opacity: 0;
     transform: translateY(1rem);
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &-title {
       margin-bottom: 0.5rem;
-      font-size: $font-size-base;
-      color: $body-bg;
+      font-size: var(--font-size-base);
+      color: var(--body-bg);
     }
 
     &-author {
@@ -86,9 +86,9 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 0;
-      font-size: $font-size-sm;
+      font-size: var(--font-size-sm);
       line-height: 1.15;
-      color: $text-muted;
+      color: var(--text-muted);
 
       &-image {
         flex-shrink: 0;
@@ -103,11 +103,11 @@
   }
 }
 
-@for $i from 1 to 1000 {
+/*@for $i from 1 to 1000 {
   .book:nth-child(#{$i}) {
     animation-delay: $i * 0.0375s;
   }
-}
+}*/
 
 @keyframes load-books {
   0% {

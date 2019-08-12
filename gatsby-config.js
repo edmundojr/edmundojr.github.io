@@ -44,11 +44,7 @@ module.exports = {
         trackingId: `UA-1068613-7`,
       },
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      postCssPlugins: [require('autoprefixer')()],
-      precision: 8,
-    },
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,

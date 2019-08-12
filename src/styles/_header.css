@@ -1,0 +1,76 @@
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: var(--body-color);
+  pointer-events: none;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--grid-gap);
+
+    & > * {
+      pointer-events: auto;
+    }
+  }
+
+  & svg {
+    display: block;
+    fill: currentColor;
+    transition: fill 300ms var(--ease-out-expo);
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.15));
+  }
+}
+
+/* Logo */
+
+.logo {
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    color: currentColor;
+    filter: drop-shadow(0 0 1rem var(--body-bg));
+
+    &:last-child {
+      margin-right: -0.5rem;
+    }
+  }
+}
+
+.back-button {
+  grid-column: 1;
+  align-self: center;
+  font-size: var(--h4-font-size);
+  font-weight: var(--display-font-weight);
+  line-height: 2.2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--body-color);
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
+}

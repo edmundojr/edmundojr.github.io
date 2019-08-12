@@ -1,0 +1,115 @@
+/* Responsive typography */
+
+html {
+  font-size: var(--font-size-root);
+}
+
+body {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+
+/* Selection color */
+
+::selection {
+  color: currentColor;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Improve type rendering */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Blockquotes */
+
+blockquote {
+  position: relative;
+  max-width: 75%;
+  padding-left: 1rem;
+  font-style: italic;
+  font-size: var(--blockquote-font-size);
+  color: var(--blockquote-small-color);
+
+  /* Quotation mark */
+
+  &::before {
+    content: '“';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    z-index: -1;
+    font-size: var(--display1-size);
+    line-height: 2.5rem;
+    color: var(--headings-color);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Inline blockquote */
+
+q {
+  font-style: italic;
+}
+
+/* Code */
+
+code {
+  padding: 0.1em 0.25em;
+  font-size: 85%;
+  color: var(--headings-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+}
+
+/* Headings */
+
+:--heading {
+  font-weight: var(--headings-font-weight);
+  letter-spacing: -0.05em;
+  line-height: var(--headings-line-height);
+}
+
+/* Smaller heading sizes on small screens*/
+
+/*Add color transition to links*/
+
+a {
+  transition: color 0.3s var(--ease-in-out-quart), border 0.2s var(--ease-in-out-quart);
+}
+
+ul,
+ol,
+p,
+blockquote,
+q {
+  & a {
+    border-bottom: 2px solid rgba(var(--link-color), 0);
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid rgba(var(--link-color), 0.5);
+    }
+  }
+}
+
+/* Font size utility classes */
+
+.font-size-base {
+  font-size: var(--font-size-base);
+}
+
+.font-size-lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-size-sm {
+  font-size: var(--font-size-sm);
+}
