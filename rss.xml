@@ -1,85 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 04 Aug 2019 21:48:50 GMT</lastBuildDate><item><title><![CDATA[Sketch Libraries: UX Cork Meetup]]></title><description><![CDATA[Last week I gave a talk (my first!) at the  UX Cork  meetup group. Although I was a bit nervous about doing the talk at first, it all went…]]></description><link>https://edmundojr.com//blog/sketch-libraries/</link><guid isPermaLink="false">https://edmundojr.com//blog/sketch-libraries/</guid><pubDate>Sat, 23 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week I gave a talk (my first!) at the &lt;a href=&quot;https://www.meetup.com/UX-Cork/&quot;&gt;UX Cork&lt;/a&gt; meetup group. Although I was a bit nervous about doing the talk at first, it all went okay – I think!&lt;/p&gt;
-
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1080px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 18:40:09 GMT</lastBuildDate><item><title><![CDATA[Sketch Libraries: UX Cork Meetup]]></title><description><![CDATA[Last week I gave a talk (my first!) at the UX Cork meetup group. Although I was a bit nervous about doing the talk at first, it all went…]]></description><link>https://edmundojr.com/blog/sketch-libraries/</link><guid isPermaLink="false">https://edmundojr.com/blog/sketch-libraries/</guid><pubDate>Sat, 23 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week I gave a talk (my first!) at the &lt;a href=&quot;https://www.meetup.com/UX-Cork/&quot;&gt;UX Cork&lt;/a&gt; meetup group. Although I was a bit nervous about doing the talk at first, it all went okay – I think!&lt;/p&gt;
+&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;margin-bottom: 1rem&quot;&gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 74.9074074074074%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeauXJCA4//EABkQAQEAAwEAAAAAAAAAAAAAAAECAAMRIf/aAAgBAQABBQLqrzIqgc2Pk7Lk/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAIS/9oACAEDAQE/AWJf/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/Aauv/8QAHxAAAQMDBQAAAAAAAAAAAAAAAQACERAhURIiYXGC/9oACAEBAAY/AtRvGaWYD5U5Qk8ra9w6K//EABsQAAICAwEAAAAAAAAAAAAAAAERACExQVGB/9oACAEBAAE/IQph7axKKGohjXktMO3YEKgxBGuzEwDxE//aAAwDAQACAAMAAAAQH+//xAAXEQEBAQEAAAAAAAAAAAAAAAABACER/9oACAEDAQE/EA3ZZ6l//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAExQVH/2gAIAQIBAT8QcGrMD//EAB0QAQEAAgMAAwAAAAAAAAAAAAERACExQXFRgZH/2gAIAQEAAT8QTxAbVh0nfJ+ZoiPGvTapOvcSFy5m+4EFhUCBvjGkXsgUt7+NZsUNpF+s/9k=&apos;); background-size: cover; display: block;&quot;
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1080px;&quot;
     &gt;
-      &lt;picture&gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.9074074074074%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB5q5cQgI//8QAGRABAQADAQAAAAAAAAAAAAAAAQIAAxEh/9oACAEBAAEFAuqvMmqDNj5O25P/xAAWEQEBAQAAAAAAAAAAAAAAAAAAAhL/2gAIAQMBAT8BYl//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8Bq6//xAAfEAACAgAHAQAAAAAAAAAAAAABEQACEBIhUVJhcYH/2gAIAQEABj8CzHVb4IUB+R8oGe4q3sPDP//EABwQAAEFAAMAAAAAAAAAAAAAAAEAESExQVGBkf/aAAgBAQABPyENMO7FKCBniaZ3svRrMnARbIEZ0pjB4YX/2gAMAwEAAgADAAAAEJTv/8QAGREBAAIDAAAAAAAAAAAAAAAAAQARIbHR/9oACAEDAQE/EAbzFm032f/EABgRAAIDAAAAAAAAAAAAAAAAAAABMUFR/9oACAECAQE/EHBqzA//xAAcEAEBAAIDAQEAAAAAAAAAAAABEQAhMUFxgZH/2gAIAQEAAT8QTxAbVB0nfJ+ZoiPGva1Sde46Elzd9woNVQEDfGNBTnoKW9nWspUW0C/M/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-d9537.webp 300w,
-/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-e3bfd.webp 600w,
-/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-a8775.webp 1080w&quot;
+          srcset=&quot;/static/1e1deeeb5fe031961caa91c553e6d497/17574/sketch-libraries.webp 300w,
+/static/1e1deeeb5fe031961caa91c553e6d497/70039/sketch-libraries.webp 600w,
+/static/1e1deeeb5fe031961caa91c553e6d497/7ad15/sketch-libraries.webp 1080w&quot;
           sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-84b99.jpg 300w,
-/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-489cf.jpg 600w,
-/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg 1080w&quot;
+          srcset=&quot;/static/1e1deeeb5fe031961caa91c553e6d497/63bfe/sketch-libraries.jpg 300w,
+/static/1e1deeeb5fe031961caa91c553e6d497/37873/sketch-libraries.jpg 600w,
+/static/1e1deeeb5fe031961caa91c553e6d497/908d7/sketch-libraries.jpg 1080w&quot;
           sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
-          src=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg&quot;
+          src=&quot;/static/1e1deeeb5fe031961caa91c553e6d497/908d7/sketch-libraries.jpg&quot;
           alt=&quot;Me reading from my notes&quot;
-          title=&quot;&quot;
-          src=&quot;/static/sketch-libraries-1e1deeeb5fe031961caa91c553e6d497-3b989.jpg&quot;
+          title=&quot;Me reading from my notes&quot;
         /&gt;
       &lt;/picture&gt;
-      &lt;/span&gt;
-  &lt;/span&gt;
-  
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Me reading from my notes&lt;/figcaption&gt;
+  &lt;/figure&gt;
 &lt;p&gt;&lt;small&gt;&lt;i&gt;Me reading from my notes – thanks for the pic, &lt;a href=&quot;https://www.instagram.com/arlene_angela_/&quot;&gt;Arlo&lt;/a&gt;!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;The talk was focused on Sketch Libraries, and how can help you improve your design workflow and collaboration with other designers.&lt;/p&gt;
-&lt;p&gt;You can &lt;a href=&quot;https://cloudup.com/ckuvbdbBBCT&quot;&gt;download the slides&lt;/a&gt; for the talk if you want. Hope it helps! 😊&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com//blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
-
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
+&lt;p&gt;You can &lt;a href=&quot;https://cloudup.com/ckuvbdbBBCT&quot;&gt;download the slides&lt;/a&gt; for the talk if you want. Hope it helps! 😊&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Notchless Pixel]]></title><description><![CDATA[After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the…]]></description><link>https://edmundojr.com/blog/xiaomi-mi-mix-2s-custom-rom/</link><guid isPermaLink="false">https://edmundojr.com/blog/xiaomi-mi-mix-2s-custom-rom/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After my OnePlus 3 smashed into the ground – for the third time, I decided it was time for an upgrade. I was waiting for the release of the Pixel 3 but was a bit disappointed by that notch, not to mention the price.&lt;/p&gt;
+&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;margin-bottom: 1rem&quot;&gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGNmriksD//xAAdEAABAwUBAAAAAAAAAAAAAAACAAERAwQSExQh/9oACAEBAAEFAsCnS65zJVPFbk5GQtP/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8BoX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAACAgIDAAAAAAAAAAAAAAAAARFxAhIh0eH/2gAIAQEABj8CXYtebJnEVClnp//EABoQAAMBAQEBAAAAAAAAAAAAAAABEUExcZH/2gAIAQEAAT8hcqcVUwKlquhcp9ozonG5KdPBrf0f/9oADAMBAAIAAwAAABD8/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAABEQD/2gAIAQMBAT8QhRNd/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EAXGf//EABsQAQEAAgMBAAAAAAAAAAAAAAERACExUWFB/9oACAEBAAE/EDQaqWidsT3JQQ4QhPMp7zUYYaHnqYo1QJ1TD428n5iSzIAAGuhz/9k=&apos;); background-size: cover; display: block;&quot;
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
     &gt;
-      &lt;picture&gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGNmriksD//xAAcEAACAgIDAAAAAAAAAAAAAAABAgARAwQSExT/2gAIAQEAAQUC4NfSZ53aZDU12LZGUX//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8BoX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAACAgIDAAAAAAAAAAAAAAAAARFxAhIh0eH/2gAIAQEABj8CXYtebJnEVClnp//EABoQAAMBAQEBAAAAAAAAAAAAAAABETFBcZH/2gAIAQEAAT8hcqYqpwKlqvQsp9oyicbNcnwaffo//9oADAMBAAIAAwAAABD0P//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxDARLb/xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QBcZ//8QAGxABAQACAwEAAAAAAAAAAAAAAREAITFRYUH/2gAIAQEAAT8QNyKpaJ2xPclBDhCE8ynuNRhhoeepiLSIp1TCw2kL8ykTIAAGvHP/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-70e50.webp 300w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-9bb89.webp 600w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-fbc65.webp 1200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-4601e.webp 1800w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-dbdd7.webp 2400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-d6333.webp 3024w&quot;
+          srcset=&quot;/static/f3d34d4ed42aca1fad5d8b942a46cdf5/17574/xiaomi-mi-mix-2s-portrait-mode.webp 300w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/70039/xiaomi-mi-mix-2s-portrait-mode.webp 600w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/9e229/xiaomi-mi-mix-2s-portrait-mode.webp 1200w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/ba969/xiaomi-mi-mix-2s-portrait-mode.webp 1800w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/ce3fe/xiaomi-mi-mix-2s-portrait-mode.webp 2400w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/86d33/xiaomi-mi-mix-2s-portrait-mode.webp 3024w&quot;
           sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-4e6ad.jpg 300w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-2c28a.jpg 600w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg 1200w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-a472b.jpg 1800w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-2da82.jpg 2400w,
-/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-e8d2b.jpg 3024w&quot;
+          srcset=&quot;/static/f3d34d4ed42aca1fad5d8b942a46cdf5/63bfe/xiaomi-mi-mix-2s-portrait-mode.jpg 300w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/37873/xiaomi-mi-mix-2s-portrait-mode.jpg 600w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/5e53b/xiaomi-mi-mix-2s-portrait-mode.jpg 1200w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/e2107/xiaomi-mi-mix-2s-portrait-mode.jpg 1800w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/ca857/xiaomi-mi-mix-2s-portrait-mode.jpg 2400w,
+/static/f3d34d4ed42aca1fad5d8b942a46cdf5/20602/xiaomi-mi-mix-2s-portrait-mode.jpg 3024w&quot;
           sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
-          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg&quot;
-          alt=&quot;Spock: It&apos;s only logical&quot;
-          title=&quot;&quot;
-          src=&quot;/static/xiaomi-mi-mix-2s-portrait-mode-f3d34d4ed42aca1fad5d8b942a46cdf5-c7798.jpg&quot;
+          src=&quot;/static/f3d34d4ed42aca1fad5d8b942a46cdf5/5e53b/xiaomi-mi-mix-2s-portrait-mode.jpg&quot;
+          alt=&quot;Spock: It&amp;#39;s only logical&quot;
+          title=&quot;Spock: It&amp;#39;s only logical&quot;
         /&gt;
       &lt;/picture&gt;
-      &lt;/span&gt;
-  &lt;/span&gt;
-  
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Spock: It&amp;#39;s only logical&lt;/figcaption&gt;
+  &lt;/figure&gt;
 &lt;p&gt;After doing some research on different models I picked a &lt;strong&gt;Xiaomi Mi Mix 2S&lt;/strong&gt;. The built quality of this phone is outstanding, it supports wireless charging, has 6GB of RAM, Snapdragon 845, and most importantly: it has no notch.&lt;/p&gt;
 &lt;p&gt;There &lt;em&gt;is&lt;/em&gt; a problem though: it comes with that horrible MIUI. What I don&apos;t get it, is why would they ruin such a good piece of hardware? The whole &lt;em&gt;Android-trying-to-be-iOS&lt;/em&gt; thing really doesn&apos;t work IMHO… so inspired by Linus’ video on &lt;a href=&quot;https://www.youtube.com/watch?v=BsHtfLh6azw&quot;&gt;how to turn the Pocophone into a Pixel&lt;/a&gt; I deviced to do the same with the Mi Mix 2S.&lt;/p&gt;
 &lt;p&gt;For this guide you will need:&lt;/p&gt;
@@ -106,44 +102,42 @@
 &lt;p&gt;After some testing, I found out that the apps ones ported by &lt;a href=&quot;https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/&quot;&gt;BSG&lt;/a&gt; perform great with the Pixel Experience ROM, specifically the &lt;code class=&quot;language-text&quot;&gt;MGC_6.1.021_MI8_Vc&lt;/code&gt; apk.&lt;/p&gt;
 &lt;p&gt;The image quality is way better than the one you get with the original camera app. It comes out-of-the-box with Portrait Mode, Google Lens, and Night Sight. See the Spock photo above? Shot with Mi Mix 2S on Portrair mode 🤳&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Hope you enjoy this guide! Truth be told, the main reason I&apos;m posting this here is for &lt;em&gt;Future Ed’s&lt;/em&gt; benefit, in case he needs to do it again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com//blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com//blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; margin-bottom: 1rem; max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
+&lt;p&gt;Hope you enjoy this guide! Truth be told, the main reason I&apos;m posting this here is for &lt;em&gt;Future Ed’s&lt;/em&gt; benefit, in case he needs to do it again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Coding Design 🦄]]></title><description><![CDATA[More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers…]]></description><link>https://edmundojr.com/blog/coding-design/</link><guid isPermaLink="false">https://edmundojr.com/blog/coding-design/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;margin-bottom: 1rem&quot;&gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 61.24999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQoz5WS3U/SYRTHYXFL1/0Fqby5KWkqoLZCAZUyZ75ivlerpa4LuejVmeWcFy7XX2C+tTZ1mcryfUrIRHMKJogXWrNUhB8C/n5wTg9Q5Fpe9GyfnefmfJ7vnnNYWcqnrNMOMkdxB8ym0gf+KxhAeSAAIQBAjognURDORRrzctvZGXIt91J6Azcn++HZdMldbqyqjev6tq/34R56GD9CADEAYfx+RK8XkKYD6PMxGDyHh3RlRChJqYmKFan3BHwFRTjk8xROkVDpfPvOyHR2fMXnTRZoaV4P0dy0Dq87bTA/54b+Php6umlGP49otzv/CC+IixJ4vAzk8+QYdT4dY6Ivo1Agx66uOSzIN0F+ngGKbhgh75oB0mWzUF62AKMjHvIAwrMnyAwOIO7sOCsiQnF8oVQgUKKAnwkxMfIAn58BsbFZ0NOjh5uaz1hcsAC1VUt459Yy5l9fIHURdToPtrchvGxB/4dhxO3tEwnF4mK5SJiNfCIkYuDFZEJ8nBp6ew1QXLCEWYo5yMs1IEmJ2Uo9VlcaUTfmwbZWDKb0D7//S5ggLssJCsn/0QK+ihEJVQz5U2ZgwAiGTy6cGN+FyYkfMDH+Haan9mB56QDGP3ohmLD1xT8SJl2s1aQkV2FiQgmh9BcaHBpaJNPEY4fDR5Mp0pSboa1WN21a3KeJkO7uQrr7DfpGRxC3tpzlEWFy0j2JTFo3mCar70tLbehPldX3p0rr+memN4+DK0JRYYJ33ZgXX3XsotmMODuDODWJ+GU9NOXb4ZWR1Jy62DbbUaHNRj3e3HQ3ErTkrg1W+5Zba7W6tBZLiMaNDdejjQ1KEGlMSa5kKZQatvpqBVuhKmXnqCvYJaX32az/PFYrFe5JSqyPIE15EKq86GqW2ew4QxJxfmO3uzmrq06OyeTgWCwUZ2XFHWJtjeKQxCHZT4ce+VUCJSBiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
     &gt;
-      &lt;picture&gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.24999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQoz5WS3U/SYRTHYXFL1/0Fqby5KWkqoLZCAZUyZ75ivlerpa4LuejVmeWcFy7XX2C+tTZ1mcryfUrIRHMKJogXWrNUhB8C/n5wTg9Q5Fpe9GyfnefmfJ7vnnNYWcqnrNMOMkdxB8ym0gf+KxhAeSAAIQBAjognURDORRrzctvZGXIt91J6Azcn++HZdMldbqyqjev6tq/34R56GD9CADEAYfx+RK8XkKYD6PMxGDyHh3RlRChJqYmKFan3BHwFRTjk8xROkVDpfPvOyHR2fMXnTRZoaV4P0dy0Dq87bTA/54b+Php6umlGP49otzv/CC+IixJ4vAzk8+QYdT4dY6Ivo1Agx66uOSzIN0F+ngGKbhgh75oB0mWzUF62AKMjHvIAwrMnyAwOIO7sOCsiQnF8oVQgUKKAnwkxMfIAn58BsbFZ0NOjh5uaz1hcsAC1VUt459Yy5l9fIHURdToPtrchvGxB/4dhxO3tEwnF4mK5SJiNfCIkYuDFZEJ8nBp6ew1QXLCEWYo5yMs1IEmJ2Uo9VlcaUTfmwbZWDKb0D7//S5ggLssJCsn/0QK+ihEJVQz5U2ZgwAiGTy6cGN+FyYkfMDH+Haan9mB56QDGP3ohmLD1xT8SJl2s1aQkV2FiQgmh9BcaHBpaJNPEY4fDR5Mp0pSboa1WN21a3KeJkO7uQrr7DfpGRxC3tpzlEWFy0j2JTFo3mCar70tLbehPldX3p0rr+memN4+DK0JRYYJ33ZgXX3XsotmMODuDODWJ+GU9NOXb4ZWR1Jy62DbbUaHNRj3e3HQ3ErTkrg1W+5Zba7W6tBZLiMaNDdejjQ1KEGlMSa5kKZQatvpqBVuhKmXnqCvYJaX32az/PFYrFe5JSqyPIE15EKq86GqW2ew4QxJxfmO3uzmrq06OyeTgWCwUZ2XFHWJtjeKQxCHZT4ce+VUCJSBiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-c02da.webp 300w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-2ee1d.webp 600w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-50c96.webp 1200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4eaeb.webp 1600w&quot;
+          srcset=&quot;/static/a0fb64a9efeee065cf179dc8f630552f/17574/coding-design.webp 300w,
+/static/a0fb64a9efeee065cf179dc8f630552f/70039/coding-design.webp 600w,
+/static/a0fb64a9efeee065cf179dc8f630552f/9e229/coding-design.webp 1200w,
+/static/a0fb64a9efeee065cf179dc8f630552f/31185/coding-design.webp 1600w&quot;
           sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-d99cc.png 300w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-26c40.png 600w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png 1200w,
-/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-f7375.png 1600w&quot;
+          srcset=&quot;/static/a0fb64a9efeee065cf179dc8f630552f/e24f3/coding-design.png 300w,
+/static/a0fb64a9efeee065cf179dc8f630552f/7aa3b/coding-design.png 600w,
+/static/a0fb64a9efeee065cf179dc8f630552f/f6e31/coding-design.png 1200w,
+/static/a0fb64a9efeee065cf179dc8f630552f/46606/coding-design.png 1600w&quot;
           sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px #101010;&quot;
-          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png&quot;
+          src=&quot;/static/a0fb64a9efeee065cf179dc8f630552f/f6e31/coding-design.png&quot;
           alt=&quot;Coding Design&quot;
-          title=&quot;&quot;
-          src=&quot;/static/coding-design-a0fb64a9efeee065cf179dc8f630552f-4f580.png&quot;
+          title=&quot;Coding Design&quot;
         /&gt;
       &lt;/picture&gt;
-      &lt;/span&gt;
-  &lt;/span&gt;
-  
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Coding Design&lt;/figcaption&gt;
+  &lt;/figure&gt;
 &lt;p&gt;More often than not, design is seen as merely aesthetics. Many organisations separate design from the development process, with designers handing static screens and prototypes to engineers — and in worst-case scenarios designers and engineers don’t even sit together. In the world of interactive design, functionality should play a significant role in the design process.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Code shouldn&apos;t hurt your creativity. &lt;strong&gt;It should enhance it.&lt;/strong&gt;&lt;/p&gt;
@@ -163,10 +157,10 @@
 &lt;p&gt;So that’s my take on the “should designers code” debate. In the end, it&apos;s not about your job title, but about your responsabilities. Remember, code is just another tool, and if it help you delivery better results, why not use it?&lt;/p&gt;
 &lt;p&gt;If you have any thoughts you want to share, feel free to &lt;a href=&quot;https://twitter.com/edmundojr_&quot;&gt;drop me a tweet&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Special thanks to &lt;a href=&quot;https://twitter.com/kevduggan&quot;&gt;Kevin&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/paul-doherty-7a23b436/&quot;&gt;Paul&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/eoinjboylan&quot;&gt;Eoin&lt;/a&gt;, who have really helped me improve my coding skills in the last year – and consequently my design output.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[On Personal Growth]]></title><description><![CDATA[That which one has set oneself to do, one should not relinquish on the grounds of absence of mind or distraction.]]></description><link>https://edmundojr.com//blog/leo-tolstoy-on-personal-growth/</link><guid isPermaLink="false">https://edmundojr.com//blog/leo-tolstoy-on-personal-growth/</guid><pubDate>Sun, 09 Sep 2018 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Special thanks to &lt;a href=&quot;https://twitter.com/kevduggan&quot;&gt;Kevin&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/paul-doherty-7a23b436/&quot;&gt;Paul&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/eoinjboylan&quot;&gt;Eoin&lt;/a&gt;, who have really helped me improve my coding skills in the last year – and consequently my design output.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[On Personal Growth]]></title><description><![CDATA[That which one has set oneself to do, one should not relinquish on the grounds of absence of mind or distraction.]]></description><link>https://edmundojr.com/blog/leo-tolstoy-on-personal-growth/</link><guid isPermaLink="false">https://edmundojr.com/blog/leo-tolstoy-on-personal-growth/</guid><pubDate>Sun, 09 Sep 2018 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;That which one has set oneself to do, one should not relinquish on the grounds of absence of mind or distraction.&lt;/p&gt;
 &lt;footer&gt;— Leo Tolstoy, &lt;a href=&quot;https://archive.org/stream/diariesofleotols00tols#page/36&quot;&gt;The Diaries of Leo Tolstoy&lt;/a&gt;&lt;/footer&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Reading Tip‌‌‌‌ #1]]></title><description><![CDATA[Occasionally I'll find myself browsing  Bret Victor's website . I'm usually looking for inspiration and I am always curious to see what he…]]></description><link>https://edmundojr.com//blog/reading-tip/</link><guid isPermaLink="false">https://edmundojr.com//blog/reading-tip/</guid><pubDate>Tue, 29 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Occasionally I&apos;ll find myself browsing &lt;a href=&quot;http://worrydream.com/&quot;&gt;Bret Victor&apos;s website&lt;/a&gt;. I&apos;m usually looking for inspiration and I am always curious to see what he is working on at any given moment.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Reading Tip‌‌‌‌ #1]]></title><description><![CDATA[Occasionally I'll find myself browsing Bret Victor's website. I'm usually looking for inspiration and I am always curious to see what he is…]]></description><link>https://edmundojr.com/blog/reading-tip/</link><guid isPermaLink="false">https://edmundojr.com/blog/reading-tip/</guid><pubDate>Tue, 29 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Occasionally I&apos;ll find myself browsing &lt;a href=&quot;http://worrydream.com/&quot;&gt;Bret Victor&apos;s website&lt;/a&gt;. I&apos;m usually looking for inspiration and I am always curious to see what he is working on at any given moment.&lt;/p&gt;
 &lt;p&gt;Here’s some reading advice that stuck with me:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“It’s tempting to judge what you read:&lt;/p&gt;
@@ -177,12 +171,12 @@
 &lt;p&gt;And if it feels worthwhile, you can make a genuine effort to understand that entire worldview. You don&apos;t have to adopt it. Just make it available to yourself, so you can make connections to it when it&apos;s needed.”&lt;/p&gt;
 &lt;footer&gt;— Bret Victor, &lt;a href=&quot;http://worrydream.com/Links2013/&quot;&gt;Links 2013&lt;/a&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Found this on his &lt;a href=&quot;http://worrydream.com/Links2013/&quot;&gt;2013 links page&lt;/a&gt;, you&apos;ll find additional reading tips and a fair amount of book recommendations and links about &lt;q&gt;powerful seeing, and powerful representations for scientific thinking&lt;/q&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Waiting for inspiration]]></title><description><![CDATA[There is a popular notion that artists work from inspiration—that there is some strike or bolt or bubbling up of creative mojo from who…]]></description><link>https://edmundojr.com//blog/waiting-for-inspiration/</link><guid isPermaLink="false">https://edmundojr.com//blog/waiting-for-inspiration/</guid><pubDate>Sun, 27 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Found this on his &lt;a href=&quot;http://worrydream.com/Links2013/&quot;&gt;2013 links page&lt;/a&gt;, you&apos;ll find additional reading tips and a fair amount of book recommendations and links about &lt;q&gt;powerful seeing, and powerful representations for scientific thinking&lt;/q&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Waiting for inspiration]]></title><description><![CDATA[There is a popular notion that artists work from inspiration—that there is some strike or bolt or bubbling up of creative mojo from who…]]></description><link>https://edmundojr.com/blog/waiting-for-inspiration/</link><guid isPermaLink="false">https://edmundojr.com/blog/waiting-for-inspiration/</guid><pubDate>Sun, 27 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;There is a popular notion that artists work from inspiration—that there is some strike or bolt or bubbling up of creative mojo from who knows where… but I hope [my work] makes clear that waiting for inspiration to strike is a terrible, terrible plan. In fact, perhaps the single best piece of advice I can offer to anyone trying to do creative work is to ignore inspiration.&lt;/p&gt;
 &lt;footer&gt;— Mason Currey, author of &lt;a href=&quot;http://masoncurrey.com/&quot;&gt;Daily Rituals: How Artists Work&lt;/a&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I&apos;m currently reading &lt;strong&gt;Deep Work&lt;/strong&gt; by Cal Newport and found this great piece of advice. There&apos;s an &lt;a href=&quot;https://www.nytimes.com/2014/09/26/opinion/david-brooks-routine-creativity-and-president-obamas-un-speech.html&quot;&gt;article by David Brooks&lt;/a&gt; in which he summarizes this more blunty, saying that you should &lt;q&gt;think like an artist but work like an accountant.&lt;/q&gt;&lt;/p&gt;
-&lt;p&gt;If you feel like distractions are hurting your productivity, &lt;a href=&quot;http://calnewport.com/books/deep-work/&quot;&gt;go buy this book&lt;/a&gt;, I can&apos;t recommend it enough.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why animate?]]></title><description><![CDATA[When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding…]]></description><link>https://edmundojr.com//blog/why-animate/</link><guid isPermaLink="false">https://edmundojr.com//blog/why-animate/</guid><pubDate>Mon, 21 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding personality to your interface. In fact, to animate means bring to life.&lt;/p&gt;
+&lt;p&gt;If you feel like distractions are hurting your productivity, &lt;a href=&quot;http://calnewport.com/books/deep-work/&quot;&gt;go buy this book&lt;/a&gt;, I can&apos;t recommend it enough.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why animate?]]></title><description><![CDATA[When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding…]]></description><link>https://edmundojr.com/blog/why-animate/</link><guid isPermaLink="false">https://edmundojr.com/blog/why-animate/</guid><pubDate>Mon, 21 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When done well, animations can add valuable interaction and feedback. They enhance the emotional experience, bringing delight and adding personality to your interface. In fact, to animate means bring to life.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Emotional design’s primary goal is to facilitate human-to-human communication. If we’re doing our job well, the computer recedes into the background, and personalities rise to the surface.&lt;/p&gt;
 &lt;footer&gt;— Aarron Walter, Designing For Emotion&lt;/footer&gt;
@@ -191,7 +185,7 @@
 &lt;p&gt;You click on a “New” button and a form just… appears from nowhere? You click a “X” to close a modal and… it just vanishes into thin air? That is unnatural and it’s what we should be avoiding as designers. Nothing in the real world does anything as jarringly as just swapping states. If that happened it would feel like a glitch in the matrix.&lt;/p&gt;
 &lt;p&gt;Take for instance the carousel interface below: without any animations, could you tell that it is indeed a carousel interface? Are we offering the user any clues other than changing the background color and emoji when we swap the panels?&lt;/p&gt;
 &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
-  &lt;iframe class=&quot;embed-responsive-item&quot; height=&quot;310&quot; scrolling=&quot;no&quot; title=&quot;CSS 3D transform Colorful Animated Carousel&quot; src=&quot;//codepen.io/edmundojr/embed/qdLWWx/?height=383&amp;theme-id=33557&amp;default-tab=result&amp;embed-version=2&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+  &lt;iframe height=&quot;440&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;CSS 3D transform Colorful Animated Carousel&quot; src=&quot;//codepen.io/edmundojr/embed/qdLWWx/?height=440&amp;theme-id=dark&amp;default-tab=result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p&gt;If you toggle the animation (go on, I wait), you&apos;ll see how much nicer it is to understand the relationship between the elements and the flow between different states – you instantly get a sense of depth of the interface, it feels faster, it is now enjoybable… you feel that it is truly alive. 😊&lt;/p&gt;
 &lt;h2&gt;What makes a good animation&lt;/h2&gt;
@@ -207,7 +201,7 @@
 &lt;li&gt;&lt;strong&gt;Animate things independently&lt;/strong&gt;: stagger individual elements instead of animating big blocks&lt;/li&gt;
 &lt;li&gt;Always &lt;strong&gt;use custom easings&lt;/strong&gt;: the default ones are crap&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That&apos;s about it. Remember that having fun is the best way to get the best results. Go the extra mile, play, experiment, and be happy with what you do. Try, iterate, and polish!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Scariest Moment]]></title><description><![CDATA[Happy days: today I'm releasing a new version of my website! 🎉 I decided to throw away the  previous one (✦ 2014 - ♱ 2018)  and build this…]]></description><link>https://edmundojr.com//blog/the-scariest-moment/</link><guid isPermaLink="false">https://edmundojr.com//blog/the-scariest-moment/</guid><pubDate>Sun, 18 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy days: today I&apos;m releasing a new version of my website! 🎉&lt;/p&gt;
+&lt;p&gt;That&apos;s about it. Remember that having fun is the best way to get the best results. Go the extra mile, play, experiment, and be happy with what you do. Try, iterate, and polish!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Scariest Moment]]></title><description><![CDATA[Happy days: today I'm releasing a new version of my website! 🎉 I decided to throw away the previous one (✦ 2014 - ♱ 2018) and build this…]]></description><link>https://edmundojr.com/blog/the-scariest-moment/</link><guid isPermaLink="false">https://edmundojr.com/blog/the-scariest-moment/</guid><pubDate>Sun, 18 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy days: today I&apos;m releasing a new version of my website! 🎉&lt;/p&gt;
 &lt;p&gt;I decided to throw away the &lt;a href=&quot;https://github.com/edmundojr/edmundojr-2014&quot;&gt;previous one (✦ 2014 - ♱ 2018)&lt;/a&gt; and build this one from scratch using &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby.js&lt;/a&gt;, a static site generator for React.js.&lt;/p&gt;
 &lt;p&gt;Because I was already learning about the new CSS Grid system, I decided to use it for designing this baby. I started with some rough sketches on Sketch (ah ha!) and then moved on to design in the browser. FirefoxDeveloperEdition has some &lt;a href=&quot;https://mozilladevelopers.github.io/playground/css-grid&quot;&gt;excellent tools&lt;/a&gt; for working with CSS Grid layout, I highly recommend it.&lt;/p&gt;
 &lt;p&gt;Here&apos;s a list of things I plan to do next with this website, in no particular order:&lt;/p&gt;
