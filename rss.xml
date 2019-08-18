@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 13 Aug 2019 13:28:11 GMT</lastBuildDate><item><title><![CDATA[XCode iOS Build fail: CompileAssetCatalog]]></title><description><![CDATA[After upgrading to XCode 10.3 my iOS local builds started to fail on . From what I searched it happens for Native iOS project and React…]]></description><link>https://edmundojr.com/blog/xcode-ios-build-fail-compileassetcatalog/</link><guid isPermaLink="false">https://edmundojr.com/blog/xcode-ios-build-fail-compileassetcatalog/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After upgrading to &lt;strong&gt;XCode 10.3&lt;/strong&gt; my iOS local builds started to fail on &lt;code class=&quot;language-text&quot;&gt;CompileAssetCatalog&lt;/code&gt;. From what I searched it happens for Native iOS project and React Native ones as well.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Edmundo Santos]]></title><description><![CDATA[From the desk of Edmundo Santos, User Interface Designer & Engineer.]]></description><link>https://edmundojr.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Aug 2019 13:12:54 GMT</lastBuildDate><item><title><![CDATA[XCode iOS Build fail: CompileAssetCatalog]]></title><description><![CDATA[After upgrading to XCode 10.3 my iOS local builds started to fail on . From what I searched it happens for Native iOS project and React…]]></description><link>https://edmundojr.com/blog/xcode-ios-build-fail-compileassetcatalog/</link><guid isPermaLink="false">https://edmundojr.com/blog/xcode-ios-build-fail-compileassetcatalog/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After upgrading to &lt;strong&gt;XCode 10.3&lt;/strong&gt; my iOS local builds started to fail on &lt;code class=&quot;language-text&quot;&gt;CompileAssetCatalog&lt;/code&gt;. From what I searched it happens for Native iOS project and React Native ones as well.&lt;/p&gt;
 &lt;p&gt;Here’s how you fix it:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;On XCode, clean the build by going to &lt;em&gt;Product › Clean Build&lt;/em&gt; or by hitting &lt;code class=&quot;language-text&quot;&gt;⌘⇧K&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;⌥⌘⇧K&lt;/code&gt;&lt;/li&gt;
@@ -43,6 +43,7 @@
           src=&quot;/static/1e1deeeb5fe031961caa91c553e6d497/908d7/sketch-libraries.jpg&quot;
           alt=&quot;Me reading from my notes&quot;
           title=&quot;Me reading from my notes&quot;
+          loading=&quot;lazy&quot;
         /&gt;
       &lt;/picture&gt;
     &lt;/span&gt;
@@ -86,6 +87,7 @@
           src=&quot;/static/f3d34d4ed42aca1fad5d8b942a46cdf5/5e53b/xiaomi-mi-mix-2s-portrait-mode.jpg&quot;
           alt=&quot;Spock: It&amp;#39;s only logical&quot;
           title=&quot;Spock: It&amp;#39;s only logical&quot;
+          loading=&quot;lazy&quot;
         /&gt;
       &lt;/picture&gt;
     &lt;/span&gt;
@@ -148,6 +150,7 @@
           src=&quot;/static/a0fb64a9efeee065cf179dc8f630552f/f6e31/coding-design.png&quot;
           alt=&quot;Coding Design&quot;
           title=&quot;Coding Design&quot;
+          loading=&quot;lazy&quot;
         /&gt;
       &lt;/picture&gt;
     &lt;/span&gt;
