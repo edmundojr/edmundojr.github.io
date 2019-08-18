@@ -2,27 +2,26 @@ module.exports = {
   siteMetadata: {
     title: 'Edmundo Santos',
     author: 'Edmundo Santos',
-    description:
-      'From the desk of Edmundo Santos, User Interface Designer & Engineer.',
+    description: 'From the desk of Edmundo Santos, User Interface Designer & Engineer.',
     siteUrl: 'https://edmundojr.com/',
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-unwrap-images',
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               backgroundColor: '#101010',
               linkImagesToOriginal: false,
@@ -30,38 +29,38 @@ module.exports = {
               quality: 100,
               showCaptions: true,
               withWebp: true,
-              wrapperStyle: `margin-bottom: 1rem`
+              wrapperStyle: 'margin-bottom: 1rem',
             },
-          }
+          },
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: `UA-1068613-7`,
+        trackingId: 'UA-1068613-7',
       },
     },
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-feed',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `@halkeye/gatsby-source-goodreads`,
+      resolve: '@halkeye/gatsby-source-goodreads',
       options: {
-        developerKey: `k3utR8gOzC6HeUkbxbXg`,
-        goodReadsUserId: `35088315`,
+        developerKey: 'k3utR8gOzC6HeUkbxbXg',
+        goodReadsUserId: '35088315',
       },
     },
     {
-      resolve: `gatsby-plugin-sentry`,
+      resolve: 'gatsby-plugin-sentry',
       options: {
-        dsn: "https://fbc978873a654e3087dac0d237ba81ff@sentry.io/1533801",
+        dsn: 'https://fbc978873a654e3087dac0d237ba81ff@sentry.io/1533801',
         environment: process.env.NODE_ENV,
-        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
-      }
-    }
+        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+      },
+    },
   ],
 }

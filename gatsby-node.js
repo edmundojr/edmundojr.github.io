@@ -1,15 +1,16 @@
-const each = require('lodash/each')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+// const path = require('path')
+// const { createFilePath } = require('gatsby-source-filesystem')
+import path from 'path'
+import { createFilePath } from 'gatsby-source-filesystem'
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
   createRedirect({
-    fromPath: `/`,
+    fromPath: '/',
     isPermanent: true,
     redirectInBrowser: true,
-    toPath: `/blog/`,
+    toPath: '/blog/',
   })
 
   return new Promise((resolve, reject) => {
@@ -22,6 +23,9 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   fields {
                     slug
+                  }
+                  frontmatter {
+                    title
                   }
                 }
               }
@@ -38,9 +42,10 @@ exports.createPages = ({ graphql, actions }) => {
         const posts = result.data.allMarkdownRemark.edges
         const postsPerPage = 7
         const numPages = Math.ceil(posts.length / postsPerPage)
+
         Array.from({ length: numPages }).forEach((_, i) => {
           createPage({
-            path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
+            path: i === 0 ? '/blog/' : `/blog/${i + 1}`,
             component: path.resolve('./src/templates/blog.js'),
             context: {
               limit: postsPerPage,
@@ -52,12 +57,17 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         // Create blog posts pages
-        each(result.data.allMarkdownRemark.edges, edge => {
+        posts.forEach((post, index) => {
+          const previous = index === posts.length - 1 ? null : posts[index + 1].node
+          const next = index === 0 ? null : posts[index - 1].node
+
           createPage({
-            path: edge.node.fields.slug,
+            path: post.node.fields.slug,
             component: path.resolve('./src/templates/post.js'),
             context: {
-              slug: edge.node.fields.slug,
+              slug: post.node.fields.slug,
+              previous,
+              next,
             },
           })
         })
@@ -68,10 +78,10 @@ exports.createPages = ({ graphql, actions }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value,
     })
