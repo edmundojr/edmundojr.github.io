@@ -24,7 +24,8 @@
     "prismjs": "^1.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-pose": "^4.0.8"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",

@@ -1,15 +1,23 @@
 .hero {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 57ch;
   height: 70vh;
-  max-height: 30rem;
+  max-height: 28rem;
   min-height: 20rem;
-  padding-top: 2rem;
+  padding: calc(var(--grid-gap) * 2) 0 var(--grid-gap);
+  margin: 0 auto;
   text-align: center;
 
-  &-content {
-    grid-column: 2;
-    animation: loadIn 600ms 100ms backwards var(--ease-out-expo);
+  @media (--sm-window) {
+    height: auto;
+    max-height: none;
+    min-height: auto;
+    margin: 5rem auto 2rem;
   }
+
   &-title {
     margin-bottom: 0.5rem;
     font-size: var(--display1-size);
