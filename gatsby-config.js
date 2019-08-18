@@ -55,5 +55,13 @@ module.exports = {
         goodReadsUserId: `35088315`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sentry`,
+      options: {
+        dsn: "https://fbc978873a654e3087dac0d237ba81ff@sentry.io/1533801",
+        environment: process.env.NODE_ENV,
+        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
+      }
+    }
   ],
 }

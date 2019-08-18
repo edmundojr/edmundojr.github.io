@@ -24,6 +24,7 @@ export const Hero = React.memo(({ title, description }) => {
     setVisible(true)
     return () => setVisible(false)
   }, [])
+
   return (
     <PoseGroup>
       {visible && (
