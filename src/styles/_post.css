@@ -10,7 +10,6 @@
   transition-property: color, background, box-shadow, transform;
   transition-duration: 600ms;
   transition-timing-function: var(--ease-out-expo);
-  animation: loadIn 600ms 100ms backwards var(--ease-out-expo);
 
   @media (--sm-window) {
     padding: var(--grid-padding);
