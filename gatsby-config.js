@@ -1,10 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Edmundo Santos',
-    author: 'Edmundo Santos',
-    description: 'From the desk of Edmundo Santos, User Interface Designer & Engineer.',
-    siteUrl: 'https://edmundojr.com/',
-  },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -44,7 +38,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
-    'gatsby-plugin-feed',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {

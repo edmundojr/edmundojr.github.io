@@ -18,7 +18,7 @@ const HeroContent = posed.div({
   },
 })
 
-export const Hero = React.memo(({ title, description }) => {
+export default React.memo(({ title, description }) => {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
     setVisible(true)
@@ -36,5 +36,3 @@ export const Hero = React.memo(({ title, description }) => {
     </PoseGroup>
   )
 })
-
-Hero.displayName = 'Hero'

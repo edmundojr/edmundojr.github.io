@@ -1,5 +1,3 @@
-// const path = require('path')
-// const { createFilePath } = require('gatsby-source-filesystem')
 import path from 'path'
 import { createFilePath } from 'gatsby-source-filesystem'
 

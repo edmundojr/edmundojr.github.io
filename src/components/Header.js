@@ -13,7 +13,7 @@ const HeaderContent = posed.header({
   },
 })
 
-export const Header = () => {
+export default React.memo(() => {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
     setVisible(true)
@@ -36,7 +36,7 @@ export const Header = () => {
       )}
     </PoseGroup>
   )
-}
+})
 
 const Logo = () => (
   <Link className="logo" to="/">

@@ -1,23 +1,26 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import get from 'lodash/get'
 import { graphql, Link } from 'gatsby'
+// import config from "../config"
 
 import { Layout } from '../components'
 
-const BlogPostTemplate = props => {
-  const siteTitle = get(props, 'data.site.siteMetadata.title')
-  const post = get(props, 'data.markdownRemark')
+export default ({ data }) => {
   const {
-    frontmatter: { title, date, tags },
-  } = post
+    markdownRemark: {
+      frontmatter: { title, date, tags },
+      html,
+    },
+  } = data
   return (
     <Layout>
-      <Helmet title={`${title} × ${siteTitle}`} />
+      {/*<Helmet title={`${title} × ${config.title}`} />*/}
       <main>
         <article className={'post container-grid'}>
           <header className={'post-header container-grid'}>
-            <Link className={'back-button'} to={'/blog/'} aria-label={'Back to home'}>←</Link>
+            <Link className={'back-button'} to={'/blog/'} aria-label={'Back to home'}>
+              ←
+            </Link>
             <h1 className={'post-title'}>{title}</h1>
             <time className={'post-date'}>{date}</time>
             <ul className={'post-tags'}>
@@ -28,26 +31,15 @@ const BlogPostTemplate = props => {
               ))}
             </ul>
           </header>
-          <div
-            className={'post-content container-grid'}
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <div className={'post-content container-grid'} dangerouslySetInnerHTML={{ __html: html }} />
         </article>
       </main>
     </Layout>
   )
 }
 
-export default BlogPostTemplate
-
-export const pageQuery = graphql`
+export const query = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
