@@ -1,42 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-import posed, { PoseGroup } from 'react-pose'
 
-const HeaderContent = posed.header({
-  enter: {
-    opacity: 1,
-    // transition: { duration: 150 },
-  },
-  exit: {
-    opacity: 0,
-    // transition: { duration: 150 },
-  },
-})
-
-export default React.memo(() => {
-  const [visible, setVisible] = useState(false)
-  useEffect(() => {
-    setVisible(true)
-    return () => setVisible(false)
-  }, [])
-  return (
-    <PoseGroup>
-      {visible && (
-        <HeaderContent key={'header'} className="header" role="banner">
-          <div className="header-content container-fluid">
-            <Logo />
-            <nav className="nav" role="navigation">
-              <Dribbble link={'https://dribbble.com/edmundojr'} />
-              <Instagram link={'https://instagram.com/manfromanotherland'} />
-              <GitHub link={'https://github.com/edmundojr'} />
-              <Twitter link={'https://twitter.com/edmundojr_'} />
-            </nav>
-          </div>
-        </HeaderContent>
-      )}
-    </PoseGroup>
-  )
-})
+export default () => (
+  <header key={'header'} className="header" role="banner">
+    <div className="header-content container-fluid">
+      <Logo />
+      <nav className="nav" role="navigation">
+        <Dribbble link={'https://dribbble.com/edmundojr'} />
+        <Instagram link={'https://instagram.com/manfromanotherland'} />
+        <GitHub link={'https://github.com/edmundojr'} />
+        <Twitter link={'https://twitter.com/edmundojr_'} />
+      </nav>
+    </div>
+  </header>
+)
 
 const Logo = () => (
   <Link className="logo" to="/">

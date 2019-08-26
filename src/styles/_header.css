@@ -76,6 +76,15 @@
   color: var(--body-color);
   transition: color 0.3s;
 
+  @media (--sm-window) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    grid-column: unset;
+    transform: translateX(-50%);
+    color: var(--body-bg);
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -103,14 +112,5 @@
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
     }
-  }
-
-  @media (--sm-window) {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    grid-column: unset;
-    transform: translateX(-50%);
-    color: var(--body-bg);
   }
 }

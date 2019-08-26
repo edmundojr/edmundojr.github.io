@@ -17,6 +17,16 @@ const Card = posed.div({
     opacity: 0,
     transition: { duration: 300 },
   },
+  hoverable: true,
+  hover: {
+    scale: 1.01,
+    y: -5,
+  },
+  init: {
+    scale: 1,
+    y: 0,
+    transition: { type: 'spring', stiffness: 500, damping: 15 },
+  },
 })
 
 export default React.memo(({ slug, title, date, description, index }) => {

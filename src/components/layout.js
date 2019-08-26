@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Footer, Header } from '../components'
 import '../styles/main.css'
 
-export default React.memo(({ children }) => (
+export default ({ children }) => (
   <>
     <Helmet>
       <html lang="en" />
@@ -20,4 +20,4 @@ export default React.memo(({ children }) => (
     {children}
     <Footer />
   </>
-))
+)

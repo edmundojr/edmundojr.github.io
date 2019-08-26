@@ -1,13 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Hero, Layout, PostCard } from '../components'
-import posed from 'react-pose'
-
-const Main = posed.div({
-  enter: {
-    staggerChildren: 300,
-  },
-})
 
 export default ({ data, pageContext }) => {
   const {
@@ -22,7 +15,7 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <Hero title={'Exploring ideas about design, code, and technology.'} description={'+ some other random stuff.'} />
-      <Main className={'blog-grid'}>
+      <main className={'blog-grid'}>
         {posts.map(({ node }, index) => {
           const {
             frontmatter: { title, description, date },
@@ -30,7 +23,7 @@ export default ({ data, pageContext }) => {
           } = node
           return <PostCard key={index} index={index} slug={slug} title={title} description={description} date={date} />
         })}
-      </Main>
+      </main>
       <div className={'pagination'}>
         {!isFirst && (
           <Link to={prevPage} rel="prev" aria-label="Previous page">
