@@ -7,24 +7,23 @@ const HeroContent = posed.div({
     opacity: 1,
     delay: 100,
     transition: {
-      y: { type: 'spring', stiffness: 250, damping: 15 },
-      default: { duration: 300 },
+      y: { type: 'spring', stiffness: 100, damping: 15 },
+      default: { duration: 200 },
     },
   },
   exit: {
     y: 40,
     opacity: 0,
-    transition: { duration: 300 },
+    transition: { duration: 200 },
   },
 })
 
-export default React.memo(({ title, description }) => {
+export default ({ title, description }) => {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
     setVisible(true)
     return () => setVisible(false)
   }, [])
-
   return (
     <PoseGroup>
       {visible && (
@@ -35,4 +34,4 @@ export default React.memo(({ title, description }) => {
       )}
     </PoseGroup>
   )
-})
+}
