@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import { Hero, Layout, PostCard } from '../components'
 import posed from 'react-pose'
+import { Helmet } from 'react-helmet'
 
 const Main = posed.div({
   enter: {
     delay: 100,
-    staggerChildren: 25,
+    staggerChildren: 75,
     transition: { type: 'spring', stiffness: 100, damping: 15 },
   },
   initialPose: 'exit',
@@ -29,6 +30,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <Helmet title={"Articles about design and code · Edmundo Santos, Designer"} />
       <Hero title={'Exploring ideas about design, code, and technology.'} description={'+ some other random stuff.'} />
       <Main className={'blog-grid'} pose={visible ? 'enter' : 'init'}>
         {posts.map(({ node }, index) => {
