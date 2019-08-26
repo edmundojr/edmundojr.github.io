@@ -1,11 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Hero, Layout } from '../components'
-// import config from '../config'
 
 export default () => (
   <Layout>
-    {/*<Helmet title={config.title + ' × About'} />*/}
+    <Helmet title={'Edmundo Santos, Designer'} />
     <Hero
       type={'large'}
       title={[
