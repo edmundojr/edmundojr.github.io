@@ -32,7 +32,7 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Helmet title={"Articles about design and code · Edmundo Santos, Designer"} />
       <Hero title={'Exploring ideas about design, code, and technology.'} description={'+ some other random stuff.'} />
-      <Main className={'blog-grid'} pose={visible ? 'enter' : 'init'}>
+      <Main className={'blog-grid'} pose={visible ? 'enter' : 'exit'}>
         {posts.map(({ node }, index) => {
           const {
             frontmatter: { title, description, date },

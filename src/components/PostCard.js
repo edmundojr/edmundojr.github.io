@@ -9,7 +9,7 @@ const Card = posed(Link)({
     scale: 1,
     rotateX: 0,
   },
-  init: {
+  exit: {
     opacity: 0,
     y: 100,
     scale: 0.9,
