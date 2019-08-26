@@ -7,7 +7,7 @@
   padding: var(--grid-padding) var(--grid-padding) calc(var(--grid-padding) * 2);
   color: currentColor;
   border-radius: 6px;
-  transform-origin: center;
+  transform-origin: top center;
   transition-property: color, background, box-shadow, transform;
   transition-duration: 600ms;
   transition-timing-function: var(--ease-out-expo);

@@ -3,18 +3,17 @@ import posed, { PoseGroup } from 'react-pose'
 
 const HeroContent = posed.div({
   enter: {
-    y: 0,
     opacity: 1,
-    delay: 100,
-    transition: {
-      y: { type: 'spring', stiffness: 100, damping: 15 },
-      default: { duration: 200 },
-    },
+    y: 0,
+    scale: 1,
+    rotateX: 0,
+    transition: { type: 'spring', stiffness: 100, damping: 15 },
   },
   exit: {
-    y: 40,
     opacity: 0,
-    transition: { duration: 200 },
+    y: 100,
+    scale: 0.9,
+    rotateX: -25,
   },
 })
 

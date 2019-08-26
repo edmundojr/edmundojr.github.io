@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import { Hero, Layout, PostCard } from '../components'
+import posed from 'react-pose'
+
+const Main = posed.div({
+  enter: {
+    delay: 100,
+    staggerChildren: 25,
+    transition: { type: 'spring', stiffness: 100, damping: 15 },
+  },
+  initialPose: 'exit',
+})
 
 export default ({ data, pageContext }) => {
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    setVisible(true)
+    return () => setVisible(false)
+  }, [])
   const {
     allMarkdownRemark: { edges: posts },
   } = data
@@ -15,7 +30,7 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <Hero title={'Exploring ideas about design, code, and technology.'} description={'+ some other random stuff.'} />
-      <main className={'blog-grid'}>
+      <Main className={'blog-grid'} pose={visible ? 'enter' : 'init'}>
         {posts.map(({ node }, index) => {
           const {
             frontmatter: { title, description, date },
@@ -23,7 +38,7 @@ export default ({ data, pageContext }) => {
           } = node
           return <PostCard key={index} index={index} slug={slug} title={title} description={description} date={date} />
         })}
-      </main>
+      </Main>
       <div className={'pagination'}>
         {!isFirst && (
           <Link to={prevPage} rel="prev" aria-label="Previous page">
