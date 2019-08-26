@@ -11,7 +11,7 @@ export default ({ data }) => {
   } = data
   return (
     <Layout>
-      {/*<Helmet title={config.title + ' × Reading'} />*/}
+      <Helmet title={"From the library of Edmundo Santos"} />
       <Hero type={'large'} title={'From the library of Edmundo Santos'} description={'Designer & Book Nerd'} />
       <main className={'container-fluid'}>
         <div className={'reading'}>

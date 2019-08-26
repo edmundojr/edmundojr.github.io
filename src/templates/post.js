@@ -14,7 +14,7 @@ export default ({ data }) => {
   } = data
   return (
     <Layout>
-      {/*<Helmet title={`${title} × ${config.title}`} />*/}
+      <Helmet title={`${title} · Edmundo Santos, Designer`} />
       <main>
         <article className={'post container-grid'}>
           <header className={'post-header container-grid'}>
