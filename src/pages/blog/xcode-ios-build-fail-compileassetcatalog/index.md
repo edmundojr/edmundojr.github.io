@@ -1,7 +1,7 @@
 ---
 title: 'macOS upgrade breaking XCode iOS build'
 description: 'Try this if your iOS builds are failing on CompileAssetCatalog step.'
-date: '2019-08-13'
+date: '2018-05-21'
 tags: ['Development']
 ---
 
