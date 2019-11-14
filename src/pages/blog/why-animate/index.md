@@ -1,7 +1,7 @@
 ---
 title: 'Why animate?'
 description: 'No animation is unnatural.'
-date: '2018-05-21'
+date: '2019-08-13'
 tags: ['Design', 'Animation']
 ---
 
@@ -27,16 +27,22 @@ If you toggle the animation (go on, I wait), you'll see how much nicer it is to 
 
 So we know we should animate, but what makes for a good animation? What should we focus on?
 
-First of all, you should animate exclusively using `opacity` and `transform` properties, anything else will trigger a browser layout or paint, which are expensive operations. That's the only way to keep your animations running at a smooth 60fps rate.
-
-> The process that the browser goes through is pretty simple: calculate the styles that apply to the elements (Recalculate Style), generate the geometry and position for each element (Layout), fill out the pixels for each element into layers (Paint Setup and Paint) and draw the layers out to screen (Composite Layers). To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing -- transform and opacity. The **higher up** you start on the timeline waterfall the **more work** the browser has to do to get pixels on to the screen.
->
-> <footer><span>—</span> Paul Lewis and Paul Irish, <a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#disqus_thread">High Performance Animations</a></footer>
-
-Secondly, animation is all about timing:
+First of all, _animation is all about timing_:
 
 - Try to **keep your animations fast**: usually around the _300ms_ mark
 - **Animate things independently**: stagger individual elements instead of animating big blocks
 - Always **use custom easings**: the default ones are crap
 
-That's about it. Remember that having fun is the best way to get the best results. Go the extra mile, play, experiment, and be happy with what you do. Try, iterate, and polish!
+Second, if you are working with CSS you should animate exclusively using `opacity` and `transform` properties. You might need to get creative, but any other property will trigger a browser layout or paint, which are expensive operations. That's the only way to keep your animations running at a smooth 60fps rate.
+
+> The process that the browser goes through is pretty simple: calculate the styles that apply to the elements (Recalculate Style), generate the geometry and position for each element (Layout), fill out the pixels for each element into layers (Paint Setup and Paint) and draw the layers out to screen (Composite Layers). To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing -- transform and opacity. The **higher up** you start on the timeline waterfall the **more work** the browser has to do to get pixels on to the screen.
+>
+> <footer><span>—</span> Paul Lewis and Paul Irish, <a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#disqus_thread">High Performance Animations</a></footer>
+
+That's about it. Remember that having fun is the best way to get the best results. Go the extra mile, play, experiment, and be happy with what you do.
+
+Try, iterate, and polish!
+
+---
+
+If you have any comments or feedback, please [drop me a line on Twitter](https://twitter.com/edmundojr_).
