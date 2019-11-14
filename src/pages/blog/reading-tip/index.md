@@ -23,4 +23,4 @@ Here’s some reading advice that stuck with me:
 >
 > <footer>— Bret Victor, <a href="http://worrydream.com/Links2013/">Links 2013</a></footer>
 
-Found this on his [2013 links page](http://worrydream.com/Links2013/), you'll find additional reading tips and a fair amount of book recommendations and links about <q>powerful seeing, and powerful representations for scientific thinking</q>.
+Found this on his [2013 links page](http://worrydream.com/Links2013/), where you can also find additional reading tips, great book recommendations, and links about <q>powerful seeing, and powerful representations for scientific thinking</q>, as he puts it.
