@@ -1,7 +1,7 @@
 ---
 title: 'Waiting for inspiration'
 description: 'Creative mojo just doesn’t bubble from who knows where.'
-date: '2018-05-27'
+date: '2018-12-07'
 tags: ['Reading', 'Quotes']
 ---
 

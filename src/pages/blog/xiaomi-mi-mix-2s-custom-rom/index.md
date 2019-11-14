@@ -1,7 +1,7 @@
 ---
 title: 'The Notchless Pixel'
 description: 'Installing a custom ROM on Xiaomi Mi Mix 2S.'
-date: '2018-12-07'
+date: '2018-05-27'
 tags: ['Android', 'Hacking']
 ---
 
