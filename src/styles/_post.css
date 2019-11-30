@@ -78,7 +78,6 @@
     align-self: flex-end;
     padding: 1.75rem 0;
     margin-top: 10rem;
-    animation: loadIn 600ms 100ms backwards var(--ease-out-expo);
   }
 
   &-title {
@@ -110,7 +109,6 @@
     grid-column: 1 / 4;
     grid-row: 2;
     transform-origin: top center;
-    animation: loadIn 600ms 150ms backwards var(--ease-out-expo);
 
     & :--heading,
     & :--textTags {

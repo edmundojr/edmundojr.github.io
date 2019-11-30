@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-// import config from "../config"
 
 import { Layout } from '../components'
 
@@ -18,7 +17,7 @@ export default ({ data }) => {
       <main>
         <article className={'post container-grid'}>
           <header className={'post-header container-grid'}>
-            <Link className={'back-button'} to={'/blog/'} aria-label={'Back to home'}>
+            <Link className={'back-button'} to={'/'} aria-label={'Go back'}>
               ←
             </Link>
             <h1 className={'post-title'}>{title}</h1>

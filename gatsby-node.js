@@ -1,17 +1,8 @@
 import path from 'path'
 import { createFilePath } from 'gatsby-source-filesystem'
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
-
-  createRedirect({
-    fromPath: '/',
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: '/blog/',
-  })
-
-  return new Promise((resolve, reject) => {
+exports.createPages = ({ graphql, actions: { createPage } }) =>
+  new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
@@ -43,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         Array.from({ length: numPages }).forEach((_, i) => {
           createPage({
-            path: i === 0 ? '/blog/' : `/blog/${i + 1}`,
+            path: i === 0 ? '/' : `/blog/${i + 1}`,
             component: path.resolve('./src/templates/blog.js'),
             context: {
               limit: postsPerPage,
@@ -72,16 +63,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
     )
   })
-}
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
   if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode })
     createNodeField({
       name: 'slug',
       node,
-      value,
+      value: createFilePath({ node, getNode })
     })
   }
 }
