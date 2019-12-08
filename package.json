@@ -6,6 +6,7 @@
   "license": "CC-BY-4.0",
   "dependencies": {
     "@halkeye/gatsby-source-goodreads": "^0.0.6",
+    "framer-motion": "^1.6.17",
     "gatsby": "^2.18.5",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-offline": "^3.0.25",
@@ -24,7 +25,8 @@
     "prismjs": "^1.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "eslint": "^6.7.2",

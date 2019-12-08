@@ -1,8 +1,35 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Hero = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 57ch;
+  height: 70vh;
+  max-height: 28rem;
+  min-height: 20rem;
+  padding: calc(var(--grid-gap) * 2) 0 var(--grid-gap);
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    font-size: var(--display1-size);
+    font-weight: var(--display-font-weight);
+    line-height: var(--display-line-height);
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.8;
+  }
+`
 
 export default ({ title, description }) => (
-  <div key={'hero'} className={'hero'}>
-    <h1 className={'hero-title'}>{title}</h1>
-    <p className={'hero-description lead mb-0'}>{description}</p>
-  </div>
+  <Hero>
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </Hero>
 )
