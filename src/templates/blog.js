@@ -2,12 +2,35 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Hero, Layout, PostCard } from '../components'
 import { Helmet } from 'react-helmet'
+import { motion } from 'framer-motion'
 
-export default ({ data, pageContext }) => {
-  const {
+const container = {
+  visible: {
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const item = {
+  hidden: { y: 100, scale: 0.95, opacity: 0 },
+  visible: {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+    },
+  },
+}
+
+export default ({
+  data: {
     allMarkdownRemark: { edges: posts },
-  } = data
-  const { currentPage: page, numPages } = pageContext
+  },
+  pageContext: { currentPage: page, numPages },
+}) => {
   const prevPage = page - 1 === 1 ? '/' : (page - 1).toString()
   const nextPage = '/blog/' + (page + 1).toString()
   const isFirst = page === 1
@@ -15,17 +38,27 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={"Articles about design and code · Edmundo Santos, Designer"} />
+      <Helmet title={'Articles about design and code · Edmundo Santos, Designer'} />
       <Hero title={'Exploring ideas about design, code, and technology.'} description={'+ some other random stuff.'} />
-      <div className={'blog-grid'}>
+      <motion.div className={'blog-grid'} variants={container} initial="hidden" animate="visible">
         {posts.map(({ node }, index) => {
           const {
             frontmatter: { title, description, date },
             fields: { slug },
           } = node
-          return <PostCard key={index} index={index} slug={slug} title={title} description={description} date={date} />
+          return (
+            <PostCard
+              key={index}
+              index={index}
+              slug={slug}
+              title={title}
+              description={description}
+              date={date}
+              variants={item}
+            />
+          )
         })}
-      </div>
+      </motion.div>
       <div className={'pagination'}>
         {!isFirst && (
           <Link to={prevPage} rel="prev" aria-label="Previous page">
