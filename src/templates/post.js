@@ -17,11 +17,11 @@ export default ({ data }) => {
       <main>
         <article className={'post container-grid'}>
           <header className={'post-header container-grid'}>
-            <Link className={'back-button'} to={'/'} aria-label={'Go back'}>
-              ←
-            </Link>
             <h1 className={'post-title'}>{title}</h1>
             <time className={'post-date'}>{date}</time>
+            <Link className={'back-button'} to={'/'} aria-label={'Go back'}>
+              ← Back
+            </Link>
             <ul className={'post-tags'}>
               {tags.map((tag, index) => (
                 <li key={`${index}`} className={'post-tags-tag'}>
