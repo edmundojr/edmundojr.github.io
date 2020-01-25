@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-const Hero = styled.div`
+const Hero = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,9 +28,30 @@ const Hero = styled.div`
   }
 `
 
+const container = {
+  visible: {
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const item = {
+  hidden: { y: 10, scale: 0.95, opacity: 0 },
+  visible: {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+}
+
 export default ({ title, description }) => (
-  <Hero>
-    <h1>{title}</h1>
-    <p>{description}</p>
+  <Hero variants={container} initial="hidden" animate="visible">
+    <motion.h1 variants={item}>{title}</motion.h1>
+    <motion.p variants={item}>{description}</motion.p>
   </Hero>
 )
