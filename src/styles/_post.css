@@ -128,6 +128,7 @@
       &-figcaption {
         grid-column: 2;
         margin-top: 0.5rem;
+        padding-left: calc(var(--grid-padding) * 2);
         opacity: 0.5;
       }
     }
