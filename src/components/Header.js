@@ -3,15 +3,13 @@ import { Link } from 'gatsby'
 
 export default () => (
   <header key={'header'} className="header" role="banner">
-    <div className="header-content container-fluid">
-      <Logo />
-      <nav className="nav" role="navigation">
-        <Dribbble link={'https://dribbble.com/edmundojr'} />
-        <Instagram link={'https://instagram.com/manfromanotherland'} />
-        <GitHub link={'https://github.com/edmundojr'} />
-        <Twitter link={'https://twitter.com/edmundojr_'} />
-      </nav>
-    </div>
+    <Logo />
+    <nav className="nav" role="navigation">
+      <Dribbble link={'https://dribbble.com/edmundojr'} />
+      <Instagram link={'https://instagram.com/manfromanotherland'} />
+      <GitHub link={'https://github.com/edmundojr'} />
+      <Twitter link={'https://twitter.com/edmundojr_'} />
+    </nav>
   </header>
 )
 
