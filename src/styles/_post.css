@@ -118,11 +118,16 @@
     & .embed-responsive,
     & pre {
       grid-column: 1 / 4;
+      border-radius: 6px;
     }
 
     & .gatsby-resp-image {
       &-figure {
         grid-column: 1 / 4;
+
+        img {
+          border-radius: 6px;
+        }
       }
 
       &-figcaption {
@@ -143,4 +148,20 @@
   font-weight: var(--font-weight-bold);
   line-height: var(--headings-line-height);
   text-align: center;
+}
+
+video.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  outline: none;
+  border-radius: 6px;
+
+  &-16by9::before {
+    display: block;
+    padding-top: 56.25%;
+    content: '';
+  }
 }

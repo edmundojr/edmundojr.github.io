@@ -24,7 +24,7 @@ export default ({ data }) => {
             </Link>
             <ul className={'post-tags'}>
               {tags.map((tag, index) => (
-                <li key={`${index}`} className={'post-tags-tag'}>
+                <li key={index} className={'post-tags-tag'}>
                   {tag}
                 </li>
               ))}
