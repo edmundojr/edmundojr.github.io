@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),r=(t("TJpk"),t("Kvkj"));n.default=function(){return c.a.createElement(r.d,null,c.a.createElement(r.c,{title:"Edmundo Santos",description:"User Interface Designer"}),c.a.createElement("main",null))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-f324db5998f11559a1e9.js.map
