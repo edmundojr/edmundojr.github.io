@@ -115,12 +115,15 @@
       grid-column: 2;
     }
 
+    /* Media and code */
     & .embed-responsive,
-    & pre {
+    & pre,
+    & .gatsby-highlight {
       grid-column: 1 / 4;
       border-radius: 6px;
     }
 
+    /* Responsive images */
     & .gatsby-resp-image {
       &-figure {
         grid-column: 1 / 4;
@@ -138,6 +141,13 @@
       }
     }
   }
+}
+
+/* Improve vertical rhythm for code blocks */
+
+.gatsby-highlight + :--heading,
+.gatsby-highlight + :--textTags {
+  margin-top: var(--headings-margin-bottom);
 }
 
 /* Pagination */
