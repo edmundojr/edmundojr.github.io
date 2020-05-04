@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-const Hero = styled(motion.div)`
+const Wrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,9 +49,9 @@ const item = {
   },
 }
 
-export default ({ title, description }) => (
-  <Hero variants={container} initial="hidden" animate="visible">
+export const Hero = ({ title, description }) => (
+  <Wrapper variants={container} initial="hidden" animate="visible">
     <motion.h1 variants={item}>{title}</motion.h1>
     <motion.p variants={item}>{description}</motion.p>
-  </Hero>
+  </Wrapper>
 )
