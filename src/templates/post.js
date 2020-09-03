@@ -11,6 +11,7 @@ export default ({ data }) => {
       html,
     },
   } = data
+
   return (
     <Layout>
       <Helmet title={`${title} · Edmundo Santos, Designer`} />
