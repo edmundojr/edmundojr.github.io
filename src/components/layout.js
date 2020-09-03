@@ -1,14 +1,14 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import { Footer, Header } from '../components'
+import { Helmet } from 'react-helmet'
+import { Footer, Header } from '.'
 import '../styles/main.css'
 
-export default ({ children }) => (
+export const Layout = ({ children }) => (
   <>
     <Helmet>
       <html lang="en" />
       <meta name="theme-color" content="#A6B2BB" />
-      <title>Edmundo Santos</title>
+      <title>Edmundo Santos, Designer</title>
       <link rel="manifest" href="/manifest.json" />
       <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
       <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />

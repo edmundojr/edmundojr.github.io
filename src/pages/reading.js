@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { Hero, Layout } from '../components'
 
@@ -10,7 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <Helmet title={'From the library of Edmundo Santos'} />
-      <Hero type={'large'} title={'From the library of Edmundo Santos'} description={'Designer & Book Nerd'} />
+      <Hero title={'From the library of Edmundo Santos'} description={'Designer & Book Nerd'} />
       <main className={'container-fluid'}>
         <div className={'reading'}>
           {books.map(({ node }) => (

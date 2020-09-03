@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 
 import { Layout } from '../components'
@@ -11,6 +11,7 @@ export default ({ data }) => {
       html,
     },
   } = data
+
   return (
     <Layout>
       <Helmet title={`${title} · Edmundo Santos, Designer`} />

@@ -7,22 +7,14 @@ import { motion } from 'framer-motion'
 const container = {
   visible: {
     transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.1,
+      staggerChildren: 0.075,
     },
   },
 }
 
 const item = {
-  hidden: { y: 100, scale: 0.95, opacity: 0 },
-  visible: {
-    y: 0,
-    scale: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.3,
-    },
-  },
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
 }
 
 export default ({
