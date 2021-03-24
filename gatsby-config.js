@@ -41,13 +41,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
-      resolve: '@halkeye/gatsby-source-goodreads',
-      options: {
-        developerKey: 'k3utR8gOzC6HeUkbxbXg',
-        goodReadsUserId: '35088315',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-sentry',
       options: {
         dsn: 'https://fbc978873a654e3087dac0d237ba81ff@sentry.io/1533801',
