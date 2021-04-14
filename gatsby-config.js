@@ -48,5 +48,12 @@ module.exports = {
         enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
+    {
+      resolve: 'gatsby-plugin-mixpanel',
+      options: {
+        apiToken: 'f560d5562bced39cf94873eb7b0b14c0',
+        pageViews: 'all',
+      },
+    },
   ],
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-export default () => (
+export const Header = () => (
   <header key={'header'} className="header" role="banner">
     <Logo />
     <nav className="nav" role="navigation">
@@ -15,8 +15,7 @@ export default () => (
 
 const Logo = () => (
   <Link className="logo" to="/">
-    <svg width="44px" height="25px" viewBox="0 0 44 25">
-      <title>Edmundo Santos, Designer</title>
+    <svg width="44px" height="25px" viewBox="0 0 44 25" aria-label="Edmundo Santos, Designer">
       <path d="m7 10h11v5h-11v3h11v7h-18v-25h18v7h-11zm14-10h10.596559c3.4302141 0 6.2890548 1.15549158 8.7403355 3.63739954 2.4305573 2.46291632 3.6631055 5.44260526 3.6631055 8.85310466 0 3.4364879-1.2325482 6.4281716-3.6631055 8.8910879-2.4414125 2.4719124-5.3002531 3.6184079-8.7403355 3.6184079h-10.596559zm8.2821402 17.9870389c.3241834.006979.6483668.0129611.9715078.0129611 1.6271714 0 3.4940926-.1256231 5.0618477-1.6251246 1.1028491-1.0538385 1.6855453-2.3888335 1.6845029-3.8614158 0-1.3918245-.5347463-2.67397804-1.5865182-3.80658024-1.0090339-1.13260219-2.4152185-1.70687936-4.1779006-1.70687936h-3.2355798v10.9870389z" />
     </svg>
   </Link>

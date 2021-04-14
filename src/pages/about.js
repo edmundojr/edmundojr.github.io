@@ -1,12 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { Hero, Layout } from '../components'
 
 export default () => (
   <Layout>
     <Helmet title={'Edmundo Santos, Designer'} />
     <Hero
-      type={'large'}
       title={[
         'Hi, I’m Ed! ',
         <span key={'wave'} className="flip">
